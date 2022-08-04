@@ -1,0 +1,11 @@
+/* this is just for visibility purposes to be amended by Morag and Adonelle -Imane */
+
+.mfl-sidebar {
+	font-family: 'Trebuchet MS', 'Helvetica', 'sans-serif' ;
+    color: white;
+	background-color: #707489;
+	padding: 32px;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 250px;
+}

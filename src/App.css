@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+  background-color:rgb(245, 246, 247);
+  font-family: 'Trebuchet MS', 'Helvetica', 'sans-serif' ;
+
+
+}   
+.label{
+  display: block;
+  font-size: larger;
+  color: black;
+  padding: 5px;
+}
+ 
+.input{
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
+  
+}
+.btn{
+  color: rgb(242, 241, 247);
+  background-color: rgb(105, 88, 158);
+  border-radius: 5px;
+  font-size: larger;
+  display: block;
+  padding: 5px;
+  margin: 10px auto;
+}
+ 
+.messages{
+  display: flex;
+  justify-content: center;
+}
+ 
+.error{
+  display: block;
+  background-color: rgb(105, 88, 158);
+  color: white;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
+ 
+.success{
+  display: block;
+  background-color: rgb(105, 88, 158);
+  color: white;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
+
+.mfl-logo-login {
+  height: 70px; 
+  display: block;
+  justify-content: center;
+}
