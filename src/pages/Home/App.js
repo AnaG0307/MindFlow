@@ -8,8 +8,8 @@ function App() {
   return (
 
     <div className='App'>
-      <h1>Ready to sign up?</h1>
-      <Registration />
+      <h1>MindFlow</h1>
+      <h2>Your wellbeing companion</h2>
     </div>
   );
 }

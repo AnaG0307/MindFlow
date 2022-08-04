@@ -8,6 +8,8 @@ import Footer from './Components/Footer'
 import Dashboard from './pages/Dashboard';
 import Registration from './Components/Login/Registration';
 import Login from './Components/Login/login.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

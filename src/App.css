@@ -1,14 +1,21 @@
+@import url(//db.onlinewebfonts.com/c/2d57f676e3d6955778fb8acac0176b9a?family=Eina01-Bold);
+
+#root{
+  font-family: "Eina01-Bold";
+  font-size: 20px;
+
+}
+
 .App {
   text-align: center;
-  background-color:rgb(245, 246, 247);
-  font-family: 'Trebuchet MS', 'Helvetica', 'sans-serif' ;
-
+  background-color:rgb(255, 255, 255);
+  font-family: 'Eina01-Bold';
 
 }   
 .label{
   display: block;
   font-size: larger;
-  color: black;
+  color: rgb(64, 64, 65);
   padding: 5px;
 }
  
@@ -19,8 +26,8 @@
   
 }
 .btn{
-  color: rgb(242, 241, 247);
-  background-color: rgb(105, 88, 158);
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   font-size: larger;
   display: block;
@@ -35,7 +42,7 @@
  
 .error{
   display: block;
-  background-color: rgb(105, 88, 158);
+  background-color: rgb(255, 255, 255);
   color: white;
   width: fit-content;
   height: 50px;
@@ -44,7 +51,7 @@
  
 .success{
   display: block;
-  background-color: rgb(105, 88, 158);
+  background-color: rgb(255, 255, 255);
   color: white;
   width: fit-content;
   height: 50px;
