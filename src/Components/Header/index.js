@@ -11,6 +11,8 @@ import Logo from "../../assets/logo.png"
 import Logo2 from "../../assets/logo2.png"
 import '../../style/Header.css'
 import '../../style/index.css'
+import HeaderLogin from '../../App.css'
+
 
 function Header() {
   return (
@@ -18,19 +20,24 @@ function Header() {
           <Container fluid>
             <Navbar.Brand href="#">
 			<img
-			src={Logo} 
+			src={Logo2} 
 			alt= "MindFlow logo" 
 			className="mfl-logo"
-			width="50" 
+			width="49" 
 			height="40"
-			/>			
-			
+			/>
 			</Navbar.Brand>
+      <div className="justify-content-end">
+      <Navbar.Text>
+      Signed in as: <a href="#login">Buffy Summers</a>
+      </Navbar.Text>
+      </div>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-false`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-false`}
               aria-labelledby={`offcanvasNavbarLabel-expand-false`}
               placement="end"
+			  style={{fontSize:"20px"}}
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-false`}>
