@@ -1,14 +1,20 @@
+@import url(//db.onlinewebfonts.com/c/2d57f676e3d6955778fb8acac0176b9a?family=Eina01-Bold);
+
+#root{
+  font-family: "Eina01-Bold";
+  font-size: 20px;
+}
+
 .App {
   text-align: center;
-  background-color:rgb(245, 246, 247);
-  font-family: 'Trebuchet MS', 'Helvetica', 'sans-serif' ;
-
+  background-color:rgb(255, 255, 255);
+  font-family: 'Eina01-Bold';
 
 }   
 .label{
   display: block;
   font-size: larger;
-  color: black;
+  color: rgb(64, 64, 65);
   padding: 5px;
 }
  
@@ -19,8 +25,8 @@
   
 }
 .btn{
-  color: rgb(242, 241, 247);
-  background-color: rgb(105, 88, 158);
+  color: rgb(137, 137, 137);
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
   font-size: larger;
   display: block;
@@ -30,13 +36,13 @@
  
 .messages{
   display: flex;
-  justify-content: center;
+  justify-content:right
 }
  
 .error{
   display: block;
-  background-color: rgb(105, 88, 158);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(192, 163, 255);
   width: fit-content;
   height: 50px;
   padding: 5px;
@@ -44,8 +50,8 @@
  
 .success{
   display: block;
-  background-color: rgb(105, 88, 158);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(192, 163, 255);
   width: fit-content;
   height: 50px;
   padding: 5px;
@@ -55,4 +61,10 @@
   height: 70px; 
   display: block;
   justify-content: center;
+}
+
+.HeaderLogin {
+  font-family: "Eina01-Bold";
+  font-size: 20px;
+  justify-content: right;
 }

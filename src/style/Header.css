@@ -1,22 +1,9 @@
-/* the below are data added from another project of mine just for visibility sake, it's meant to be amended
-by Adonelle and Morag - Imane.*/
 .mfl-banner {
-    padding: 30px;
+    padding:10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(245, 246, 247);
+    color: rgb(64, 64, 65);
+    background-color:rgb(255, 255, 255);
 }
 
-.mfl-title {
-    font-family: 'Trebuchet MS', 'Helvetica', 'sans-serif' ;
-    height: 70px;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.mfl-logo {
-    height: 70px; 
-}

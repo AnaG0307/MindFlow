@@ -1,15 +1,11 @@
-/* the below are data added from another project of mine just for visibility sake, it's meant to be amended
-by Adonelle and Morag - Imane.*/
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Eina01-Bold';
+  color: rgb(64, 64, 65);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Eina01-Bold';
 }

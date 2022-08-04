@@ -1,6 +1,6 @@
-/* this is just for visibility purposes, the below will be amended by Adonelle and Morag*/
 .mfl-footer {
-    font-family: 'Trebuchet MS', 'Helvetica', 'sans-serif' ;
+    font-family: 'Eina01-Bold' ;
+    color: rgb(64, 64, 65);
     display: flex;
     flex-direction: column;
     align-items: center;
