@@ -93,4 +93,4 @@ function Period() {
   );
 }
 
-export default Calendar;
+export default Period;
