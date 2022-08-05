@@ -1,18 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Home from './pages/LandingPage/App';
-import Header from './Components/Header';
-import reportWebVitals from './reportWebVitals';
-import Footer from './Components/Footer'
-import Dashboard from './pages/Dashboard';
-import Registration from './Components/Login/Registration';
-import Login from './Components/Login/login.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import ThemeProvider from 'react-bootstrap/ThemeProvider'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/LandingPage/App";
+import Header from "./Components/Header";
+import reportWebVitals from "./reportWebVitals";
+import Footer from "./Components/Footer";
+import Dashboard from "./pages/Dashboard";
+import Registration from "./Components/Login/Registration";
+import Login from "./Components/Login/login.js";
+import Period from "./Components/Period/period.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+import ThemeProvider from "react-bootstrap/ThemeProvider";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
@@ -20,12 +20,13 @@ root.render(
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/Registration" element={<Registration />} /> 
+        <Route path="/Period" element={<Period />} />
+        <Route path="/Registration" element={<Registration />} />
         <Route path="/Login" element={<Login />} />
       </Routes>
       <Footer />
     </Router>
-    </React.StrictMode>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
