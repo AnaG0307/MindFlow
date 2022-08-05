@@ -7,7 +7,7 @@ const firebaseAdmin = require("../services/firebase.js") ;
 
 const router = express.Router();
 
-exports.auth = ("/", authenticate, async (req, res) => {
+exports.authen = ("/", authenticate, async (req, res) => {
   res.status(200).json(req.user);
 });
 
