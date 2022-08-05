@@ -20,8 +20,8 @@ root.render(
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Period" element={<Period />} />
-        <Route path="/Registration" element={<Registration />} />
         <Route path="/Login" element={<Login />} />
       </Routes>
       <Footer />
