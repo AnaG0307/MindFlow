@@ -10,7 +10,7 @@ function Footer() {
     }
     function handleBlur (){
         if(!inputValue.includes('@')){
-            alert("Your email address is invalid, there is no @")
+            alert("Invalid email address")
         }
     }
     return (
