@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Home from './pages/Landing Page/App';
+import Home from './pages/LandingPage/App';
 import Header from './Components/Header';
 import reportWebVitals from './reportWebVitals';
 import Footer from './Components/Footer'
