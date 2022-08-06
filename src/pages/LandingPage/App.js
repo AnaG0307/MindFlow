@@ -4,7 +4,7 @@ import Logo from "../../assets/logo.png"
 import Logo2 from "../../assets/logo2.png"
 import '../../style/Header.css'
 import '../../style/index.css'
-import '../..style/Sidebar.css'
+import '../../style/Sidebar2.css'
 
 
 function App() {
