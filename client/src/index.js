@@ -22,7 +22,7 @@ root.render(
         <Route exact path="/" element={<Home />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/Period/period.js" element={<PeriodPage />} />
+        <Route path="/Period" element={<PeriodPage />} />
         <Route path="/Login" element={<Login />} />
       </Routes>
       <Footer />

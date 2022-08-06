@@ -51,7 +51,7 @@ function App() {
         Log in
       </Button>{" "}
       <Button variant="period" size="lg">
-        <Link to="./Period/period.js">Period Calendar</Link>
+        <Link to="/Period">Period Calendar</Link>
       </Button>{" "}
     </div>
   );
