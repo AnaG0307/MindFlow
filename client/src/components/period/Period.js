@@ -21,11 +21,6 @@ function Period() {
   return (
     <>
       <div className="text-center">
-        <nav className="navbar navbar-light bg-light">
-          <div className="container-fluid text-center">
-            <h4>Calculate Next period, Ovulation Day </h4>
-          </div>
-        </nav>
         <h4>Calculate Next period, Ovulation Day</h4>
 
         <label for="cycle">Select your Cycle Length : </label>
