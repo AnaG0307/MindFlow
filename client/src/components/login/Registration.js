@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import login from "./Login";
-import Dashboard from "../../pages/dashboard";
+import Dashboard from "../../pages/dashboard/MoodLog";
 import {
   BrowserRouter as Router,
   Route,
