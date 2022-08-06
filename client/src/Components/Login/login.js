@@ -5,7 +5,7 @@ import {
   Routes,
   useNavigate,
 } from "react-router-dom";
-import Registration from "./registration";
+import Registration from "./Registration";
 import Dashboard from "../../pages/dashboard";
 
 function login() {
