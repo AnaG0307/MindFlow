@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/LandingPage/App";
-import Header from "./components/Header";
+import Home from "./pages/landingPage/App";
+import Header from "./components/header";
 import reportWebVitals from "./reportWebVitals";
-import Footer from "./components/Footer";
-import Dashboard from "./pages/Dashboard";
+import Footer from "./components/footer";
+import Dashboard from "./pages/dashboard";
 import Registration from "./components/Login/Registration";
-import Login from "./components/Login/login.js";
-import Period from "./components/Period/period.js";
+import Login from "./components/login/Login.js";
+import Period from "./components/period/Period.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 
