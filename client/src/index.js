@@ -8,7 +8,8 @@ import Footer from "./components/footer/Footer.js";
 import Dashboard from "./pages/dashboard/MoodLog.js";
 import Registration from "./components/login/Registration.js";
 import Login from "./components/login/Login.js";
-import Period from "./components/period/Period.js";
+//import Period from "./components/period/Period.js";
+import PeriodPage from "./pages/Period.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 
@@ -21,7 +22,7 @@ root.render(
         <Route exact path="/" element={<Home />} />
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/Period" element={<Period />} />
+        <Route path="/Period/period.js" element={<PeriodPage />} />
         <Route path="/Login" element={<Login />} />
       </Routes>
       <Footer />
