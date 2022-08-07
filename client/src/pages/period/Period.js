@@ -1,5 +1,6 @@
 import React from "react";
 import "../../App.css";
+import "../../style/Period.css";
 import Logo from "../../assets/logo.png";
 import Logo2 from "../../assets/logo2.png";
 import LandingImage from "../../assets/LandingImage.png";
@@ -15,10 +16,10 @@ import {
 } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-function PeriodPage () {
+function PeriodPage() {
   return (
     <div>
-        <Period />
+      <Period />
     </div>
   );
 }
