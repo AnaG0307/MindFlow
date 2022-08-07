@@ -25,19 +25,20 @@ function PeriodPage() {
     <div className="PeriodPage"> 
     <Container>
       <Row>
-
-        <Col xs={12} lg={6}>
+      
+        <Col xs={12} lg={8} style={{ padding: 0}}>
           <div>
+          <h2 className="pagetitle">Calculate Your Next Period</h2>
           <img
             src={CalendarPage} 
             alt= "CalendarPagePNG" 
             className="CalendarPagePNG"
-            width="570" 
-            height="600"
+            width="630" 
+            height="670"
             /> 
           </div>
         </Col>
-        <Col xs={12} lg={6}>
+        <Col xs={12} lg={4} style={{paddingLeft:0 }}>
           <div>
           <Period />
           </div>
