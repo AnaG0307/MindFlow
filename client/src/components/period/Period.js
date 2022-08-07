@@ -20,9 +20,9 @@ function Period() {
   return (
     <>
       <div className="text-center">
-        <h4>Calculate Next period, Ovulation Day</h4>
+        <h3>Calculate Your Next Period and Ovulation Day</h3>
 
-        <label for="cycle">Select your Cycle Length : </label>
+        <label className="cyclelegnth" for="cycle">Select your Cycle Length : </label>
         <select
           onChange={(e) => cycleValue(e.target.value)}
           defaultValue={cycle}
@@ -49,27 +49,26 @@ function Period() {
         </select>
       </div>
 
-      <p className="text-center">
-        Select Your Last Period Start Date from the Calendar
+      <p className="text-center2">
+        Select Your Last Period Start Date from the Calendar:
       </p>
-
+      <div className="calendarbox">
       <div className="d-flex justify-content-center ">
         <Calendar onChange={onChange} value={value} className="calendar mt-0" />
       </div>
-
+      </div>
       <div className="text-center mt-4 p-2">
         <div className="row">
           <div class="d-flex justify-content-center">
             <div className="col-md-3 m-3 box ">
-              <p>Next Period</p>
+              <p>Next Period:</p>
 
               <Moment format="Do MMMM YYYY" add={{ days: cycleLength - 1 }}>
                 {date}
               </Moment>
             </div>
             <div className="col-md-3 m-3 box ">
-              <p> Approximate Ovulation Day</p>
-
+              <p> Approximate Ovulation Day:</p>
               <Moment
                 format="Do MMMM YYYY"
                 add={{ days: cycleLength - 1 - 14 }}
