@@ -1,8 +1,58 @@
-# Getting Started with Create React App
+# **MindFlow**
+
+1. [Introduction](#Introduction)
+2. [Background](#Background)
+3. [Specifications and Design](#Specifications-and-Design)
+4. [Implementation and Execution](#Implementation-and-Execution)
+5. [Testing and Evaluation](#Testing-and-Evaluation)
+6. [Getting Started](#Getting-Started)
+7. [Conclusion](#Conclusion)
+
+---
+
+## **About**
+
+• Aims and objectives of the project
+• Roadmap of the report
+
+---
+
+## **Background**
+
+• Any specific details about the project based on your chosen topic. For example, if it is a game, it would be good to understand the rules of the game and its logic. If it is a trading portfolio, then explain what analysis you are performing (end of day profit/loss, historical price evaluation etc) and how does it work. If it is a restaurant booking system, then explain the rules / requirements that your team locked in for the system.
+
+---
+
+## **Specifications and Design**
+
+• Requirements technical and non-technical
+• Design and architecture
+
+---
+
+## **Implementation and Execution**
+
+• Development approach and team member roles
+• Tools and libraries
+• Implementation process (achievements, challenges, decision to change something)
+• Agile development (did team use any agile elements like iterative approach, refactoring, code reviews)
+• Implementation challenges
+
+---
+
+## **Testing and Evaluation**
+
+• Testing strategy
+• Functional and user testing
+• System limitations
+
+---
+
+## **Getting Started**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
@@ -39,7 +89,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
@@ -68,3 +118,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+## **Conclusion**
