@@ -1,8 +1,10 @@
 import React from "react";
 import "../../App.css";
-import Sidebar from "../../components/sidebar/Sidebar";
+import Sidebar from "../../components/sidebar/Sidebar2.js";
 
-function Dashboard() {
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+function Home(props) {
   return (
     <div className="App">
       <h2>Hello, how are you feeling today?</h2>
@@ -12,7 +14,7 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default Home;
 
 
 
