@@ -1,7 +1,19 @@
-import React from 'react';
-import '../../App.css'
-import Logo from "../../assets/logo.png"
-import Logo2 from "../../assets/logo2.png"
-import '../../style/Header.css'
-import '../../style/index.css'
+import React from "react";
+import "../../App.css";
+import Sidebar from "../../components/sidebar/Sidebar";
+
+function Dashboard() {
+  return (
+    <div className="App">
+      <h2>Hello, how are you feeling today?</h2>
+      <span>😀 😐 🙁 </span>
+      <Sidebar />
+    </div>
+  );
+}
+
+export default Dashboard;
+
+
+
 
