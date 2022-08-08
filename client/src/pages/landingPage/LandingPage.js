@@ -10,6 +10,7 @@ import '../../style/LandingPage.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import {Link} from 'react-router-dom';
 
 function App() {
   
@@ -46,9 +47,13 @@ function App() {
                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa <br/>
                 qui officia deserunt mollit anim id est laborum.</text>	
                 <div className="buttongroup">
-                <Button className="signupbutton" size="med">Sign Up</Button>
+                <Link to="/SignUp.js">
+                <Button className="signupbutton" size="med" >Sign Up</Button>
+                </Link>
                 <h6 className="or">OR</h6>
-                <Button className="loginbutton" size="med">Log in</Button>
+                <Link to="/Login.js">
+                <Button className="loginbutton" size="med" >Log in</Button>
+                </Link>
                 </div>
           </div>
         </Col>
