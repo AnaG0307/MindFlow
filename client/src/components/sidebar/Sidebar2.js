@@ -31,7 +31,7 @@ function Sidebar () {
         </li>
         <li>
           <span>
-          <Link to="/Period">
+          <Link to="/period">
             <div className="Calendar"></div>
           Calendar
           </Link>
