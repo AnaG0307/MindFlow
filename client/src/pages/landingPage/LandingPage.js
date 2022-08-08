@@ -51,7 +51,7 @@ function App() {
                 <Button className="signupbutton" size="med" >Sign Up</Button>
                 </Link>
                 <h6 className="or">OR</h6>
-                <Link to="/Login">
+                <Link to="/LoginPage">
                 <Button className="loginbutton" size="med" >Log in</Button>
                 </Link>
                 </div>
