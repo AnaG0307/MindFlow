@@ -20,7 +20,7 @@ MindFlow
 
 Ana Genover, Edita Dolnickova, Adonelle Sagoe, Imane Zioche, Morag McClenaghan
 
-#### **Aims & Objectives of the priject:**
+#### **Aims & Objectives of the project:**
 
 To create a mood-tracking app for women to track how they feel throughout their menstrual cycles as well as any physical symptoms.
 
