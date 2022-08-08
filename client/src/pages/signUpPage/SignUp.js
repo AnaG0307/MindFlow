@@ -8,3 +8,7 @@ import '../../style/index.css'
 import Button from 'react-bootstrap/Button';
 import Registration from '../../Components/Login/Registration';
 import { BrowserRouter as Router, Route, Routes, useNavigate} from 'react-router-dom';
+
+
+
+
