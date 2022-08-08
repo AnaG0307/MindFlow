@@ -5,10 +5,10 @@ import Home from "./pages/landingPage/LandingPage.js";
 import Header from "./components/header/Header.js";
 import reportWebVitals from "./reportWebVitals";
 import Footer from "./components/footer/Footer.js";
-import Dashboard from "./pages/dashboard/MoodLog.js";
+import Dashboard from "./pages/homePage/Home.js";
 import Registration from "./components/login/Registration.js";
 import Login from "./components/login/Login.js";
-import PeriodPage from "./pages/period/Period.js";
+import PeriodPage from "./pages/periodPage/Period.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 

@@ -47,11 +47,11 @@ function App() {
                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa <br/>
                 qui officia deserunt mollit anim id est laborum.</text>	
                 <div className="buttongroup">
-                <Link to="/SignUp.js">
+                <Link to="/SignUp">
                 <Button className="signupbutton" size="med" >Sign Up</Button>
                 </Link>
                 <h6 className="or">OR</h6>
-                <Link to="/Login.js">
+                <Link to="/Login">
                 <Button className="loginbutton" size="med" >Log in</Button>
                 </Link>
                 </div>
