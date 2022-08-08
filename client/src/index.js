@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/landingPage/App";
+import Home from "./pages/landingPage/LandingPage.js";
 import Header from "./components/header/Header.js";
 import reportWebVitals from "./reportWebVitals";
 import Footer from "./components/footer/Footer.js";
@@ -16,14 +16,16 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
+    
       <Header />
 
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/Period" element={<PeriodPage />} />
-        <Route path="/Login" element={<Login />} />
+        <Route exact path="/" element={<Home />}></Route>
+        <Route path="/Dashboard" element={<Dashboard />}></Route>
+        <Route path="/Dashboard" element={<Dashboard />}></Route>
+        <Route path="/period" element={<PeriodPage />}></Route>
+        <Route exact path="/Login" element={<Login />}></Route>
+        <Route path="/Home" element={<landingPage />}></Route>
       </Routes>
       <Footer />
     </Router>
