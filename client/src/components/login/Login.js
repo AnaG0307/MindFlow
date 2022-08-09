@@ -3,77 +3,97 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  useNavigate,
+  useNavigate,  useLocation
 } from "react-router-dom";
 import Registration from "./Registration";
 import Dashboard from "../../pages/dashboard/MoodLog";
 
-function login() {
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+
+
+
+export default function  Login() {
   // Navigate between pages
+  const location = useLocation();
   const navigate = useNavigate();
+  
   const navigatetoDashboard = () => {
-    navigate("/Dashboard");
+    navigate("/UserProfile");
   };
   const navigatetoReg = () => {
     navigate("/Registration");
   };
-  const [emaillog, setEmaillog] = useState("");
-  const [passwordlog, setPasswordlog] = useState("");
+  const [fields, setFields] = useState({
+    email: "",
+    password: ""
+  });
 
-  /* WORK IN PROGRESS 
-Showing success message
-const successMessage = () => {
-	return (
-	<div
-		className="success"
-		style={{
-		display: submitted ? '' : 'none',
-		}}>
-		<h1>User {firstName} successfully registered!!</h1>
-	</div>
-	);
-};
+  const [error, setError] = useState("");
 
-// Showing error message if error is true
-const errorMessage = () => {
-	return (
-	<div
-		className="error"
-		style={{
-		display: error ? '' : 'none',
-		}}>
-		<h1>Please enter all the fields</h1>
-	</div>
-	);
-}; */
+
+  const auth =getAuth();
+
+
+  const handleChange = (e) => {
+    setFields({ ...fields, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const user = await signInWithEmailAndPassword(
+        auth,
+        fields.email,
+        fields.password
+      );
+      if (user) {
+        navigate("/UserProfile");
+        console.log("Called");
+      }
+    } catch (err) {
+      console.log(err);
+      setError("Invalid email address or password.");
+    }
+  };
+ 
+
   return (
-    <div className="App">
-      <div className="form">
+    <div>
+      {location.state && location.state.message ? (
+        <p style={{ color: "green" }}>{location.state.message}</p>
+      ) : null}
+      <h1>Log In</h1>
+      <form onSubmit={handleSubmit}>
         <div>
-          <h1>User Login</h1>
+          <label htmlFor="email" className="label">Email Address</label>
         </div>
-
-        <form>
-          <div>
-            <label className="label">Enter Email</label>
-            <input
-              type="email"
-              placeholder="Enter email"
-              className="input"
-              onChange={(event) => setEmaillog(event.target.value)}
-            />
-          </div>
-          <div>
-            <label className="label">Enter Password</label>
-            <input
-              type="password"
-              placeholder="Enter Password"
-              className="input"
-              onChange={(event) => setPasswordlog(event.target.value)}
-            />
-          </div>
-          <div>
-            <button onClick={navigatetoDashboard} className="btn" type="submit">
+        <div>
+          <input
+            className="input"
+            type="email"
+            name="email"
+            value={fields.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div >
+          <label htmlFor="password" className="label">Password</label>
+        </div>
+        <div>
+          <input
+            className="input"
+            type="password"
+            name="password"
+            value={fields.password}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        
+        {error ? <p style={{ color: "red" }}>Error: {error}</p> : null}
+        <div>
+            <button className="btn" type="submit">
               Submit
             </button>
             <hr />
@@ -81,14 +101,13 @@ const errorMessage = () => {
               Register Here{" "}
             </button>
           </div>
-          <Routes>
+          {/* <Routes>
             <Route path="/Dashboard" element={<Dashboard />} />
             <Route path="/Registration" element={<Registration />} />
           </Routes>
-        </form>
-      </div>{" "}
+       */}
+      </form>
+      
     </div>
   );
 }
-
-export default login;
