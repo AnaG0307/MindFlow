@@ -2,14 +2,13 @@ import "react-calendar/dist/Calendar.css";
 import React, { useState } from "react";
 import Moment from "react-moment";
 import Calendar from "react-calendar";
+import MoodLog from "../moodLog/MoodLog";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   useNavigate,
 } from "react-router-dom";
-
-import Button from "@mui/joy/Button";
 
 function Period() {
   const [value, onChange] = useState(new Date());
@@ -80,8 +79,11 @@ function Period() {
                 {date}
               </Moment>
             </div>
-            <Button>My button</Button>;
           </div>
+          <div className="text-center">
+            <MoodLog />
+          </div>
+          <button className="m-2">Save</button>
         </div>
         <Routes>
           <Route path="/Period" element={<Period />} />

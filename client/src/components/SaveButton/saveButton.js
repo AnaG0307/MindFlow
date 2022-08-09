@@ -1,31 +1,14 @@
-import {
-  SaveButton,
-  Toolbar,
-  Edit,
-  SimpleForm,
-  useNotify,
-  useRedirect,
-} from "react-admin";
+import React, { Component } from "react";
 
-const PostSaveButton = (props) => {
-  const notify = useNotify();
-  const redirect = useRedirect();
-  const onSuccess = (response) => {
-    notify(`Post "${response.data.title}" saved!`);
-    redirect("/posts");
-  };
-  return <SaveButton {...props} mutationOptions />;
-};
+function Form() {
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log("You clicked submit.");
+  }
 
-const PostEditToolbar = () => (
-  <Toolbar>
-    <PostSaveButton />
-    <DeleteButton />
-  </Toolbar>
-);
-
-const PostEdit = () => (
-  <Edit>
-    <SimpleForm toolbar={<PostEditToolbar />}>...</SimpleForm>
-  </Edit>
-);
+  return (
+    <form onSubmit={handleSubmit}>
+      <button type="submit">Submit</button>
+    </form>
+  );
+}
