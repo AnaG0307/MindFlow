@@ -63,6 +63,7 @@ function App (){
         <Route exact path="/Login" element={<Login />}></Route>
         <Route path="/Home" element={<landingPage />}></Route>
         <Route path="/SignUp" element={< SignUp/>}></Route>
+        <Route path="/Reset" element={< ResetPage/>}></Route>
 
   </Route> 
       </Routes>
