@@ -5,15 +5,15 @@ export default function MoodLog() {
 
   return (
     <div>
-      <label for="cycle">Select your mood for today : </label>
+      <label className="selectmoodtext" for="cycle">Select your mood for today : </label>
       <select
         onChange={(e) => setMood(e.target.value)}
         defaultValue={mood}
-        className="m-2"
+        className="moodselect"
       >
-        <option value="great">Great!</option>
-        <option value="medium">So so</option>
-        <option value="horrible">Horrible...</option>
+        <option className="great" value="great">Great 😄</option>
+        <option className="soso" value="medium">So so 😶</option>
+        <option className="horrible" value="horrible">Awful 😓</option>
       </select>
     </div>
   );

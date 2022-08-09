@@ -60,7 +60,7 @@ function Period() {
           />
         </div>
       </div>
-      <div className="text-center mt-4 p-2">
+      <div className="text-centermt-4p-2">
         <div className="row">
           <div class="d-flex justify-content-center">
             <div className="col-md-3 m-3 box ">
@@ -83,7 +83,7 @@ function Period() {
           <div className="text-center">
             <MoodLog />
           </div>
-          <button className="m-2">Save</button>
+          <button className="savemood">Save</button>
         </div>
         <Routes>
           <Route path="/Period" element={<Period />} />

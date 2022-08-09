@@ -1,5 +1,4 @@
 * {
-	overflow: hidden;
 	font-family: "Eina01-Bold" !important;
 	color: rgb(64, 64, 65) !important;
 }
@@ -59,11 +58,11 @@
 	border-radius: 10px;
 	text-align: center;
 	color: rgb(64, 64, 65) !important;
-	background-color: rgb(206, 236, 218) !important;
+	background-color: rgb(219, 236, 242) !important;
 	width: 150px !important;
 	height: 150px !important;
 	line-height: normal;
-	margin-top: -10px !important;
+	margin-top: -30px !important;
 	font-size: 20px;
 }
 
@@ -84,3 +83,48 @@ abbr[title] {
 	margin-left: 150px; 
 }
 
+.moodselect {
+	margin-top: 0px !important;
+	margin-right: 0px !important;
+	margin-bottom: 10px !important;
+	margin-left: 0px !important;
+	font-size: 17.5px;
+	background-color:  rgb(255, 255, 255) !important;
+	border-color: rgb(215, 237, 243) !important;
+	width: 95px;
+	height: 30px;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.25);
+	justify-content: center !important;
+}
+
+.savemood {
+	margin-top: 10px !important;
+	margin-right: 0px !important;
+	margin-bottom: 10px !important;
+	margin-left: 180px !important;
+	position: center !important;
+	font-size: 20px;
+    background-color: rgb(50, 60, 132) !important;
+    border: rgb(50, 60, 132) !important;
+    color: white !important;
+	width: 80px !important;
+	height: 40px !important;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.25);
+}
+
+.selectmoodtext {
+	margin-top: 10px !important;
+	margin-right: 10px !important;
+	margin-bottom: -8px !important;
+	margin-left: 0px !important;
+	font-size: 20px;
+}
+
+.text-centermt-4p-2 {
+	margin-top: 0px !important;
+	margin-right: 0px !important;
+	margin-bottom: 0px !important;
+	margin-left: 0px !important;
+}
