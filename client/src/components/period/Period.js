@@ -9,6 +9,8 @@ import {
   useNavigate,
 } from "react-router-dom";
 
+import Button from "@mui/joy/Button";
+
 function Period() {
   const [value, onChange] = useState(new Date());
   const [cycle, cycleValue] = useState("28");
@@ -20,7 +22,9 @@ function Period() {
   return (
     <>
       <div className="text-center">
-        <label className="cyclelegnth" for="cycle">Select your cycle length : </label>
+        <label className="cyclelegnth" for="cycle">
+          Select your cycle length :{" "}
+        </label>
         <select
           onChange={(e) => cycleValue(e.target.value)}
           defaultValue={cycle}
@@ -47,13 +51,15 @@ function Period() {
         </select>
       </div>
 
-      <p className="text-center2">
-        Select your last period start date:
-      </p>
+      <p className="text-center2">Select your last period start date:</p>
       <div className="calendarbox">
-      <div className="d-flex justify-content-center ">
-        <Calendar onChange={onChange} value={value} className="calendar mt-0" />
-      </div>
+        <div className="d-flex justify-content-center ">
+          <Calendar
+            onChange={onChange}
+            value={value}
+            className="calendar mt-0"
+          />
+        </div>
       </div>
       <div className="text-center mt-4 p-2">
         <div className="row">
@@ -74,6 +80,7 @@ function Period() {
                 {date}
               </Moment>
             </div>
+            <Button>My button</Button>;
           </div>
         </div>
         <Routes>
