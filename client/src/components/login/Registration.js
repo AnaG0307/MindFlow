@@ -7,149 +7,143 @@ import {
   Routes,
   useNavigate,
 } from "react-router-dom";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import axios from "axios";
 
-function Registration() {
+
+export default function Registration() {
   // Navigate between pages
   const navigate = useNavigate();
+
   const navigatetoDashboard = () => {
     navigate("/Dashboard");
   };
   const navigatetoLogin = () => {
-    navigate("/login");
+    navigate("/Login");
   };
   // Registration
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  // Errors
-  const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState(false);
+ 
+    const [fields, setFields] = useState({
+      email: "",
+      name: "",
+      surname: "",
+      password: "",
+      confirmPassword: ""
+    });
 
-  // Handling the name change
-  const handleFName = (e) => {
-    setFirstName(e.target.value);
-    setSubmitted(false);
-  };
-  const handleLName = (e) => {
-    setLastName(e.target.value);
-    setSubmitted(false);
-  };
+    const [error, setError] = useState("");
+  
+      const auth = getAuth();
+  
+    const handleChange = (e) => {
+      setFields({ ...fields, [e.target.name]: e.target.value });
+    };
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      if (fields.password.length < 6) {
+        return setError("Password must be at least 6 characters in length.");
+      }
+      if (fields.confirmPassword !== fields.password) {
+        return setError("Password and confirm password must match.");
+      }
 
-  // Handling the email change
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-    setSubmitted(false);
-  };
-
-  // Handling the password change
-  const handlePassword = (e) => {
-    setPassword(e.target.value);
-    setSubmitted(false);
-  };
-
-  // Handling the form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (
-      firstName === "" ||
-      lastName === "" ||
-      email === "" ||
-      password === ""
-    ) {
-      setError(true);
-    } else {
-      setSubmitted(true);
-      setError(false);
-    }
-  };
-
-  // Showing success message
-  const successMessage = () => {
-    return (
-      <div
-        className="success"
-        style={{
-          display: submitted ? "" : "none",
-        }}
-      >
-        <h1>User {firstName} successfully registered!!</h1>
-      </div>
-    );
-  };
-
-  // Showing error message if error is true
-  const errorMessage = () => {
-    return (
-      <div
-        className="error"
-        style={{
-          display: error ? "" : "none",
-        }}
-      >
-        <h1>Please enter all the fields</h1>
-      </div>
-    );
-  };
+      try {
+        const req = await axios.post("http://localhost:4000/api/user", {
+          email: fields.email,
+          password: fields.password,
+          name: fields.name,
+          surname: fields.surname
+        });
+        const message = req.data.success;
+        return navigate("/Login", {
+          replace: true,
+          state: {
+            message
+          }
+        });
+      } catch (err) {
+        const errMessage = err.response.data.error;
+        return setError(errMessage);
+      }
+    };
+  
 
   return (
     <div className="App">
       <div className="form">
         <div>
-          <h1>User Registration</h1>
+          <h1>Register</h1>
         </div>
 
-        <div className="messages">
-          {errorMessage()}
-          {successMessage()}
+        <form onSubmit={handleSubmit}>
+          <div>
+           
+            <label className="label" htmlFor="name">First Name</label>
+              <input
+            className="input"
+            type="text"
+            name="name"
+            value={fields.name}
+            onChange={handleChange}
+            required
+          />
+          </div>
+
+          <div>
+            <label className="label" htmlFor="surname">Last Name</label>
+             <input
+            className="input"
+            type="text"
+            name="surname"
+            value={fields.surname}
+            onChange={handleChange}
+            required
+          />
+          </div>
+
+          <div>
+            <label className="label" htmlFor="email">Email</label>
+            <input
+            className="input"
+            type="email"
+            name="email"
+            value={fields.email}
+            onChange={handleChange}
+            required
+          />
+          </div>
+
+          <div>
+            <label className="label" tmlFor="password">Password</label>
+            
+             <input
+            className="input"
+            type="password"
+            name="password"
+            value={fields.password}
+            onChange={handleChange}
+            required
+          />
+          </div>
+          <div>
+          <label className="label" htmlFor="confirmPassword">Confirm Password</label>
+        </div>
+        <div>
+          <input
+            className="input"
+            type="password"
+            name="confirmPassword"
+            value={fields.confirmPassword}
+            onChange={handleChange}
+            required
+          />
         </div>
 
-        <form>
-          <div>
-            {/* Labels and inputs for form data */}
-            <label className="label">First Name</label>
-            <input
-              onChange={handleFName}
-              className="input"
-              value={firstName}
-              type="text"
-            />
-          </div>
-
-          <div>
-            <label className="label">Last Name</label>
-            <input
-              onChange={handleLName}
-              className="input"
-              value={lastName}
-              type="text"
-            />
-          </div>
-
-          <div>
-            <label className="label">Email</label>
-            <input
-              onChange={handleEmail}
-              className="input"
-              value={email}
-              type="email"
-            />
-          </div>
-
-          <div>
-            <label className="label">Password</label>
-            <input
-              onChange={handlePassword}
-              className="input"
-              value={password}
-              type="password"
-            />
-          </div>
-
-          <div>
-            <button onClick={navigatetoDashboard} className="btn" type="submit">
-              Submit
-            </button>
+         
+          {error ? <p style={{ color: "red" }}>Error: {error}</p> : null}
+        <div>
+          <button type="submit" className="btn">Sign Up</button>
             <hr />
             <button onClick={navigatetoLogin} className="btn" type="submit">
               {" "}
@@ -158,12 +152,10 @@ function Registration() {
           </div>
           <Routes>
             <Route path="/Dashboard" element={<Dashboard />} />
-            <Route path="/login" element={<login />} />
+            <Route path="/Login" element={<login />} />
           </Routes>
         </form>
       </div>
     </div>
   );
 }
-
-export default Registration;
