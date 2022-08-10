@@ -16,10 +16,13 @@ app.use(cors({ origin: true }));
 app.use(express.json());
 
 
+// I would like to move this router get to routes, put the auhentication middleware stops working and gives warning. But works here...random??
 
-app.get("/", authenticate, async (req, res) => {
+app.get("/api/user", authenticate, async (req, res) => {
   res.status(200).json(req.user);
-  });
+    });
+
+
 
 app.use("/api/user", userRouter);
 

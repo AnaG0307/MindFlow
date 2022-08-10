@@ -9,11 +9,15 @@ import Dashboard from "../../pages/dashboard/MoodLog";
 import { useEffect, useState } from "react";
 import firebaseService from "../../services/firebase";
 import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
+import '../../style/ProfilePage.css'
+import Profile1 from "../../assets/Profile1.png"
+
 
 
 
 import axios from "axios";
 import React, { Component }  from 'react';
+import Container from "react-bootstrap/esm/Container";
 
 
 
@@ -49,34 +53,48 @@ export default function UserProfile() {
 //   }, []);
 
   return (
-    <>
-       {/* <h1>Dashboard</h1>
-      {loadingUser ? (
-        <p>Loading User</p>
-      ) : ( */}
-        <div>
-          <p>Name: {auth.currentUser.name}</p>
-          <p>Surname: {auth.currentUser.surname}</p>
-          <p>Email: {auth.currentUser.email}</p>
-        </div>
+    // <>
+    //    {/* <h1>Dashboard</h1>
+    //   {loadingUser ? (
+    //     <p>Loading User</p>
+    //   ) : ( */}
+    //     // <div className="detail">
+    //     //   <p>Name: {auth.currentUser.displayName}</p>
+    //     //   <p>Surname: {auth.currentUser.surname}</p>
+    //     //   <p>Email: {auth.currentUser.email}</p>
+    //     // </div>
+    <Container> 
+      <div className="header">
+        <h1>Your Profile Details</h1>
+      </div>
+      <div className="profile">
+      <img
+      src={Profile1} 
+      alt= "ProfilePic" 
+      width="200" 
+      height="200" 
+      />	
+      </div>
+      <div className="detail">
+        <p>Name: Namela</p> 
+        <p>Surname: Namerson</p>
+        <p>email: email@idk.com</p>
+      </div>
+      </Container>
+// to="/"
+// onClick={() =>  {
+//   signOut(auth)
+//     .then(() => {
+//       console.log("user signed out");
+//     })
+//     .catch((error) => {
+//       console.log("error", error);
+//     });
+// }}
+// >
+// Log out
+// </Link>
 
-
-  
-      <Link
-to="/"
-onClick={() =>  {
-  signOut(auth)
-    .then(() => {
-      console.log("user signed out");
-    })
-    .catch((error) => {
-      console.log("error", error);
-    });
-}}
->
-Log out
-</Link>
-
-    </>
-  );
-}
+// //     </>
+   );
+ }

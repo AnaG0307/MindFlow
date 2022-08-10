@@ -7,9 +7,18 @@ const firebaseAdmin = require("../services/firebase.js") ;
 
 const router = express.Router();
 
-exports.authen = ("/", authenticate, async (req, res) => {
+
+// user authentication to retrive data, api/user route connection to middleware
+
+exports.user = ("/", authenticate, async (req, res) => {
   res.status(200).json(req.user);
-});
+  console.log(req.user)
+  });
+
+
+//send user details to the MongoDB
+
+
 
 exports.signup = ("/", async (req, res) => {
   const { email, name, password, surname } = req.body;
