@@ -33,7 +33,7 @@ export default function Registration() {
 
     const [error, setError] = useState("");
   
-      const auth = getAuth();
+    const auth = getAuth();
   
     const handleChange = (e) => {
       setFields({ ...fields, [e.target.name]: e.target.value });
