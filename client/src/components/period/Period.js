@@ -2,6 +2,7 @@ import "react-calendar/dist/Calendar.css";
 import React, { useState } from "react";
 import Moment from "react-moment";
 import Calendar from "react-calendar";
+import MoodLog from "../moodLog/MoodLog";
 import {
   BrowserRouter as Router,
   Route,
@@ -20,7 +21,9 @@ function Period() {
   return (
     <>
       <div className="text-center">
-        <label className="cyclelegnth" for="cycle">Select your cycle length : </label>
+        <label className="cyclelegnth" for="cycle">
+          Select your cycle length :{" "}
+        </label>
         <select
           onChange={(e) => cycleValue(e.target.value)}
           defaultValue={cycle}
@@ -47,15 +50,17 @@ function Period() {
         </select>
       </div>
 
-      <p className="text-center2">
-        Select your last period start date:
-      </p>
+      <p className="text-center2">Select your last period start date:</p>
       <div className="calendarbox">
-      <div className="d-flex justify-content-center ">
-        <Calendar onChange={onChange} value={value} className="calendar mt-0" />
+        <div className="d-flex justify-content-center ">
+          <Calendar
+            onChange={onChange}
+            value={value}
+            className="calendar mt-0"
+          />
+        </div>
       </div>
-      </div>
-      <div className="text-center mt-4 p-2">
+      <div className="text-centermt-4p-2">
         <div className="row">
           <div class="d-flex justify-content-center">
             <div className="col-md-3 m-3 box ">
@@ -75,6 +80,10 @@ function Period() {
               </Moment>
             </div>
           </div>
+          <div className="text-center">
+            <MoodLog />
+          </div>
+          <button className="savemood">Save</button>
         </div>
         <Routes>
           <Route path="/Period" element={<Period />} />

@@ -27,11 +27,6 @@ function Header() {
 			height="40"
 			/>
 			</Navbar.Brand>
-      <div className="justify-content-end">
-      <Navbar.Text>
-      Signed in as: <a href="#login">Buffy Summers</a>
-      </Navbar.Text>
-      </div>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-false`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-false`}
@@ -66,3 +61,9 @@ function Header() {
 }
 
 export default Header;
+
+// <div className="justify-content-end">
+// <Navbar.Text>
+// Signed in as: <a href="#login">Buffy Summers</a>
+// </Navbar.Text>
+// </div>
