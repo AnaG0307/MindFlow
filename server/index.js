@@ -17,9 +17,9 @@ app.use(express.json());
 
 
 
-app.get("/", authenticate, async (req, res) => {
-  res.status(200).json(req.user);
-  });
+// app.get("/", authenticate, async (req, res) => {
+//   res.status(200).json(req.user);
+//   });
 
 app.use("/api/user", userRouter);
 
