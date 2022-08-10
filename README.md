@@ -105,10 +105,31 @@ We have tried and distribute the workload as evenly as possible, however if one 
 ## **Testing and Evaluation**
 
 #### **Testing strategy:**
+For our testing strategy, rather than following the testing pyramid as introduced by Mike Cohn, we thought that given the nature of our project, a frame which lies more on backend tests would be more suitable, hence we followed the testing trophy as introduced by Kent C. Dodds (https://kentcdodds.com/blog/write-tests). The style of the testing trophy is summarised as follow by its creator: "Write tests. Not too many. Mostly integration."  
+
+So here is what we implemented: 
+
+1. Static analysis: through the use of code formatters such as Prettier, or Linters like ESLint. Due to lack of time no Type checker like Typescript or Flow was implemented. 
+
+2. Unit tests to verify that the algorithms were working where we could implement them through the use of Jest. 
+
+3. Integration tests through Jest and react-testing-library to check that the features of our app were working as expected 
+
+4. and finally to check that the app was working as a whole, we used user-testers (mostly ourselves and acquaintances) 
 
 #### **Functional and user testing:**
+Our strategy also comprised a smart use of time, therefore a few types of functional testing were privileged over others such as: 
 
+Unit testing : We checked if individual components or units of our app matched our requirements (functioning and performing as expected), as a result we wrote tests for each section of our app (each page and component) to ensure that the right values were being returned. 
+
+Functional : Functional testing usually involve testing the behavior rather than the code, from a user side that would mean being able to register and to submit log in details for example. In order to do so we implemented tests within our code pages as well as extra test jest pages.  
+
+We also used user-testers in order to implement our functional testing strategy.  
 #### **System limitations:**
+Our project is a very interesting project which would have benefitted from a longer development period. Due to having a dashboard featuring multiple options (trackers, calendars, log in and Sign-Up pages), more rigorous checks would have been implemented and lengthier test codes had we had more time. 
+
+For our testing strategy, the testing trophy usually require the developers to use Cypress in order to implement end-to-end tests, however time, and training limitations stopped us from being able to do so on this project, hence the use of user-testers instead. 
+When using React Js, writing proper code in regards to testing is a lengthier process, especially as we need to write more code. Due to our knowledge and time limitations, having a comprehensive framework providing us with testing tools, with a more structured architecture along a set of established, official guidelines would have been helpful (a bit like Angular does, despite Angular being much more complex to get a grasp of). 
 
 ---
 
