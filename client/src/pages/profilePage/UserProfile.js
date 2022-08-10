@@ -55,7 +55,7 @@ export default function UserProfile() {
         <p>Loading User</p>
       ) : ( */}
         <div>
-          <p>Name: {auth.currentUser.name}</p>
+          <p>Name: {auth.currentUser.displayName}</p>
           <p>Surname: {auth.currentUser.surname}</p>
           <p>Email: {auth.currentUser.email}</p>
         </div>
