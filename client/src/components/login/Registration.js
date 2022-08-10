@@ -21,7 +21,7 @@ export default function Registration() {
   };
   // Registration
 
-    const [error, setError] = useState("");
+  const [error, setError] = useState("");
     
   const [fields, setFields] = useState({
     email: "",
