@@ -22,12 +22,22 @@ export default function Registration() {
   // Registration
 
     const [error, setError] = useState("");
+    
+  const [fields, setFields] = useState({
+    email: "",
+    name: "",
+    surname: "",
+    password: "",
+    confirmPassword: "",
+  });
+
   
     const auth = getAuth();
-  
     const handleChange = (e) => {
       setFields({ ...fields, [e.target.name]: e.target.value });
     };
+  
+  
   
     const handleSubmit = async (e) => {
       e.preventDefault();
@@ -38,13 +48,6 @@ export default function Registration() {
         return setError("Password and confirm password must match.");
       }
 
-  const [fields, setFields] = useState({
-    email: "",
-    name: "",
-    surname: "",
-    password: "",
-    confirmPassword: "",
-  });
 
 
   const handleChange = (e) => {
@@ -179,4 +182,5 @@ export default function Registration() {
       </div>
     </div>
   );
+    }
 }
