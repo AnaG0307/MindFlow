@@ -21,6 +21,23 @@ export default function Registration() {
   };
   // Registration
 
+    const [error, setError] = useState("");
+  
+    const auth = getAuth();
+  
+    const handleChange = (e) => {
+      setFields({ ...fields, [e.target.name]: e.target.value });
+    };
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      if (fields.password.length < 6) {
+        return setError("Password must be at least 6 characters in length.");
+      }
+      if (fields.confirmPassword !== fields.password) {
+        return setError("Password and confirm password must match.");
+      }
+
   const [fields, setFields] = useState({
     email: "",
     name: "",
@@ -29,9 +46,6 @@ export default function Registration() {
     confirmPassword: "",
   });
 
-  const [error, setError] = useState("");
-
-  const auth = getAuth();
 
   const handleChange = (e) => {
     setFields({ ...fields, [e.target.name]: e.target.value });
