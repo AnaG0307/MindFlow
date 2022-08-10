@@ -129,8 +129,8 @@ We also used user-testers in order to implement our functional testing strategy.
 Our project is a very interesting project which would have benefitted from a longer development period. Due to having a dashboard featuring multiple options (trackers, calendars, log in and Sign-Up pages), more rigorous checks would have been implemented and lengthier test codes had we had more time. 
 
 For our testing strategy, the testing trophy usually require the developers to use Cypress in order to implement end-to-end tests, however time, and training limitations stopped us from being able to do so on this project, hence the use of user-testers instead. 
-
 When using React Js, writing proper code in regards to testing is a lengthier process, especially as we need to write more code. Due to our knowledge and time limitations, having a comprehensive framework providing us with testing tools, with a more structured architecture along a set of established, official guidelines would have been helpful (a bit like Angular does, despite Angular being much more complex to get a grasp of). 
+
 ---
 
 ## **Getting Started**
