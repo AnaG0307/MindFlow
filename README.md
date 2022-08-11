@@ -18,7 +18,7 @@ MindFlow
 
 #### **Developers:**
 
-Ana Genover, Edita Dolnickova, Adonelle Sagoe, Imane Zioche, Morag McClenaghan
+Ana Genover, Edita Dolnickova, Adonelle Sagoe, Imane Ziouche, Morag McClenaghan
 
 #### **Aims & Objectives of the project:**
 
