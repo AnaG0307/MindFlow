@@ -2,67 +2,63 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  useNavigate, Link, useLocation
+  useNavigate,
+  Link,
+  useLocation,
 } from "react-router-dom";
 //import Registration from "./Registration";
 import Dashboard from "../../pages/dashboard/MoodLog";
 import { useEffect, useState } from "react";
 import firebaseService from "../../services/firebase";
 import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
-import '../../style/ProfilePage.css'
-import Profile1 from "../../assets/Profile1.png"
-
-
-
+import "../../style/ProfilePage.css";
+import Profile1 from "../../assets/Profile1.png";
+import Sidebar2 from "../../components/sidebar/Sidebar2.js";
 
 import axios from "axios";
-import React, { Component }  from 'react';
+import React, { Component } from "react";
 import Container from "react-bootstrap/esm/Container";
-import { useGetUserQuery } from '../../redux/slice/profileSlice'
-
-
+import { useGetUserQuery } from "../../redux/slice/profileSlice";
 
 export default function UserProfile() {
-//   const [loadingUser, setLoadingUser] = useState(true);
-//   const [user, setUser] = useState(null);
-   
-   const auth = getAuth();
-    
-   const  {
-      currentData: user,
-      isLoading,
-      isSuccess,
-      isError
-      
-    } = useGetUserQuery()
+  //   const [loadingUser, setLoadingUser] = useState(true);
+  //   const [user, setUser] = useState(null);
 
+  const auth = getAuth();
 
-//   let navigate = useNavigate()
+  const {
+    currentData: user,
+    isLoading,
+    isSuccess,
+    isError,
+  } = useGetUserQuery();
 
-//   const getUser = async () => {
-//     try {
-//       const token = await firebaseService.auth.currentUser.getIdToken(true);
-//       console.log(token);
-//       const req = await axios.get("http://localhost:4000", {
-//         headers: {
-//           authorization: `Bearer ${token}`
-//         }
-//       });
+  //   let navigate = useNavigate()
 
-//       console.log(req.data);
+  //   const getUser = async () => {
+  //     try {
+  //       const token = await firebaseService.auth.currentUser.getIdToken(true);
+  //       console.log(token);
+  //       const req = await axios.get("http://localhost:4000", {
+  //         headers: {
+  //           authorization: `Bearer ${token}`
+  //         }
+  //       });
 
-//       if (req.data) {
-//         setUser(req.data);
-//         setLoadingUser(false);
-//       }
-//     } catch (err) {
-//       console.error(err);
-//     }
-//   };
+  //       console.log(req.data);
 
-//   useEffect(() => {
-//     getUser();
-//   }, []);
+  //       if (req.data) {
+  //         setUser(req.data);
+  //         setLoadingUser(false);
+  //       }
+  //     } catch (err) {
+  //       console.error(err);
+  //     }
+  //   };
+
+  //   useEffect(() => {
+  //     getUser();
+  //   }, []);
 
   return (
     // <>
@@ -75,46 +71,42 @@ export default function UserProfile() {
     //     //   <p>Surname: {auth.currentUser.surname}</p>
     //     //   <p>Email: {auth.currentUser.email}</p>
     //     // </div>
-    <Container> 
+    <Container>
       <div className="header">
         <h1>Your Profile Details</h1>
       </div>
       <div className="profile">
-      <img
-      src={Profile1} 
-      alt= "ProfilePic" 
-      width="200" 
-      height="200" 
-      />	
+        <img src={Profile1} alt="ProfilePic" width="200" height="200" />
       </div>
       <div className="detail">
-      {isLoading && <h2>...Loading</h2>}
-         {isError && <h2>Something went wrong</h2>}
-         {isSuccess && <div>
-
+        {isLoading && <h2>...Loading</h2>}
+        {isError && <h2>Something went wrong</h2>}
+        {isSuccess && (
+          <div>
             <p>Name: {user.name}</p>
             <p>Surname: {user.surname}</p>
             <p>Email: {user.email}</p>
-           
-            
-            
-            </div>}
+          </div>
+        )}
       </div>
-      </Container>
-// to="/"
-// onClick={() =>  {
-//   signOut(auth)
-//     .then(() => {
-//       console.log("user signed out");
-//     })
-//     .catch((error) => {
-//       console.log("error", error);
-//     });
-// }}
-// >
-// Log out
-// </Link>
+      <div>
+        <Sidebar2 />
+      </div>
+    </Container>
+    // to="/"
+    // onClick={() =>  {
+    //   signOut(auth)
+    //     .then(() => {
+    //       console.log("user signed out");
+    //     })
+    //     .catch((error) => {
+    //       console.log("error", error);
+    //     });
+    // }}
+    // >
+    // Log out
+    // </Link>
 
-// //     </>
-   );
- }
+    // //     </>
+  );
+}
