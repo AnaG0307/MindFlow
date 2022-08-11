@@ -2,8 +2,8 @@ const firebaseAdmin = require("../services/firebase.js") ;
 
 // validate the Firebase tokens sent from the frontend
 
-module.exports = async function (req, res, next) {
-  try {
+ module.exports = async function (req, res, next) {
+   try {
     const firebaseToken = req.headers.authorization?.split(" ")[1];
 
     let firebaseUser;
@@ -16,7 +16,7 @@ module.exports = async function (req, res, next) {
       return res.sendStatus(401);
     }
 
-// once validated, tack on the user document fetched from MongoDB onto our request as req.user
+//once validated, tack on the user document fetched from MongoDB onto our request as req.user
 
 
     const usersCollection = req.app.locals.db.collection("user");

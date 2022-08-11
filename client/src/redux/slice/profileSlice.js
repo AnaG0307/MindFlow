@@ -1,19 +1,37 @@
-// import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-
-// // Define our single API slice object
-// export const profileApi = createApi({
-  
-//   reducerPath: 'api',
+ //send get quuery to the MongoDB for user details
  
-//   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4000/' }),
-  
-//   endpoints: builder => ({
-//     getUser: builder.query({
-      
-//       query: () => '/api/user'
-//     })
-//   })
-// })
+ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-// // Export the auto-generated hook for the `getPosts` query endpoint
-// export const { useGetUserQuery } = profileApi
+ 
+ export const profileApi = createApi({
+    
+   reducerPath: 'api',
+ 
+   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4000/', 
+
+
+   prepareHeaders: (headers, {getState}) => {
+        
+    
+     const token = getState().auth.value
+    
+
+        if (token) {
+         headers.set('authorization', `Bearer ${token}`)
+         }
+     
+         return headers
+   }
+}),
+
+  
+   endpoints: builder => ({
+     getUser: builder.query({
+      
+       query: () => '/api/user'
+     })
+   })
+ })
+
+
+ export const { useGetUserQuery } = profileApi;
