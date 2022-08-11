@@ -39,13 +39,23 @@ function App() {
         <Col xs={12} lg={6}>
           <div className="rhc">
                 <h3 className="landingheadline">Your journey starts here</h3>
-                <text className="landingpararaph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,adipiscing<br/> 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br/>
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <br/>
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla <br/>
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa <br/>
-                qui officia deserunt mollit anim id est laborum.</text>	
+                <text className="landingpararaph">
+                At MindFlow, we believe in connecting with both our bodies and<br/> 
+                our cycles. By gaining valuable insight into our menstrual cycles,<br/>
+                we can become better equipped to make decisions about our bodies<br/>
+                that work for us.<br/><br/>
+                <img
+                src={Logo2} 
+                alt= "MindFlow logo" 
+                className="landinglogo"
+                width="25" 
+                height="22"
+                />	
+                <br/>
+                It can often be difficult for women to access information and<br/>
+                support for women's health, so here at MindFlow we hope to be<br/>
+                the first step in your journey to understanding your body's <br/>
+                relationship mestruation and wellbeing.</text>	
                 <div className="buttongroup">
                 <Link to="/SignUp">
                 <Button className="signupbutton" size="med" >Sign Up</Button>
