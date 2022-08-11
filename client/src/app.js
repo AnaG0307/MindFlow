@@ -24,7 +24,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { saveUser } from "./redux/slice/authSlice";
 import ProtectedRoutes from "./utils/ProtectedRoutes";
 import PublicRoutes from  "./utils/PublicRoutes";
-import TestProfile from "./pages/profilePage/testprofile"
 
 function App (){
 
