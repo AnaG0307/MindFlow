@@ -18,13 +18,25 @@ import Profile1 from "../../assets/Profile1.png"
 import axios from "axios";
 import React, { Component }  from 'react';
 import Container from "react-bootstrap/esm/Container";
+import { useGetUserQuery } from '../../redux/slice/profileSlice'
 
 
 
 export default function UserProfile() {
 //   const [loadingUser, setLoadingUser] = useState(true);
 //   const [user, setUser] = useState(null);
+   
    const auth = getAuth();
+    
+   const  {
+      currentData: user,
+      isLoading,
+      isSuccess,
+      isError
+      
+    } = useGetUserQuery()
+
+
 //   let navigate = useNavigate()
 
 //   const getUser = async () => {
@@ -76,9 +88,17 @@ export default function UserProfile() {
       />	
       </div>
       <div className="detail">
-        <p>Name: Namela</p> 
-        <p>Surname: Namerson</p>
-        <p>email: email@idk.com</p>
+      {isLoading && <h2>...Loading</h2>}
+         {isError && <h2>Something went wrong</h2>}
+         {isSuccess && <div>
+
+            <p>Name: {user.name}</p>
+            <p>Surname: {user.surname}</p>
+            <p>Email: {user.email}</p>
+           
+            
+            
+            </div>}
       </div>
       </Container>
 // to="/"
