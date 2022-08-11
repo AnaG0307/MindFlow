@@ -49,6 +49,7 @@ export default function  Login() {
       if (user) {
         navigate("/UserProfile");
         console.log("Called");
+        console.log(user)
       }
     } catch (err) {
       console.log(err);
