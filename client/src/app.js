@@ -24,7 +24,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { saveUser } from "./redux/slice/authSlice";
 import ProtectedRoutes from "./utils/ProtectedRoutes";
 import PublicRoutes from  "./utils/PublicRoutes";
-import TestProfile from "./pages/profilePage/testprofile"
+import TestLog from "./pages/moodLog/MoodLog"
 
 function App (){
 
@@ -67,6 +67,7 @@ function App (){
         <Route path="/Home" element={<landingPage />}></Route>
         <Route path="/SignUp" element={< SignUp/>}></Route>
         <Route path="/Reset" element={< ResetPage/>}></Route>
+        <Route path = "/Test" element = {<TestLog/>}></Route>
 
         
         <Route path="/UserProfile/*" element={<UserProfile />} />
