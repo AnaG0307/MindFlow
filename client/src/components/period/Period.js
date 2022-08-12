@@ -80,9 +80,7 @@ function Period() {
               </Moment>
             </div>
           </div>
-          <div className="text-center">
-            <MoodLog />
-          </div>
+          <div className="text-center"></div>
           <button className="savemood">Save</button>
         </div>
         <Routes>
