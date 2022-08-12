@@ -1,0 +1,22 @@
+* {
+	font-family: "Eina01-Bold" !important;
+	color: rgb(64, 64, 65) !important;
+}
+
+.pagetitle {
+	color: rgb(64, 64, 65) !important;
+	font-size: 35px !important;
+	padding-left: 100px;
+    line-height: 1.5em;
+    height: 3em; 
+}
+
+.text-center {
+	margin-top: -50px;
+	margin-bottom: 0px !important;
+}
+
+.rightcol {
+	margin-left: -0px !important;
+	padding-left: 200px;
+}
