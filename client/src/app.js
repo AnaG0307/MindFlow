@@ -1,27 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/landingPage/LandingPage";
-import Header from "./components/header/Header";
-import reportWebVitals from "./reportWebVitals";
-import Footer from "./components/footer/Footer.js";
-import Registration from "./components/login/Registration";
-import PeriodPage from "./pages/periodPage/Period";
-import "bootstrap/dist/css/bootstrap.min.css";
-import ThemeProvider from "react-bootstrap/ThemeProvider";
-//import Dashboard from "../pages/dashboard/MoodLog";
-import Login from "./pages/loginPage/LoginPage";
-import SignUp from "./pages/signUpPage/SignUp";
-import UserProfile from "./pages/profilePage/UserProfile";
-import ResetPage from "./pages/resetPage/ResetPage";
-import QuestionnairePage from "./pages/questionnairePage/Questionnaire.js";
-import ResourcesPage from "./pages/resourcesPage/Resources";
-import StatisticsPage from "./pages/statisticsPage/Statistics";
-import SettingsPage from "./pages/settingsPage/Settings";
-import LogoutPage from "./pages/logoutPage/LogoutPage";
-
 import { useEffect } from "react";
-
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "./services/firebase";
 import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
@@ -29,6 +8,22 @@ import { useSelector, useDispatch } from "react-redux";
 import { saveUser } from "./redux/slice/authSlice";
 import ProtectedRoutes from "./utils/ProtectedRoutes";
 import PublicRoutes from "./utils/PublicRoutes";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer.js";
+import PeriodPage from "./pages/periodPage/Period";
+import Home from "./pages/landingPage/LandingPage";
+import Login from "./pages/loginPage/LoginPage";
+import SignUp from "./pages/signUpPage/SignUp";
+import UserProfile from "./pages/profilePage/UserProfile";
+import ResetPage from "./pages/resetPage/ResetPage";
+import QuestionnairePage from "./pages/questionnairePage/Questionnaire.js";
+import ResourcesPage from "./pages/resourcesPage/Resources";
+import SettingsPage from "./pages/settingsPage/Settings";
+import LogoutPage from "./pages/logoutPage/LogoutPage";
+import Resources from "./pages/resourcesPage/Resources";
+import Statistics from "./pages/statisticsPage/Statistics";
 
 import TestLog from "./pages/moodLog/MoodLog";
 
@@ -51,47 +46,36 @@ function App() {
   return (
     <Router>
       <Header />
-
       <Routes>
-      <Route exact path="/" element={<Home />} />
-
-   <Route path="/" element={<ProtectedRoutes/>}>
-      
-     
-  </Route>
-     
-        
-  <Route path="/" element={<PublicRoutes/>}>
-  <Route exact path="/" element={<Home />}></Route>
-       {/* <Route path="/Dashboard" element={<Dashboard />}></Route> */}
+        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<ProtectedRoutes />}></Route>
+        <Route path="/" element={<PublicRoutes />}></Route>
+        <Route exact path="/" element={<Home />}></Route>
+        {/* <Route path="/Dashboard" element={<Dashboard />}></Route> */}
         <Route path="/period" element={<PeriodPage />}></Route>
         <Route exact path="/Login" element={<Login />}></Route>
         <Route path="/Home" element={<landingPage />}></Route>
-        <Route path="/SignUp" element={< SignUp/>}></Route>
-        <Route path="/Reset" element={< ResetPage/>}></Route>
-        <Route path = "/Test" element = {<TestLog/>}></Route>
-        <Route path="/questionnaire" element = {<QuestionnairePage/>}></Route>
-        <Route path="/resources" element = {<ResourcesPage/>}></Route>
-        <Route path="/statistics" element = {<StatisticsPage/>}></Route>
-        <Route path="/settings" element = {<SettingsPage/>}></Route>
-        <Route path="/logout" element = {<LogoutPage/>}></Route>
-
+        <Route path="/SignUp" element={<SignUp />}></Route>
+        <Route path="/Reset" element={<ResetPage />}></Route>
+        <Route path="/Test" element={<TestLog />}></Route>
+        <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
+        <Route path="/resources" element={<ResourcesPage />}></Route>
+        <Route path="/settings" element={<SettingsPage />}></Route>
+        <Route path="/logout" element={<LogoutPage />}></Route>
         <Route path="/" element={<ProtectedRoutes />}></Route>
-
-        <Route path="/" element={<PublicRoutes />}>
-          <Route exact path="/" element={<Home />}></Route>
-          {/* <Route path="/Dashboard" element={<Dashboard />}></Route> */}
-          <Route path="/period" element={<PeriodPage />}></Route>
-          <Route exact path="/Login" element={<Login />}></Route>
-          <Route path="/Home" element={<landingPage />}></Route>
-          <Route path="/SignUp" element={<SignUp />}></Route>
-          <Route path="/Reset" element={<ResetPage />}></Route>
-          <Route path="/Test" element={<TestLog />}></Route>
-          <Route path="/Resources" element={<Resources />}></Route>
-          <Route path="/Statistics" element={<Statistics />}></Route>
-          <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
-          <Route path="/UserProfile/*" element={<UserProfile />} />
-        </Route>
+        <Route path="/" element={<PublicRoutes />}></Route>
+        <Route exact path="/" element={<Home />}></Route>
+        {/* <Route path="/Dashboard" element={<Dashboard />}></Route> */}
+        <Route path="/period" element={<PeriodPage />}></Route>
+        <Route exact path="/Login" element={<Login />}></Route>
+        <Route path="/Home" element={<landingPage />}></Route>
+        <Route path="/SignUp" element={<SignUp />}></Route>
+        <Route path="/Reset" element={<ResetPage />}></Route>
+        <Route path="/Test" element={<TestLog />}></Route>
+        <Route path="/Resources" element={<Resources />}></Route>
+        <Route path="/Statistics" element={<Statistics />}></Route>
+        <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
+        <Route path="/UserProfile/*" element={<UserProfile />}></Route>
       </Routes>
       <Footer />
     </Router>
