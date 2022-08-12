@@ -35,7 +35,7 @@ function App (){
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
-        dispatch(saveUser(user.refreshToken));
+        dispatch(saveUser(user.accessToken))
       } else {
         dispatch(saveUser(undefined));
       }
