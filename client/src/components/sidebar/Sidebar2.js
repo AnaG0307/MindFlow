@@ -41,7 +41,7 @@ function Sidebar () {
           <span>
             <div className="Settings"></div>
           </span>
-          <span>Settings</span>
+          <span>Statistics</span>
         </li>
       </ul>
 
