@@ -6,7 +6,7 @@
 .pagetitle {
 	color: rgb(64, 64, 65) !important;
 	font-size: 35px !important;
-	padding-left: 327px
+	padding-left: 250px
 }
 
 .cyclelegnth {
@@ -77,10 +77,10 @@ abbr[title] {
 }
 
 .CalendarPagePNG {
-	margin-top: 20px;
+	margin-top: 89px;
 	margin-bottom: 40px;
 	margin-right: 0px; 
-	margin-left: 150px; 
+	margin-left: 35px; 
 }
 
 .moodselect {
@@ -128,3 +128,9 @@ abbr[title] {
 	margin-bottom: 0px !important;
 	margin-left: 0px !important;
 }
+
+.rightcol {
+	margin-left: -0px !important;
+	padding-left: 200px;
+}
+

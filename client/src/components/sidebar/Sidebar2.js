@@ -8,7 +8,6 @@ import Logo from "../../assets/logo.png"
 function Sidebar () {
     return (
     <div>
-    <div className="container">
       <ul className="sidebar">
       <div className="logo">
       <img
@@ -50,7 +49,6 @@ function Sidebar () {
         </li>
       </ul>
       <div className="content"></div>
-    </div>
     </div>
     )
     };
