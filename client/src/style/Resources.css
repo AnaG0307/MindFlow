@@ -1,0 +1,54 @@
+* {
+	font-family: "Eina01-Bold" !important;
+	color: rgb(64, 64, 65) !important;
+}
+
+.pagetitle {
+	color: rgb(64, 64, 65) !important;
+	font-size: 35px !important;
+	padding-left: 100px;
+    line-height: 1.5em;
+    height: 3em; 
+    white-space: nowrap;
+}
+
+.heading {
+	color: rgb(64, 64, 65) !important;
+	font-size: 15px !important;
+	padding-left: 60px;
+    height: 3em; 
+}
+
+.Resources-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 61rem;
+    margin: 0 auto;
+}
+
+.Resources-table .Resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 61rem;
+    margin: 0 auto;
+}
+
+.Resources-table .Resources .paragraph {
+    color: violet;
+    padding-left: 60px;
+    line-height: 1.5em;
+
+}
+
+
+.text-center {
+	margin-top: -50px;
+	margin-bottom: 0px !important;
+}
+
+.rightcol {
+	margin-left: -0px !important;
+	padding-left: 200px;
+}

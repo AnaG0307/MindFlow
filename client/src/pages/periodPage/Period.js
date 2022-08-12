@@ -29,8 +29,8 @@ function PeriodPage() {
           <Col xs={12} lg={1}>
             <Sidebar />
           </Col>
-          <Col xs={12} lg={7} style={{ padding: 0 }}>
-            <h2 className="pagetitle">Calculate Your Next Period</h2>
+          <h3 className="pagetitle">Calculate Your Next Period</h3>
+          <Col xs={12} lg={7}>
             <div className="rightcol">
               <Period />
             </div>

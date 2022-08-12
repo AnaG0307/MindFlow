@@ -80,7 +80,6 @@ function Period() {
             </div>
           </div>
           <div className="text-center"></div>
-          <button className="savemood">Save</button>
         </div>
         <Routes>
           <Route path="/Period" element={<Period />} />

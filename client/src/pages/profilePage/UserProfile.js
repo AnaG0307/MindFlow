@@ -13,12 +13,15 @@ import firebaseService from "../../services/firebase";
 import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
 import "../../style/ProfilePage.css";
 import Profile1 from "../../assets/Profile1.png";
-import Sidebar2 from "../../components/sidebar/Sidebar2.js";
-
+import Sidebar from "../../components/sidebar/Sidebar2.js";
 import axios from "axios";
 import React, { Component } from "react";
 import Container from "react-bootstrap/esm/Container";
 import { useGetUserQuery } from "../../redux/slice/profileSlice";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 
 export default function UserProfile() {
   //   const [loadingUser, setLoadingUser] = useState(true);
@@ -75,7 +78,12 @@ export default function UserProfile() {
       <div className="header">
         <h1>Your Profile Details</h1>
       </div>
-      <div className="profile">
+      <Row>
+        <Col xs={12} lg={1}>
+        <Sidebar />
+        </Col>
+        <Col xs={12} lg={7} style={{ padding: 0}}>
+        <div className="profile">
         <img src={Profile1} alt="ProfilePic" width="200" height="200" />
       </div>
       <div className="detail">
@@ -89,9 +97,9 @@ export default function UserProfile() {
           </div>
         )}
       </div>
-      <div>
-        <Sidebar2 />
-      </div>
+        </Col>
+      </Row>
+      
     </Container>
     // to="/"
     // onClick={() =>  {

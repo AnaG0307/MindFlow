@@ -9,8 +9,7 @@ import {
 
 function Resources() {
   return (
-    <div>
-      <h1> Welcome </h1>
+    <div className="text-center">
       <Routes>
         <Route path="/resources" element={<Resources />} />
       </Routes>
