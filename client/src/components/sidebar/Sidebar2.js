@@ -13,9 +13,8 @@ function Sidebar () {
           <span>
           <Link to="/questionnaire">
             <div className="Questionnaire"></div>
-            </Link>
-          </span>
-          <span>Questionnaire</span>
+            Questionnaire</Link>
+            </span>
         </li>
         <li>
           <span>
@@ -27,15 +26,17 @@ function Sidebar () {
         </li>
         <li>
           <span>
+          <Link to="/statistics"> 
             <div className="Statistics"></div>
+            Statistics</Link>
           </span>
-          <span>Statistics</span>
         </li>
         <li>
           <span>
+          <Link to="/resources"> 
             <div className="Resources"></div>
+            Resources</Link>
           </span>
-          <span>Resources</span>
         </li>
       </ul>
       <div className="content"></div>
