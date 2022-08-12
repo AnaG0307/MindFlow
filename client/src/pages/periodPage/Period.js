@@ -30,7 +30,9 @@ function PeriodPage() {
       
         <Col xs={12} lg={8} style={{ padding: 0}}>
           <div>
+          
           <h2 className="pagetitle">Calculate Your Next Period</h2>
+          <Sidebar />
           <img
             src={CalendarPage} 
             alt= "CalendarPagePNG" 
@@ -46,10 +48,11 @@ function PeriodPage() {
           </div>
         </Col>
       </Row>
+      
     </Container>
     </div>
   );
 }
 
 export default PeriodPage;
-export {Sidebar};
+
