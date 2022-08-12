@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Dashboard from "../../pages/moodLog/MoodLog";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -13,9 +13,7 @@ export default function Registration() {
   // Navigate between pages
   const navigate = useNavigate();
 
-  const navigatetoDashboard = () => {
-    navigate("/Dashboard");
-  };
+  
   const navigatetoLogin = () => {
     navigate("/Login");
   };
@@ -158,7 +156,7 @@ export default function Registration() {
             </button>
           </div>
           <Routes>
-            <Route path="/Dashboard" element={<Dashboard />} />
+           
             <Route path="/Login" element={<login />} />
           </Routes>
         </form>

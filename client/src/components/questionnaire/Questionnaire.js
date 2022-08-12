@@ -48,6 +48,9 @@ export default function Questionnaire() {
           Select your mood for today :{" "}
         </label>
         <select value={mood} onChange={handleChange} className="moodselect">
+        <option className="" value="">
+           Select
+          </option>
           <option className="great" value="great">
             Great 😄
           </option>
@@ -58,7 +61,7 @@ export default function Questionnaire() {
             Awful 😓
           </option>
         </select>
-
+        {error ? <p style={{ color: "red" }}>Error: {error}</p> : null}
         <div>
           <button type="submit" className="submitbutton">
             Submit
