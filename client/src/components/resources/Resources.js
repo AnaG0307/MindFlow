@@ -1,17 +1,20 @@
-import React from "react";
 import "../../App.css";
-import Logo2 from "../../assets/logo2.png";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 
 function Resources() {
   return (
-    <>
-      <div>
-        <Routes>
-          <Route path="/resources" element={<Resources />} />
-        </Routes>
-      </div>
-    </>
+    <div>
+      <h1> Welcome </h1>
+      <Routes>
+        <Route path="/resources" element={<Resources />} />
+      </Routes>
+    </div>
   );
 }
 

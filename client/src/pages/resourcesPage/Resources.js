@@ -6,11 +6,13 @@ import Container from "react-bootstrap/Container";
 
 function ResourcesPage() {
   return (
-    <section className="Resources">
-      <Sidebar />
-      <h1> This is resources page </h1>
-      <Resources />
-    </section>
+    <div className="ResourcesPage">
+      <Container>
+        <h1> This is resources page </h1>
+        <Resources />
+        <Sidebar />
+      </Container>
+    </div>
   );
 }
 

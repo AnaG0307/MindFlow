@@ -2,12 +2,22 @@ import React from 'react';
 import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarContent } from 'react-pro-sidebar';
 import '../../style/SideBar2.css'
 import {Link} from 'react-router-dom';
+import Logo from "../../assets/logo.png"
 
 
 function Sidebar () {
     return (
     <div>
       <ul className="sidebar">
+      <div className="logo">
+      <img
+			src={Logo} 
+			alt= "MindFlow logo" 
+			className="mfl-logo"
+			width="49" 
+			height="40"
+			/>
+      </div>
         <li>
           <span>
           <Link to="/questionnaire">

@@ -15,8 +15,10 @@ import SignUp from "./pages/signUpPage/SignUp";
 import UserProfile from "./pages/profilePage/UserProfile";
 import ResetPage from "./pages/resetPage/ResetPage";
 import QuestionnairePage from "./pages/questionnairePage/Questionnaire.js";
-import Resources from "./pages/resourcesPage/Resources";
-import Statistics from "./pages/statisticsPage/StatisticsPage";
+import ResourcesPage from "./pages/resourcesPage/Resources";
+import StatisticsPage from "./pages/statisticsPage/Statistics";
+import SettingsPage from "./pages/settingsPage/Settings";
+import LogoutPage from "./pages/logoutPage/LogoutPage";
 
 import { useEffect } from "react";
 
@@ -51,7 +53,28 @@ function App() {
       <Header />
 
       <Routes>
-        <Route exact path="/" element={<Home />} />
+      <Route exact path="/" element={<Home />} />
+
+   <Route path="/" element={<ProtectedRoutes/>}>
+      
+     
+  </Route>
+     
+        
+  <Route path="/" element={<PublicRoutes/>}>
+  <Route exact path="/" element={<Home />}></Route>
+       {/* <Route path="/Dashboard" element={<Dashboard />}></Route> */}
+        <Route path="/period" element={<PeriodPage />}></Route>
+        <Route exact path="/Login" element={<Login />}></Route>
+        <Route path="/Home" element={<landingPage />}></Route>
+        <Route path="/SignUp" element={< SignUp/>}></Route>
+        <Route path="/Reset" element={< ResetPage/>}></Route>
+        <Route path = "/Test" element = {<TestLog/>}></Route>
+        <Route path="/questionnaire" element = {<QuestionnairePage/>}></Route>
+        <Route path="/resources" element = {<ResourcesPage/>}></Route>
+        <Route path="/statistics" element = {<StatisticsPage/>}></Route>
+        <Route path="/settings" element = {<SettingsPage/>}></Route>
+        <Route path="/logout" element = {<LogoutPage/>}></Route>
 
         <Route path="/" element={<ProtectedRoutes />}></Route>
 
