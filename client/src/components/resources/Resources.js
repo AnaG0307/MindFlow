@@ -2,7 +2,6 @@ import React from "react";
 import "../../App.css";
 import Logo2 from "../../assets/logo2.png";
 import Sidebar from "../sidebar/Sidebar2";
-import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
