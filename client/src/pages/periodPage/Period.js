@@ -27,25 +27,27 @@ function PeriodPage() {
     <div className="PeriodPage"> 
     <Container>
       <Row>
-      
-        <Col xs={12} lg={8} style={{ padding: 0}}>
-          <div>
-          
-          <h2 className="pagetitle">Calculate Your Next Period</h2>
-          <Sidebar />
-          <img
-            src={CalendarPage} 
-            alt= "CalendarPagePNG" 
-            className="CalendarPagePNG"
-            width="630" 
-            height="670"
-            /> 
-          </div>
+        <Col xs={12} lg={1}>
+        <Sidebar />
+        </Col>
+        <Col xs={12} lg={7} style={{ padding: 0}}>
+        <h2 className="pagetitle">Calculate Your Next Period</h2>
+        <div className= "rightcol">
+        <Period />
+        </div>
         </Col>
         <Col xs={12} lg={4} style={{paddingLeft:0 }}>
-          <div>
-          <Period />
-          </div>
+        <div>          
+        
+        <img
+          src={CalendarPage} 
+          alt= "CalendarPagePNG" 
+          className="CalendarPagePNG"
+          width="450" 
+          height="400"
+          /> 
+        </div>
+
         </Col>
       </Row>
       

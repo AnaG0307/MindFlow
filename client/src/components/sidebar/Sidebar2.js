@@ -7,7 +7,6 @@ import {Link} from 'react-router-dom';
 function Sidebar () {
     return (
     <div>
-    <div className="container">
       <ul className="sidebar">
         <li>
           <span>
@@ -40,7 +39,6 @@ function Sidebar () {
         </li>
       </ul>
       <div className="content"></div>
-    </div>
     </div>
     )
     };
