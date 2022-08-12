@@ -11,12 +11,6 @@ function Sidebar () {
       <ul className="sidebar">
         <li>
           <span>
-            <div className="Home"></div>
-          </span>
-          <span>Home</span>
-        </li>
-        <li>
-          <span>
           <Link to="/questionnaire">
             <div className="Questionnaire"></div>
             </Link>
