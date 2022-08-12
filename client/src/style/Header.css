@@ -7,3 +7,6 @@
     background-color:rgb(255, 255, 255);
 }
 
+.headerbar {
+    width: 50px !important;
+}
