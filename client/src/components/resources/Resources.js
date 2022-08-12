@@ -2,6 +2,7 @@ import React from "react";
 import "../../App.css";
 import Logo2 from "../../assets/logo2.png";
 import Sidebar from "../sidebar/Sidebar2";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -9,15 +10,16 @@ import {
   useNavigate,
 } from "react-router-dom";
 
-function Questionnaire() {
+function Resources() {
   return (
     <div>
       <Sidebar />
-      <h1> This is a questionnaire </h1>
+      <h1> This is resources page again </h1>
       <Routes>
-        <Route path="/questionnaire" element={<Questionnaire />} />
+        <Route path="/Resources" element={<Resources />} />
       </Routes>
     </div>
   );
 }
-export default Questionnaire;
+
+export default Resources;
