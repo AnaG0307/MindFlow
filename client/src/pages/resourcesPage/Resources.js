@@ -9,7 +9,6 @@ function ResourcesPage() {
     <div className="ResourcesPage">
       <Container>
         <Sidebar />
-        <Resources />
         <h1> This is resources page </h1>
       </Container>
     </div>
