@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
-const config =require("./config/index.js");
-const db = require("./config/db.js") ;
+const config =require("./config/index");
+const db = require("./config/db") ;
 const userRouter = require('./routes/user');
-const authenticate = require("./middleware/authenticate.js") ;
+const authenticate = require("./middleware/authenticate") ;
 const moodRouter = require('./routes/mood');
 
 
