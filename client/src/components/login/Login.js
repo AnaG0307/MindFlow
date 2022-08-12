@@ -6,7 +6,7 @@ import {
   useNavigate,  useLocation
 } from "react-router-dom";
 import Registration from "./Registration";
-import Dashboard from "../../pages/dashboard/MoodLog";
+import Dashboard from "../../pages/moodLog/MoodLog";
 
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 

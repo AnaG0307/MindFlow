@@ -4,6 +4,7 @@ const config =require("./config/index.js");
 const db = require("./config/db.js") ;
 const userRouter = require('./routes/user');
 const authenticate = require("./middleware/authenticate.js") ;
+const moodRouter = require('./routes/mood');
 
 
 
@@ -25,6 +26,8 @@ app.get("/api/user", authenticate, async (req, res) => {
 
 
 app.use("/api/user", userRouter);
+app.use("/api/period", moodRouter);
+
 
 
 app.listen(config.PORT, () =>
