@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
 //import Dashboard from "../pages/dashboard/MoodLog";
 import Login from "./pages/loginPage/LoginPage";
-import SignUp from "./pages/signUpPage/SignUp"
+import SignUp from "./pages/signUpPage/SignUp";
 import UserProfile from "./pages/profilePage/UserProfile";
 import ResetPage from "./pages/resetPage/ResetPage";
 import QuestionnairePage from "./pages/questionnairePage/Questionnaire.js";
@@ -28,12 +28,11 @@ import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
 import { useSelector, useDispatch } from "react-redux";
 import { saveUser } from "./redux/slice/authSlice";
 import ProtectedRoutes from "./utils/ProtectedRoutes";
-import PublicRoutes from  "./utils/PublicRoutes";
+import PublicRoutes from "./utils/PublicRoutes";
 
-import TestLog from "./pages/moodLog/MoodLog"
+import TestLog from "./pages/moodLog/MoodLog";
 
-function App (){
-
+function App() {
   initializeApp(firebaseConfig);
   const auth = getAuth();
   const user = useSelector((state) => state.auth.value);
@@ -42,7 +41,7 @@ function App (){
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
-        dispatch(saveUser(user.accessToken))
+        dispatch(saveUser(user.accessToken));
       } else {
         dispatch(saveUser(undefined));
       }
@@ -50,7 +49,6 @@ function App (){
   }, [auth, dispatch]);
 
   return (
-
     <Router>
       <Header />
 
@@ -78,15 +76,26 @@ function App (){
         <Route path="/settings" element = {<SettingsPage/>}></Route>
         <Route path="/logout" element = {<LogoutPage/>}></Route>
 
-        
-        <Route path="/UserProfile/*" element={<UserProfile />} />
+        <Route path="/" element={<ProtectedRoutes />}></Route>
 
-  </Route> 
+        <Route path="/" element={<PublicRoutes />}>
+          <Route exact path="/" element={<Home />}></Route>
+          {/* <Route path="/Dashboard" element={<Dashboard />}></Route> */}
+          <Route path="/period" element={<PeriodPage />}></Route>
+          <Route exact path="/Login" element={<Login />}></Route>
+          <Route path="/Home" element={<landingPage />}></Route>
+          <Route path="/SignUp" element={<SignUp />}></Route>
+          <Route path="/Reset" element={<ResetPage />}></Route>
+          <Route path="/Test" element={<TestLog />}></Route>
+          <Route path="/Resources" element={<Resources />}></Route>
+          <Route path="/Statistics" element={<Statistics />}></Route>
+          <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
+          <Route path="/UserProfile/*" element={<UserProfile />} />
+        </Route>
       </Routes>
       <Footer />
     </Router>
- 
-);
+  );
 }
 
 // If you want to start measuring performance in your app, pass a function

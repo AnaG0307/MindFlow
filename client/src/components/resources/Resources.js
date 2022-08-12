@@ -7,7 +7,6 @@ import {
   useNavigate,
 } from "react-router-dom";
 
-
 function Resources() {
   return (
     <div className="text-center">

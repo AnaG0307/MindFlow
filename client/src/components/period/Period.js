@@ -2,7 +2,6 @@ import "react-calendar/dist/Calendar.css";
 import React, { useState } from "react";
 import Moment from "react-moment";
 import Calendar from "react-calendar";
-import MoodLog from "../moodLog/MoodLog";
 import {
   BrowserRouter as Router,
   Route,
@@ -80,10 +79,7 @@ function Period() {
               </Moment>
             </div>
           </div>
-          <div className="text-center">
-         
-          </div>
-          
+          <div className="text-center"></div>
         </div>
         <Routes>
           <Route path="/Period" element={<Period />} />
