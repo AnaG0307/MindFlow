@@ -1,20 +1,19 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
-  useNavigate, 
+  useNavigate,
 } from "react-router-dom";
 
 const Reset = () => {
   const [email, setEmail] = useState("");
-  
+
   const auth = getAuth();
 
   const navigate = useNavigate();
-  
-  
+
   const navHome = () => {
     navigate("/");
   };
@@ -23,9 +22,8 @@ const Reset = () => {
     sendPasswordResetEmail(auth, email)
       .then(() => {
         console.log("success");
-       
-        navigate(navHome);   
-         
+
+        navigate(navHome);
       })
 
       .catch((error) => {
@@ -34,7 +32,6 @@ const Reset = () => {
         console.log("An error has occured: ", errorCode, errorMessage);
       });
   };
-
 
   return (
     <div>
@@ -47,7 +44,7 @@ const Reset = () => {
         onChange={(e) => setEmail(e.target.value)}
       />
       <br />
-      <button onClick={(handleReset)}>Reset password</button>
+      <button onClick={handleReset}>Reset password</button>
     </div>
   );
 };

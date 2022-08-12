@@ -1,26 +1,20 @@
 import React from "react";
-import { Navigate, Route, Outlet} from "react-router";
-import { BrowserRouter as Router, Routes } from "react-router-dom";
+import { Navigate, Route, Outlet } from "react-router";
 import { useSelector } from "react-redux";
 
+const useAuth = () => {
+  const user = useSelector((state) => state.auth.value);
+  if (user) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
-	const useAuth=()=>{
-	 
-    const user = useSelector((state) => state.auth.value)
-	  if(user){
-	    return true
-	  } else {
-	    return false
-	  }
-	}
-	
+const ProtectedRoutes = (props) => {
+  const auth = useAuth();
 
-	const  ProtectedRoutes=(props) =>{
-	
+  return auth ? <Outlet /> : <Navigate to="/SignUp" />;
+};
 
-	  const auth=useAuth()	
-
-	  return auth?<Outlet/>: <Navigate to="/SignUp"/>
-	}
-	
-	export default ProtectedRoutes;
+export default ProtectedRoutes;
