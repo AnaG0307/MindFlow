@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Dashboard from "../../pages/dashboard/MoodLog";
+import Dashboard from "../../pages/moodLog/MoodLog";
 import {
   BrowserRouter as Router,
   Route,
