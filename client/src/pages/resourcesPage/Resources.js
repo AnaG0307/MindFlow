@@ -16,41 +16,14 @@ function ResourcesPage() {
             <Sidebar />
           </Col>
           <Col xs={12} lg={7} style={{ padding: 0 }}>
-            <h1 className="pagetitle"> Your mental wellbeing matters </h1>
+            <h1 className="pagetitle">
+              {" "}
+              If you are in need of help please see some links and helpful
+              guides below{" "}
+            </h1>
             <div className="rightcol">
-              <h3 className="heading">
-                {" "}
-                If you are in need of help please see some links and helpful
-                guides below
-              </h3>
-              <div className="Resources-table">
-                <div className="Resources">
-                  <h3 className="paragraph">Helpful Articles</h3>
-                  <p>
-                    {" "}
-                    Helpful articles, personal experiences and tips from young
-                    people and our MindFlow team.
-                  </p>
-                </div>
-                <div className="Resources">
-                  <h3 className="paragraph">Mental Health</h3>
-                  <p>
-                    {" "}
-                    Start or join a conversation with our friendly MindFlow
-                    community.
-                  </p>
-                </div>
-                <div className="Resources">
-                  <h3 className="paragraph">Chat to a specialist</h3>
-                  <p>
-                    {" "}
-                    Chat to our helpful team about anything that's on your mind.
-                    Message us or have a live chat.
-                  </p>
-                </div>
-              </div>
+              <Resources />
             </div>
-            <Resources />
           </Col>
           <Col xs={12} lg={4} style={{ paddingLeft: 0 }}>
             <div>
