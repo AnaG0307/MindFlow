@@ -81,9 +81,9 @@ function Period() {
             </div>
           </div>
           <div className="text-center">
-            <MoodLog />
+         
           </div>
-          <button className="savemood">Save</button>
+          
         </div>
         <Routes>
           <Route path="/Period" element={<Period />} />
