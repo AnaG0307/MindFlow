@@ -49,9 +49,9 @@ function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Profile</Nav.Link>
-                  <Nav.Link href="#action2">Settings</Nav.Link>
-				  <Nav.Link href="#action3">Log out</Nav.Link>
+                  <Nav.Link href="/UserProfile">Profile</Nav.Link>
+                  <Nav.Link href="/settings">Settings</Nav.Link>
+				          <Nav.Link href="/logout">Log out</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
