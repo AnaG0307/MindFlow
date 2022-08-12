@@ -6,6 +6,7 @@ import Questionnaire from "../../components/questionnaire/Questionnaire";
 function questionnairePage() {
   return (
     <div className="QuestionnairePage">
+    <h1 className="pagetitle"> This is a questionnaire </h1>
       <Questionnaire />
       <Sidebar />
     </div>

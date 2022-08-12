@@ -1,3 +1,5 @@
-.QuestionnairePage {
-    color:aquamarine;
+.pagetitle {
+	color: rgb(64, 64, 65) !important;
+	font-size: 35px !important;
+	padding-left: 250px
 }

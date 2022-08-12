@@ -8,11 +8,16 @@ function ResourcesPage() {
   return (
     <div className="ResourcesPage">
       <Container>
-        <Sidebar />
+        
         <h1> This is resources page </h1>
+        <Resources />
+        <Sidebar />
       </Container>
+      
     </div>
   );
 }
 
 export default ResourcesPage;
+
+
