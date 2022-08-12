@@ -5,28 +5,23 @@ import '../../style/index.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Sidebar from '../../components/sidebar/Sidebar2';
+import logout from "../../assets/logout.png"
+import "../../style/Logout.css";
+
 
 function Logout() {
   
     return (
       <div className='App'>
       <Container>
-      <h1> This is the Logout page!</h1>
-        <Row>
-          <Col xs={12} lg={4}>
-  
-          </Col>
-          <Col xs={12} lg={4}>
-  
-  
-          </Col>
-          <Col xs={12} lg={4}>
-  
-  
-          </Col>
-        </Row>
-        <Sidebar />        
+      <h1> See you again soon!</h1>
+      <img
+      src={logout} 
+      alt= "logoutpng" 
+      className="logoutpng"
+      width="250" 
+      height="500"
+       /> 
       </Container>
       </div>  
     );
