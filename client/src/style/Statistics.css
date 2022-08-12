@@ -1,0 +1,43 @@
+.header {
+ position: center;
+ margin-left: 200px;
+}
+
+
+.col1 {
+    padding: 10px;
+    margin-top: -300px;
+    margin-left: 100px;
+
+}
+
+.col2 {
+    padding: 10px;
+    margin-left: 100px;
+}
+
+.col3 {
+    padding: 10px;
+    margin-left: 100px;
+
+}
+
+.sidebar {
+
+}
+
+.avcycle {
+    margin-top: 0;
+    margin-bottom: -10 !important;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 20px !important;
+}
+
+.moodover {
+
+}
+
+.sympover {
+
+}
