@@ -22,24 +22,21 @@ exports.logmood = ("/", async (req, res) => {
     });
   }
 
-//create mood collection add mood to a database
+//add mood to a collection in MongoDb
 
   try{
 
 
-     const FirebaseUser = await firebaseAdmin.auth
+      const FirebaseUser = await firebaseAdmin.auth.getUser
 
-     if(FirebaseUser) {
+       if(FirebaseUser) {
 
     const newmood = req.app.locals.db.collection("mood");
 
-    await newmood.insertOne({
+   await newmood.insertOne({
       mood,
-      
       date: Date(),
-     
-
-      firebaseId:  FirebaseUser.auth.uid,
+      firebaseId: FirebaseUser.uid
 
       // $lookup:
       // {
@@ -52,7 +49,7 @@ exports.logmood = ("/", async (req, res) => {
 
     });
   
-     }
+       }
   
     return res
       .status(200)
