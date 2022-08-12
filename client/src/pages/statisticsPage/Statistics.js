@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {Link} from 'react-router-dom';
+import Sidebar from '../../components/sidebar/Sidebar2';
 import {
     BrowserRouter as Router,
     Route,
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className='App'>
     <Container>
+    <h1> This is statistics page!</h1>
       <Row>
         <Col xs={12} lg={4}>
 
@@ -30,7 +32,8 @@ function App() {
 
 
         </Col>
-      </Row>        
+      </Row>
+      <Sidebar />        
     </Container>
     </div>  
   );

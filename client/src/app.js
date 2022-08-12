@@ -15,6 +15,8 @@ import SignUp from "./pages/signUpPage/SignUp"
 import UserProfile from "./pages/profilePage/UserProfile";
 import ResetPage from "./pages/resetPage/ResetPage";
 import QuestionnairePage from "./pages/questionnairePage/Questionnaire.js";
+import ResourcesPage from "./pages/resourcesPage/Resources";
+import StatisticsPage from "./pages/statisticsPage/Statistics";
 
 import { useEffect } from "react";
 
@@ -69,6 +71,8 @@ function App (){
         <Route path="/Reset" element={< ResetPage/>}></Route>
         <Route path = "/Test" element = {<TestLog/>}></Route>
         <Route path="/questionnaire" element = {<QuestionnairePage/>}></Route>
+        <Route path="/resources" element = {<ResourcesPage/>}></Route>
+        <Route path="/statistics" element = {<StatisticsPage/>}></Route>
 
         
         <Route path="/UserProfile/*" element={<UserProfile />} />
