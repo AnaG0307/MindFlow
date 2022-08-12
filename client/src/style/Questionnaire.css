@@ -1,5 +1,70 @@
 .pagetitle {
 	color: rgb(64, 64, 65) !important;
 	font-size: 35px !important;
-	padding-left: 250px
+	margin-left: 280px !important;
+	margin-bottom: 20px;
+	margin-top: -350px !important;
+
+
+
+}
+
+.Questionfunction{
+}
+
+.QuestionnairePage {
+
+}
+
+.moodselect {
+	margin-top: 0px !important;
+	margin-right: 0px !important;
+	margin-bottom: 10px !important;
+	margin-left: 0px !important;
+	font-size: 17.5px;
+	background-color:  rgb(255, 255, 255) !important;
+	border-color: rgb(215, 237, 243) !important;
+	width: 95px;
+	height: 30px;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.25);
+	justify-content: center !important;
+}
+
+
+.selectmoodtext {
+	margin-top: 10px !important;
+	margin-right: 10px !important;
+	margin-bottom: -8px !important;
+	margin-left: 600px !important;
+	font-size: 20px;
+}
+
+.text-centermt-4p-2 {
+	margin-top: 0px !important;
+	margin-right: 0px !important;
+	margin-bottom: 0px !important;
+	margin-left: 0px !important;
+}
+
+.submitbutton {
+	margin-left: 730px !important;
+	margin-top: 30px !important;
+	margin-right: 0px !important;
+	margin-bottom: 80px !important;
+	font-size: 20px;
+    background-color: rgb(206, 236, 218) !important;
+    border: rgb(206, 236, 218) !important;
+    color: rgb(64, 64, 65) !important;
+	width: 80px !important;
+	height: 40px !important;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+.Questionpng {
+	margin-left: 670px !important;
+	margin-bottom: 20px !important;
+
 }

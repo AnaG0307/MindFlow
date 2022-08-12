@@ -2,13 +2,14 @@ import "../../App.css";
 import React, { useState } from "react";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import axios from "axios";
-import Logo2 from "../../assets/logo2.png";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   useNavigate,
 } from "react-router-dom";
+import "../../style/Questionnaire.css";
+
 
 export default function Questionnaire() {
   const [mood, setMood] = useState([]);
@@ -59,7 +60,7 @@ export default function Questionnaire() {
         </select>
 
         <div>
-          <button type="submit" className="btn">
+          <button type="submit" className="submitbutton">
             Submit
           </button>
         </div>
