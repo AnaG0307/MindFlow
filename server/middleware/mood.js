@@ -1,4 +1,4 @@
-const firebaseAdmin = require("../services/firebase.js") ;
+const firebaseAdmin = require("../services/firebase") ;
 
 // validate the Firebase tokens sent from the frontend
 

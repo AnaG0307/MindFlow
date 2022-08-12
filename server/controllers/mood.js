@@ -1,12 +1,16 @@
 const express = require("express") ;
-const authenticate = require("../middleware/authenticate.js") ;
-const firebaseAdmin = require("../services/firebase.js") ;
+const authenticate = require("../middleware/authenticate") ;
+const firebaseAdmin = require("../services/firebase") ;
 
 
+//GET controller
 
 exports.showmood = ("/", authenticate, async (req, res) => {
    res.status(200).json(req.user);
  });
+
+
+//POST controller  to add daily mood to a database
 
 exports.logmood = ("/", async (req, res) => {
   const {mood} = req.body;
@@ -18,26 +22,50 @@ exports.logmood = ("/", async (req, res) => {
     });
   }
 
-  try {
-    const FirebaseUser = await firebaseAdmin.auth.create({
-     mood
-    });
+//create mood collection add mood to a database
 
-    if (FirebaseUser) {
-      const moodCollection = req.app.locals.db.collection("mood");
-      await userCollection.insertOne({
-        mood,
-      });
-    }
+  try{
+
+
+     const FirebaseUser = await firebaseAdmin.auth
+
+     if(FirebaseUser) {
+
+    const newmood = req.app.locals.db.collection("mood");
+
+    await newmood.insertOne({
+      mood,
+      
+      date: Date(),
+     
+
+      firebaseId:  FirebaseUser.auth.uid,
+
+      // $lookup:
+      // {
+      //   from:  "user",
+      //   localField: null,
+      //   foreignField: 'firebaseId',
+      //   as: 'lol'
+      // },
+    
+
+    });
+  
+     }
+  
     return res
       .status(200)
-      .json({ success: "Your mood was submitted!" });
-  } catch (err) {
-    if (err.code === "auth/email-already-exists") {
-      return res
-        .status(400)
-        .json({ error: "User account already exists at email address." });
-    }
-    return res.status(500).json({ error: "Server error. Please try again" });
-  }
+      .json({ success: "Todays mood added successfully!" });
+
+
+} catch  {
+      res.status(400).json({
+          message: "Error adding mood",
+      });
+   
+}
+
 });
+
+  

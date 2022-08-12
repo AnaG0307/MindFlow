@@ -2,8 +2,8 @@
 
 
 const express = require("express") ;
-const authenticate = require("../middleware/authenticate.js") ;
-const firebaseAdmin = require("../services/firebase.js") ;
+const authenticate = require("../middleware/authenticate") ;
+const firebaseAdmin = require("../services/firebase") ;
 
 const router = express.Router();
 
