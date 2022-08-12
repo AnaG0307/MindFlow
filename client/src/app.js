@@ -24,7 +24,6 @@ import LogoutPage from "./pages/logoutPage/LogoutPage";
 import Resources from "./pages/resourcesPage/Resources";
 import Statistics from "./pages/statisticsPage/Statistics";
 
-import TestLog from "./pages/moodLog/MoodLog";
 
 function App() {
   initializeApp(firebaseConfig);
@@ -55,7 +54,6 @@ function App() {
         <Route path="/Home" element={<landingPage />}></Route>
         <Route path="/SignUp" element={<SignUp />}></Route>
         <Route path="/Reset" element={<ResetPage />}></Route>
-        <Route path="/Test" element={<TestLog />}></Route>
         <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
         <Route path="/resources" element={<ResourcesPage />}></Route>
         <Route path="/settings" element={<SettingsPage />}></Route>
@@ -68,7 +66,6 @@ function App() {
         <Route path="/Home" element={<landingPage />}></Route>
         <Route path="/SignUp" element={<SignUp />}></Route>
         <Route path="/Reset" element={<ResetPage />}></Route>
-        <Route path="/Test" element={<TestLog />}></Route>
         <Route path="/Resources" element={<Resources />}></Route>
         <Route path="/Statistics" element={<Statistics />}></Route>
         <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
