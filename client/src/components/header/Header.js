@@ -32,26 +32,26 @@ function Header() {
               id={`offcanvasNavbar-expand-false`}
               aria-labelledby={`offcanvasNavbarLabel-expand-false`}
               placement="end"
+              className="headerbar"
 			  style={{fontSize:"20px"}}
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-false`}>
+                <Offcanvas.Title id={`offcanvasNavheaderbarbarLabel-expand-false`}>
                   MindFlow
 				  <img
 			src={Logo2} 
 			alt= "MindFlow logo" 
 			className="mfl-logo"
-			width="50" 
-			height="40"
+			width="40" 
+			height="30"
 			/>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Profile</Nav.Link>
-				  <Nav.Link href="#action3">Settings</Nav.Link>
-				  <Nav.Link href="#action2">Log out</Nav.Link>
+                  <Nav.Link href="#action1">Profile</Nav.Link>
+                  <Nav.Link href="#action2">Settings</Nav.Link>
+				  <Nav.Link href="#action3">Log out</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
