@@ -8,6 +8,7 @@ import "../../style/Header.css";
 import "../../style/index.css";
 import Period from "../../components/period/Period.js";
 import Button from "react-bootstrap/Button";
+import Sidebar from "../../components/sidebar/Sidebar2.js";
 import {
   BrowserRouter as Router,
   Route,
@@ -19,6 +20,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CalendarPage from "../../assets/CalendarPage.png"
+
 
 function PeriodPage() {
   return (
@@ -50,3 +52,4 @@ function PeriodPage() {
 }
 
 export default PeriodPage;
+export {Sidebar};
