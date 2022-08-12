@@ -11,23 +11,17 @@ function Sidebar () {
       <ul className="sidebar">
         <li>
           <span>
-            <div className="fa fa-home"></div>
+            <div className="Home"></div>
           </span>
           <span>Home</span>
         </li>
         <li>
           <span>
-            <i className="Dashboard"></i>
-          </span>
-          <span>Dashboard</span>
-        </li>
-        <li>
-          <span>
-          <Link to="/UserProfile">
-            <div className="Users"></div>
+          <Link to="/questionnaire">
+            <div className="Questionnaire"></div>
             </Link>
           </span>
-          <span>User Profile</span>
+          <span>Questionnaire</span>
         </li>
         <li>
           <span>
@@ -39,12 +33,17 @@ function Sidebar () {
         </li>
         <li>
           <span>
-            <div className="Settings"></div>
+            <div className="Statistics"></div>
           </span>
           <span>Statistics</span>
         </li>
+        <li>
+          <span>
+            <div className="Resources"></div>
+          </span>
+          <span>Resources</span>
+        </li>
       </ul>
-
       <div className="content"></div>
     </div>
     </div>
