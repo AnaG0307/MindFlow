@@ -1,36 +1,26 @@
-import React from 'react';
-import '../../App.css';
-import '../../style/Header.css';
-import '../../style/index.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import logout from "../../assets/logout.png"
+import React from "react";
+import "../../App.css";
+import "../../style/Header.css";
+import "../../style/index.css";
+import Container from "react-bootstrap/Container";
+import logout from "../../assets/logout.png";
 import "../../style/Logout.css";
 
-
 function Logout() {
-  
-    return (
-      <div className='App'>
+  return (
+    <div className="App">
       <Container>
-      <h1> See you again soon!</h1>
-      <img
-      src={logout} 
-      alt= "logoutpng" 
-      className="logoutpng"
-      width="250" 
-      height="500"
-       /> 
+        <h1> See you again soon!</h1>
+        <img
+          src={logout}
+          alt="logoutpng"
+          className="logoutpng"
+          width="250"
+          height="500"
+        />
       </Container>
-      </div>  
-    );
-  }
-  
-  export default Logout;
-  
-  
-  
-  
+    </div>
+  );
+}
 
-
+export default Logout;

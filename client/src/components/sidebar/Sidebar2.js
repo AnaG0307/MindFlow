@@ -1,61 +1,63 @@
-import React from 'react';
-import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarContent } from 'react-pro-sidebar';
-import '../../style/SideBar2.css'
-import {Link} from 'react-router-dom';
-import Logo from "../../assets/logo.png"
+import React from "react";
+import "../../style/SideBar2.css";
+import { Link } from "react-router-dom";
+import Logo from "../../assets/logo.png";
 
-
-function Sidebar () {
-    return (
+function Sidebar() {
+  return (
     <div>
       <ul className="sidebar">
-      <div className="logo">
-      <img
-			src={Logo} 
-			alt= "MindFlow logo" 
-			className="mfl-logo"
-			width="49" 
-			height="40"
-			/>
-      </div>
+        <div className="logo">
+          <img
+            src={Logo}
+            alt="MindFlow logo"
+            className="mfl-logo"
+            width="49"
+            height="40"
+          />
+        </div>
         <li>
           <span>
-          <Link to="/questionnaire">
-            <div className="Questionnaire"></div>
-            Questionnaire</Link>
-            </span>
-        </li>
-        <li>
-          <span>
-          <Link to="/period">
-            <div className="Calendar"></div>
-          Calendar
-          </Link>
-            </span>           
-        </li>
-        <li>
-          <span>
-          <Link to="/statistics"> 
-            <div className="Statistics"></div>
-            Statistics</Link>
+            <Link to="/questionnaire">
+              <div className="Questionnaire"></div>
+              Questionnaire
+            </Link>
           </span>
         </li>
         <li>
           <span>
-          <Link to="/resources"> 
-            <div className="Resources"></div>
-            Resources</Link>
+            <Link to="/period">
+              <div className="Calendar"></div>
+              Calendar
+            </Link>
+          </span>
+        </li>
+        <li>
+          <span>
+            <Link to="/statistics">
+              <div className="Statistics"></div>
+              Statistics
+            </Link>
+          </span>
+        </li>
+        <li>
+          <span>
+            <Link to="/resources">
+              <div className="Resources"></div>
+              Resources
+            </Link>
           </span>
         </li>
       </ul>
       <div className="content"></div>
     </div>
-    )
-    };
-    
-    export default Sidebar
+  );
+}
 
-{/* 
+export default Sidebar;
+
+{
+  /* 
     // <ProSidebar className='container'>
     //     <SidebarHeader> Dashboard</SidebarHeader>
     //     <SidebarContent>
@@ -66,4 +68,5 @@ function Sidebar () {
     //         <MenuItem>User Stats</MenuItem>
     //     </Menu>
     //     </SidebarContent>
-    // </ProSidebar> */}
+    // </ProSidebar> */
+}

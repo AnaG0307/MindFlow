@@ -1,15 +1,3 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useNavigate,
-  Link,
-  useLocation,
-} from "react-router-dom";
-//import Registration from "./Registration";
-import Dashboard from "../moodLog/MoodLog";
-import { useEffect, useState } from "react";
-import firebaseService from "../../services/firebase";
 import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
 import "../../style/ProfilePage.css";
 import Profile1 from "../../assets/Profile1.png";
@@ -18,10 +6,8 @@ import axios from "axios";
 import React, { Component } from "react";
 import Container from "react-bootstrap/esm/Container";
 import { useGetUserQuery } from "../../redux/slice/profileSlice";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default function UserProfile() {
   //   const [loadingUser, setLoadingUser] = useState(true);
@@ -80,26 +66,25 @@ export default function UserProfile() {
       </div>
       <Row>
         <Col xs={12} lg={1}>
-        <Sidebar />
+          <Sidebar />
         </Col>
-        <Col xs={12} lg={7} style={{ padding: 0}}>
-        <div className="profile">
-        <img src={Profile1} alt="ProfilePic" width="200" height="200" />
-      </div>
-      <div className="detail">
-        {isLoading && <h2>...Loading</h2>}
-        {isError && <h2>Something went wrong</h2>}
-        {isSuccess && (
-          <div>
-            <p>Name: {user.name}</p>
-            <p>Surname: {user.surname}</p>
-            <p>Email: {user.email}</p>
+        <Col xs={12} lg={7} style={{ padding: 0 }}>
+          <div className="profile">
+            <img src={Profile1} alt="ProfilePic" width="200" height="200" />
           </div>
-        )}
-      </div>
+          <div className="detail">
+            {isLoading && <h2>...Loading</h2>}
+            {isError && <h2>Something went wrong</h2>}
+            {isSuccess && (
+              <div>
+                <p>Name: {user.name}</p>
+                <p>Surname: {user.surname}</p>
+                <p>Email: {user.email}</p>
+              </div>
+            )}
+          </div>
         </Col>
       </Row>
-      
     </Container>
     // to="/"
     // onClick={() =>  {

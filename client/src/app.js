@@ -9,7 +9,6 @@ import { saveUser } from "./redux/slice/authSlice";
 import ProtectedRoutes from "./utils/ProtectedRoutes";
 import PublicRoutes from "./utils/PublicRoutes";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer.js";
 import PeriodPage from "./pages/periodPage/Period";
@@ -51,7 +50,6 @@ function App() {
         <Route path="/" element={<ProtectedRoutes />}></Route>
         <Route path="/" element={<PublicRoutes />}></Route>
         <Route exact path="/" element={<Home />}></Route>
-        {/* <Route path="/Dashboard" element={<Dashboard />}></Route> */}
         <Route path="/period" element={<PeriodPage />}></Route>
         <Route exact path="/Login" element={<Login />}></Route>
         <Route path="/Home" element={<landingPage />}></Route>
@@ -65,7 +63,6 @@ function App() {
         <Route path="/" element={<ProtectedRoutes />}></Route>
         <Route path="/" element={<PublicRoutes />}></Route>
         <Route exact path="/" element={<Home />}></Route>
-        {/* <Route path="/Dashboard" element={<Dashboard />}></Route> */}
         <Route path="/period" element={<PeriodPage />}></Route>
         <Route exact path="/Login" element={<Login />}></Route>
         <Route path="/Home" element={<landingPage />}></Route>
@@ -81,9 +78,5 @@ function App() {
     </Router>
   );
 }
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 
 export default App;
