@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import axios from "axios";
 import Logo2 from "../../assets/logo2.png";
-import Sidebar from "../sidebar/Sidebar2";
 import {
   BrowserRouter as Router,
   Route,
@@ -65,8 +64,6 @@ export default function Questionnaire() {
           </button>
         </div>
       </form>
-      <Sidebar />
-      <h1> This is a questionnaire </h1>
       <Routes>
         <Route path="/questionnaire" element={<Questionnaire />} />
       </Routes>
