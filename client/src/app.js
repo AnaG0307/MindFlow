@@ -16,6 +16,7 @@ import UserProfile from "./pages/profilePage/UserProfile";
 import ResetPage from "./pages/resetPage/ResetPage";
 import QuestionnairePage from "./pages/questionnairePage/Questionnaire.js";
 import Resources from "./pages/resourcesPage/Resources";
+import Statistics from "./pages/statisticsPage/StatisticsPage";
 
 import { useEffect } from "react";
 
@@ -64,6 +65,7 @@ function App() {
           <Route path="/Reset" element={<ResetPage />}></Route>
           <Route path="/Test" element={<TestLog />}></Route>
           <Route path="/Resources" element={<Resources />}></Route>
+          <Route path="/Statistics" element={<Statistics />}></Route>
           <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
           <Route path="/UserProfile/*" element={<UserProfile />} />
         </Route>
