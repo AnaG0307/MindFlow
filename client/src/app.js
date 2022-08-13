@@ -43,8 +43,10 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<ProtectedRoutes />}></Route>
-        <Route path="/" element={<PublicRoutes />}>
+        <Route element={<ProtectedRoutes />}>
+        
+        </Route>
+        <Route  element={<PublicRoutes />}>
           <Route exact path="/" element={<Home />}></Route>
           <Route path="/period" element={<PeriodPage />}></Route>
           <Route exact path="/Login" element={<Login />}></Route>
@@ -56,6 +58,7 @@ function App() {
           <Route path="/Statistics" element={<Statistics />}></Route>
           <Route path="/UserProfile/*" element={<UserProfile />}></Route>
           <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
+         
           <Route path="/resources" element={<Resources />}></Route>
         </Route>
       </Routes>
