@@ -42,7 +42,7 @@ export default function Login() {
         fields.password
       );
       if (user) {
-        navigate("/UserProfile");
+        navigate("/questionnaire");
         console.log("Called");
         console.log(user);
       }
@@ -55,7 +55,7 @@ export default function Login() {
   return (
     <div>
       {location.state && location.state.message ? (
-        <p style={{ color: "green" }}>{location.state.message}</p>
+        <p >{location.state.message}</p>
       ) : null}
       <h1>Log In</h1>
       <form onSubmit={handleSubmit}>
