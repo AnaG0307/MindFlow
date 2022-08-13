@@ -7,7 +7,6 @@ import '../../style/Header.css'
 import '../../style/index.css'
 
 import Reset from "../../components/login/Reset"
-import Sidebar from "../../components/sidebar/Sidebar";
 
 function ResetPage() {
 

@@ -1,11 +1,8 @@
 .qpagetitle {
 	color: rgb(64, 64, 65) !important;
 	font-size: 35px !important;
-	margin-left: 530px !important;
+	margin-left: 41% !important;
 	margin-bottom: 20px;
-	margin-top: -350px !important;
-
-
 
 }
 
@@ -36,7 +33,7 @@
 	margin-top: 10px !important;
 	margin-right: 10px !important;
 	margin-bottom: -8px !important;
-	margin-left: 150px !important;
+	margin-left: 15% !important;
 	font-size: 20px;
 }
 
@@ -48,9 +45,8 @@
 }
 
 .qsubmitbutton {
-	margin-left: 130px !important;
+	margin-left: 15% !important;
 	margin-top: 30px !important;
-	margin-right: 0px !important;
 	margin-bottom: 80px !important;
 	font-size: 20px;
     background-color: rgb(206, 236, 218) !important;
@@ -64,7 +60,7 @@
 }
 
 .Questionpng {
-	margin-left: 670px !important;
+	margin-left: 50% !important;
 	margin-bottom: 20px !important;
 
 }

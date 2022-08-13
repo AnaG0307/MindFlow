@@ -5,8 +5,8 @@ import Logo from "../../assets/logo.png";
 
 function Sidebar() {
   return (
-    <div>
-      <ul className="sidebar">
+    <div className="ALLSIDEBAR">
+      <ul className="sidebar" >
         <div className="logo">
           <img
             src={Logo}

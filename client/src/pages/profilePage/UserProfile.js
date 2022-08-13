@@ -60,15 +60,12 @@ export default function UserProfile() {
     //     //   <p>Surname: {auth.currentUser.surname}</p>
     //     //   <p>Email: {auth.currentUser.email}</p>
     //     // </div>
-    <Container>
+
+    <div>
       <div className="header">
         <h1>Your Profile Details</h1>
       </div>
-      <Row>
-        <Col xs={12} lg={1}>
-          <Sidebar />
-        </Col>
-        <Col xs={12} lg={7} style={{ padding: 0 }}>
+      <Sidebar /> 
           <div className="profile">
             <img src={Profile1} alt="ProfilePic" width="200" height="200" />
           </div>
@@ -83,9 +80,9 @@ export default function UserProfile() {
               </div>
             )}
           </div>
-        </Col>
-      </Row>
-    </Container>
+    </div>
+
+
     // to="/"
     // onClick={() =>  {
     //   signOut(auth)

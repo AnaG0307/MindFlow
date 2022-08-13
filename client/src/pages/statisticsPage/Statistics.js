@@ -12,54 +12,46 @@ import Sidebar from "../../components/sidebar/Sidebar2";
 
 function App() {
   return (
-    <div className="App">
-      <Container>
-        <h2 className="header">Your stats 📉</h2>
-        <h5 className="header">And insight into your health</h5>
-        <Sidebar className="sidebar" />
+    <div>
+      <div className="App">
+      <Sidebar/>
+          <h2 className="header">Your stats 📉</h2>
+          <h5 className="header">And insight into your health</h5>
+            <div className="col1">
+              <h4 classname="avcycle">Average Cycle Length 📆</h4>
+              <img
+                src={stats1}
+                alt="stats1"
+                className="stats1"
+                width="530"
+                height="400"
+              />
+            </div>
 
-        <Row>
-          <div className="col1">
-            <h4 classname="avcycle">Average Cycle Length 📆</h4>
-            <img
-              src={stats1}
-              alt="stats1"
-              className="stats1"
-              width="530"
-              height="400"
-              style={{ paddingRight: 0, paddingTop: 0 }}
-            />
-          </div>
-        </Row>
+            <div className="col2">
+              <h4 classname="moodover">Mood Overview 😊</h4>
+              <img
+                src={stats2}
+                alt="stats2"
+                className="stats2"
+                width="400"
+                height="420"
+                style={{ paddingRight: 0, paddingTop: 0 }}
+              />
+            </div>
 
-        <Row>
-          <div className="col2">
-            <h4 classname="moodover">Mood Overview 😊</h4>
-            <img
-              src={stats2}
-              alt="stats2"
-              className="stats2"
-              width="400"
-              height="420"
-              style={{ paddingRight: 0, paddingTop: 0 }}
-            />
-          </div>
-        </Row>
-
-        <Row>
-          <div className="col3">
-            <h4 classname="sympover">Symptom Overview 🌀</h4>
-            <img
-              src={stats3}
-              alt="stats3"
-              className="stats3"
-              width="540"
-              height="400"
-              style={{ paddingRight: 0, paddingTop: 0 }}
-            />
-          </div>
-        </Row>
-      </Container>
+            <div className="col3">
+              <h4 classname="sympover">Symptom Overview 🌀</h4>
+              <img
+                src={stats3}
+                alt="stats3"
+                className="stats3"
+                width="540"
+                height="400"
+                style={{ paddingRight: 0, paddingTop: 0 }}
+              />
+            </div>
+      </div>
     </div>
   );
 }
