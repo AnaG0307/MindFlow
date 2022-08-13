@@ -2,6 +2,7 @@ import React from "react";
 import "../../App.css";
 import Sidebar from "../../components/sidebar/Sidebar2.js";
 import Resources from "../../components/resources/Resources.js";
+import "../../style/Resources.css";
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -12,13 +13,14 @@ function ResourcesPage() {
     <div className="ResourcesPage">
     <Container>
       <Row>
-        <Col xs={12} lg={1}>
+        {/* <Col xs={12} lg={1}> */}
         <Sidebar />
-        </Col>
-        <Col xs={12} lg={7} style={{ padding: 0}}>
-        <h1 className="pagetitle"> Your mental wellbeing matters </h1>
+        <div>
+      
+        {/* <Col xs={12} lg={7} style={{ padding: 0}}> */}
         <div className="rightcol">
-        <h3 className="heading"> If you are in need of help please see some links and helpful guides below 
+        <h1 className="firstTitle" style={{ height: "90px"}}> Your mental wellbeing matters </h1>
+        <h3 className="resourcesHeading"> If you are in need of help please see some links and helpful guides below 
         </h3> 
         <div className="Resources-table">
         <div className="Resources">
@@ -33,25 +35,28 @@ function ResourcesPage() {
         </div>
         <div className="Resources">
         <h3 className="paragraph">Chat to a specialist</h3>
-        <p> Chat to our helpful team about anything that's on your mind. Message us or have a live chat.
+        <p> Links to local therapists in your area.
         </p>
         </div>
         </div>
         </div>
         <Resources />
-        </Col>
-        <Col xs={12} lg={4} style={{paddingLeft:0 }}>
+        {/* </Col> */}
+        {/* <Col xs={12} lg={4} style={{paddingLeft:0 }}> */}
         <div> 
+        <Col xs={12} lg={4} style={{ paddingLeft: 0 }}>      
         <img
 			src={ResourcesImage} 
 			alt= "2 ladies" 
 			className="resources-image"
 			width="850" 
       height="750"
-      style={{ paddingRight: 10, paddingTop: 20}}
+      style={{ paddingRight: 10, paddingTop: 30}}
 			/>
-        </div>
         </Col>
+        </div>
+        </div>
+        {/* </Col> */}
       </Row>
       </Container>
       
