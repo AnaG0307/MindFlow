@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import {
   BrowserRouter as Router,
   Route,
@@ -13,7 +12,6 @@ export default function Registration() {
   // Navigate between pages
   const navigate = useNavigate();
 
-  
   const navigatetoLogin = () => {
     navigate("/Login");
   };
@@ -156,7 +154,6 @@ export default function Registration() {
             </button>
           </div>
           <Routes>
-           
             <Route path="/Login" element={<login />} />
           </Routes>
         </form>
