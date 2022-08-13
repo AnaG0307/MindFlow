@@ -14,12 +14,10 @@ function PeriodPage() {
   return (
     <div className="PeriodPage">
       <Container>
+      <Sidebar />
         <Row>
-          <Col xs={12} lg={1}>
-            <Sidebar />
-          </Col>
           <h3 className="ppagetitle">Calculate Your Next Period</h3>
-          <Col xs={12} lg={7}>
+          <Col xs={12} lg={8}>
             <div className="prightcol">
               <Period />
             </div>

@@ -1,28 +1,24 @@
 .header {
- position: center;
- margin-left: 200px;
+ margin-left: 0px;
+ text-align: center;
 }
 
 
 .col1 {
     padding: 10px;
-    margin-top: -300px;
-    margin-left: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
 
 }
 
 .col2 {
     padding: 10px;
-    margin-left: 100px;
+    margin-left: 0px;
 }
 
 .col3 {
     padding: 10px;
-    margin-left: 100px;
-
-}
-
-.sidebar {
+    margin-left: 0px;
 
 }
 
