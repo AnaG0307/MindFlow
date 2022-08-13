@@ -21,7 +21,9 @@
     margin: 0px !important;
 
 }
-  
+.sidebarlogo {
+    margin-top: 10px;
+}
 .sidebar {
     position: fixed !important;
     background-color: rgb(244, 252, 255);

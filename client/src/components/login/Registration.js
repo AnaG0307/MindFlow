@@ -151,7 +151,7 @@ export default function Registration() {
             <hr />
             <button onClick={navigatetoLogin} className="signupbutt2" type="submit">
               {" "}
-              Login Here{" "}
+              Login{" "}
             </button>
           </div>
           <Routes>

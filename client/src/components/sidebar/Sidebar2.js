@@ -7,7 +7,7 @@ function Sidebar() {
   return (
     <div className="ALLSIDEBAR">
       <ul className="sidebar" >
-        <div className="logo">
+        <div className="sidebarlogo">
           <img
             src={Logo}
             alt="MindFlow logo"

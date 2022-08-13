@@ -6,31 +6,63 @@
     background-color: rgb(50, 60, 132) !important;
     border: rgb(50, 60, 132) !important;
     color: white !important;
-    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 5px;
+    margin-bottom: 2% !important;
+    width: 100px;
+	height: 50px;
+    font-size: 18px !important;
+    display: inline !important;
+	border-radius: 10px;
+	margin-top: 5%;
+
 }
 
 .submitbtn {
     background-color: rgb(50, 60, 132) !important;
     border: rgb(50, 60, 132) !important;
     color: white !important;
-    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    padding: 4px;
-    margin: 5px;
-    margin-top: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-bottom: 2% !important;
+    width: 100px;
+	height: 50px;
+    font-size: 18px !important;
+    display: inline !important;
+	border-radius: 10px;
+	margin-top: 5%;
+
+}
+
+.regbtn {
+
+    background-color: rgb(50, 60, 132) !important;
+    border: rgb(50, 60, 132) !important;
+    color: white !important;
+    margin-bottom: 2% !important;
+    width: 100px;
+	height: 50px;
+    font-size: 18px !important;
+    display: inline !important;
+	border-radius: 10px;
+	margin-top: 5%;
+
+}
+
+.resetbtn {
+
+    background-color: rgb(50, 60, 132) !important;
+    border: rgb(50, 60, 132) !important;
+    color: white !important;
+    margin-bottom: 2% !important;
+    width: 200px;
+	height: 50px;
+    font-size: 18px !important;
+    display: inline !important;
+	border-radius: 10px;
+	margin-top: 5%;
 }
 
 .col2 {
     margin-top: 50px;
     margin-bottom: 0px;
+    margin-left: 10%;
 }
 
 .break {
