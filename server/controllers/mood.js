@@ -17,26 +17,27 @@ exports.logmood = ("/", async (req, res) => {
 
   if (!mood ) {
     return res.status(400).json({
-      error:
-        "Please select your mood"
+      error: "Please select your mood"
     });
   }
 
-//add mood to a collection in MongoDb
+//add data to the collection in MongoDb
 
   try{
+
+    
 
 
       const FirebaseUser = await firebaseAdmin.auth.getUser
 
        if(FirebaseUser) {
 
-    const newmood = req.app.locals.db.collection("mood");
+      const newmood = req.app.locals.db.collection("mood");
 
-   await newmood.insertOne({
-      mood,
-      date: Date(),
-      firebaseId: FirebaseUser.uid
+      await newmood.insertOne({
+        mood,
+        date: Date(),
+        firebaseId: FirebaseUser.uid
 
       // $lookup:
       // {
@@ -51,9 +52,8 @@ exports.logmood = ("/", async (req, res) => {
   
        }
   
-    return res
-      .status(200)
-      .json({ success: "Todays mood added successfully!" });
+    return res.status(200).json({ 
+      success: "Mood added successfully!" });
 
 
 } catch  {
