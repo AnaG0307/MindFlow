@@ -34,7 +34,8 @@ const Reset = () => {
   };
 
   return (
-    <div>
+    <div className="App">
+    <div className="form">
       <h1>Reset password</h1>
       Email:
       <br />
@@ -43,8 +44,10 @@ const Reset = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
-      <br />
-      <button onClick={handleReset}>Reset password</button>
+      <div>
+      <button onClick={handleReset} className="btn">Reset password</button>
+      </div>
+    </div>
     </div>
   );
 };
