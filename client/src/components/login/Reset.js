@@ -3,6 +3,7 @@ import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import "../../style/SignUpPage.css";
 
+//Reset password firebase function
 
 export default function Reset ()  {
 

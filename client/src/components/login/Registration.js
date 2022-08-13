@@ -9,6 +9,8 @@ import { getAuth } from "firebase/auth";
 import axios from "axios";
 import "../../style/SignUpPage.css";
 
+//Register user function
+
 export default function Registration() {
   
   const auth = getAuth();
@@ -32,6 +34,8 @@ export default function Registration() {
     setFields({ ...fields, [e.target.name]: e.target.value });
   };
 
+  // Send user data to a database
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (fields.password.length < 6) {
@@ -49,7 +53,7 @@ export default function Registration() {
         surname: fields.surname,
       });
       const message = req.data.success;
-      return navigate(navLogIn, {
+      return navigate("/Login", {
         replace: true,
         state: {
           message,
