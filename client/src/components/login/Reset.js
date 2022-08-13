@@ -42,7 +42,7 @@ const Reset = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
         <div>
-          <button onClick={handleReset} className="submitbtn">
+          <button onClick={handleReset} className="resetbtn">
             Reset password
           </button>
         </div>

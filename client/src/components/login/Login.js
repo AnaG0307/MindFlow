@@ -104,8 +104,8 @@ export default function Login() {
             Submit
           </button>
           <hr />
-          <button onClick={navigatetoReg} className="signbtn" type="submit">
-            Register Here{" "}
+          <button onClick={navigatetoReg} className="regbtn" type="submit">
+            Register{" "}
           </button>
         </div>
         {/* <Routes>

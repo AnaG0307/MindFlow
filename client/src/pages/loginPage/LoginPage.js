@@ -39,7 +39,7 @@ function SignIn() {
                 <Login />
               </div>
               <div>
-                <button onClick={navReset} className="signbtn" type="button">
+                <button onClick={navReset} className="resetbtn" type="button">
                   Reset your password
                 </button>
               </div>

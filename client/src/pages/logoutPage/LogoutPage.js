@@ -10,7 +10,7 @@ function Logout() {
   return (
     <div className="App">
       <Container>
-        <h1> See you again soon!</h1>
+        <h1 className="seeya"> See you again soon!</h1>
         <img
           src={logout}
           alt="logoutpng"
