@@ -1,17 +1,33 @@
 .landinglogo {
-    margin-top: -35px;
+    margin-top: -5%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+
+.landinglogo2 {
+    margin-top: 0%;
+    margin-left: 0%;
 }
 
 .landingimage {
-    padding: 10px
+    padding: 10px;
+    margin-left: 10%;
+}
+
+.paracont {
+    text-align: center;
+    width: 600px;
 }
 
 .landingheader {
-    padding: 0px
+    padding: 0px;
+    margin-left: 36%;
 
 }
 
 .landingtagline {
+    margin-left: 26%;
+    margin-bottom: 2%;
 
 }
 
@@ -19,15 +35,20 @@
     padding: 10px;
     font-size: 33px;
     margin-bottom: 15px;
-    margin-top: -20px;
+    margin-top: 40px;
+    margin-left: 15%;
+
 }
 
 .landingpararaph {
-    margin-top: 10px !important;
+    text-align: centers;
+
 }
 
 .buttongroup{
     margin-top: 40px;  
+    margin-left: 25%;
+
 }
 
 .signupbutton {
@@ -51,15 +72,12 @@
     display: inline !important;
 }
 
-.rhc{
-    margin: 0;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
 
 .or {
     display: inline !important;
     padding: 20px;
+}
+
+.container {
+    margin: 0px !important;
 }
