@@ -6,8 +6,26 @@ import React from "react";
 import Logo2 from "../../assets/logo2.png";
 import "../../style/Header.css";
 import "../../style/index.css";
+import { getAuth, signOut} from "firebase/auth";
 
 function Header() {
+  
+  const auth = getAuth();
+
+  const handleAnchorClick = (e) => { 
+    
+    e.preventDefault();
+
+      signOut(auth) 
+      .then(() => {
+        console.log("user signed out");
+       })
+      .catch((error) => {
+         console.log("error", error);
+     });
+    }
+
+
   return (
     <Navbar key={false} expand={false} className="mb-3">
       <Container fluid>
@@ -44,7 +62,7 @@ function Header() {
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link href="/UserProfile">Profile</Nav.Link>
               <Nav.Link href="/settings">Settings</Nav.Link>
-              <Nav.Link href="/logout">Log out</Nav.Link>
+              <Nav.Link href="/logout" onClick = {handleAnchorClick}> Log out</Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
