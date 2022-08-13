@@ -9,7 +9,7 @@ import {
 import "../../style/Login.css";
 import {getAuth, signInWithEmailAndPassword,} from "firebase/auth";
 
-//Log in function
+//Log in firebase function
 
 export default function Login() {
 
