@@ -2,8 +2,6 @@ import React from "react";
 import "../../App.css";
 import Sidebar from "../../components/sidebar/Sidebar2.js";
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 function Home(props) {
   return (
     <div className="App">
@@ -15,7 +13,3 @@ function Home(props) {
 }
 
 export default Home;
-
-
-
-

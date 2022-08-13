@@ -17,13 +17,13 @@ body{
   color: rgb(64, 64, 65);
   padding: 5px;
 }
- 
+
 .input{
   font-size: larger;
   padding: 5px;
   margin: 2px;
-  
 }
+
 .btn{
   color: rgb(137, 137, 137);
   background-color: rgb(12, 0, 60);

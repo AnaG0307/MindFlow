@@ -3,20 +3,23 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  useNavigate,  useLocation
+  useNavigate,
+  useLocation,
 } from "react-router-dom";
-import Registration from "./Registration";
-import Dashboard from "../../pages/moodLog/MoodLog";
+import "../../style/Login.css";
 
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  setPersistence,
+  browserSessionPersistence,
+} from "firebase/auth";
 
-
-
-export default function  Login() {
+export default function Login() {
   // Navigate between pages
   const location = useLocation();
   const navigate = useNavigate();
-  
+
   const navigatetoDashboard = () => {
     navigate("/UserProfile");
   };
@@ -25,14 +28,12 @@ export default function  Login() {
   };
   const [fields, setFields] = useState({
     email: "",
-    password: ""
+    password: "",
   });
 
   const [error, setError] = useState("");
 
-
-  const auth =getAuth();
-
+  const auth = getAuth();
 
   const handleChange = (e) => {
     setFields({ ...fields, [e.target.name]: e.target.value });
@@ -47,26 +48,28 @@ export default function  Login() {
         fields.password
       );
       if (user) {
-        navigate("/UserProfile");
+        // setPersistence(auth, browserSessionPersistence);
+        navigate("/questionnaire");
         console.log("Called");
-        console.log(user)
+        console.log(user);
       }
     } catch (err) {
       console.log(err);
       setError("Invalid email address or password.");
     }
   };
- 
 
   return (
     <div>
       {location.state && location.state.message ? (
-        <p style={{ color: "green" }}>{location.state.message}</p>
+        <p>{location.state.message}</p>
       ) : null}
-      <h1>Log In</h1>
+      <h1 className="logintxt">Log In</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email" className="label">Email Address</label>
+          <label htmlFor="email" className="emailtxt">
+            Email Address
+          </label>
         </div>
         <div>
           <input
@@ -78,8 +81,12 @@ export default function  Login() {
             required
           />
         </div>
-        <div >
-          <label htmlFor="password" className="label">Password</label>
+        <div>
+          <label htmlFor="password" className="passtxt">
+            Password
+          </label>
+        </div>
+        <div classname="break">
         </div>
         <div>
           <input
@@ -91,24 +98,23 @@ export default function  Login() {
             required
           />
         </div>
-        
+
         {error ? <p style={{ color: "red" }}>Error: {error}</p> : null}
         <div>
-            <button className="btn" type="submit">
-              Submit
-            </button>
-            <hr />
-            <button onClick={navigatetoReg} className="btn" type="submit">
-              Register Here{" "}
-            </button>
-          </div>
-          {/* <Routes>
+          <button className="submitbtn" type="submit">
+            Submit
+          </button>
+          <hr />
+          <button onClick={navigatetoReg} className="regbtn" type="submit">
+            Register{" "}
+          </button>
+        </div>
+        {/* <Routes>
             <Route path="/Dashboard" element={<Dashboard />} />
             <Route path="/Registration" element={<Registration />} />
           </Routes>
        */}
       </form>
-      
     </div>
   );
 }

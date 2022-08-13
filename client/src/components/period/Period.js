@@ -2,13 +2,7 @@ import "react-calendar/dist/Calendar.css";
 import React, { useState } from "react";
 import Moment from "react-moment";
 import Calendar from "react-calendar";
-import MoodLog from "../moodLog/MoodLog";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useNavigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function Period() {
   const [value, onChange] = useState(new Date());
@@ -27,7 +21,7 @@ function Period() {
         <select
           onChange={(e) => cycleValue(e.target.value)}
           defaultValue={cycle}
-          className="m-2"
+          className="m-2p"
         >
           <option value="28">28</option>
           <option value="29">29</option>
@@ -80,10 +74,7 @@ function Period() {
               </Moment>
             </div>
           </div>
-          <div className="text-center">
-            <MoodLog />
-          </div>
-          <button className="savemood">Save</button>
+          <div className="text-center"></div>
         </div>
         <Routes>
           <Route path="/Period" element={<Period />} />
