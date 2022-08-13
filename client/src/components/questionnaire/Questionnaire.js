@@ -58,8 +58,7 @@ export default function Questionnaire() {
             </option>
           </select>
 
-          {error ? <p>{error}</p> : null}
-          {success ? <p>{success}</p> : null}
+          {error ? <p>{error}</p> : <p>{success}</p>}
 
           <div>
             <button type="submit" className="qsubmitbutton">

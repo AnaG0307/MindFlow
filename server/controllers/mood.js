@@ -17,7 +17,7 @@ exports.logmood = ("/", async (req, res) => {
 
   if (!mood ) {
     return res.status(400).json({
-      error: "Please select your mood"
+      error: "Please select your mood."
     });
   }
 

@@ -50,8 +50,8 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<ProtectedRoutes />}></Route>
-        <Route path="/" element={<PublicRoutes />}>
+        <Route element={<ProtectedRoutes />}></Route>
+        <Route element={<PublicRoutes />}>
           <Route path="/" element={<LandingPage />}></Route>
           <Route path="/period" element={<PeriodPage />}></Route>
           <Route path="/Login" element={<Login />}></Route>
