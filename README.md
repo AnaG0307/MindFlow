@@ -97,6 +97,9 @@ We have tried and distribute the workload as evenly as possible, however if one 
 - MongoDB
 - NPM Calendar
 - NPM Moment
+- Firebase
+- Redux Toolkit
+
 
 #### **Implementation Process & Challenges:**
 
@@ -135,6 +138,15 @@ The above points, lead developers, especially new developers such as ourselves, 
 
 - A limitation of knowledge and time
 Despite our enthusiasm for the task, we couldn't’ accomplish everything we wanted to accomplish and implement, this was due to the fact that we are still at the beginning of our programming journey. Another limitation was the time, unfortunately some of us were working full-time, this coupled with the fact that we had 3-4 weeks to develop our project put a restriction on what we could do, and narrowed our options. 
+
+- Integration of front-end and backend with external service providers
+The integration of Firebase authentication and MongoDB into our project was a challanging task. Besides authentication, we believe we could have used Firebase also as a database to ease the complexity of our project. The decision to use MongoDB was based on our desire to display personalised interactive graphs for the user, which is one of the great features of MongoDB when integrated with Custom JWT Provider such as Firebase. Although we managed to integrate MongoDB and Firebase on a basic level, we consider that using both was not a time wise decision. 
+
+- Communication
+Although we met regularly, there were ocacionally misunderstandings over who was doing what. The confusion led to doubled work as two individuals were working on the same thing.In restrospective, we believe tha this could be improved by making better use of Jira and deciding on the team-lead. 
+
+- Github merges
+Besides others, a group work on Github was also one of our main challanges. At the beginning of the project it was fairly easy to maintain separate streams of work. However, towards the finish line, we encountered several merge clashes which slowed down our workflow. We faced issues with accurate way of creating branches and pulling from the main repository. We suported each other with problemsolving of  GitHub  issues which helped us to learn throughout the process.
 ---
 
 ## **Testing and Evaluation**
