@@ -5,6 +5,8 @@ import axios from "axios";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "../../style/Questionnaire.css";
 
+//Moodlog component that sends mood imput into a database
+
 export default function Questionnaire() {
   const [mood, setMood] = useState("");
   const [error, setError] = useState("");
@@ -73,16 +75,3 @@ export default function Questionnaire() {
     </div>
   );
 }
-
-// function Questionnaire() {
-//   return (
-//     <div>
-//       <Sidebar />
-//       <h1> This is a questionnaire </h1>
-//       <Routes>
-//         <Route path="/questionnaire" element={<Questionnaire />} />
-//       </Routes>
-//     </div>
-//   );
-// }
-// export default Questionnaire;

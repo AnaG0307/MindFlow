@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "./services/firebase";
-import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useSelector, useDispatch } from "react-redux";
 import { saveUser } from "./redux/slice/authSlice";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,7 +11,6 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Redirect,
 } from "react-router-dom";
 import ProtectedRoutes from "./utils/ProtectedRoutes";
 import PublicRoutes from "./utils/PublicRoutes";
@@ -22,7 +21,7 @@ import PeriodPage from "./pages/periodPage/Period";
 import LandingPage from "./pages/landingPage/LandingPage";
 import Login from "./pages/loginPage/LoginPage";
 import SignUp from "./pages/signUpPage/SignUp";
-import UserProfile from "./pages/profilePage/UserProfile";
+import UserPage from "./pages/profilePage/UserProfile";
 import ResetPage from "./pages/resetPage/ResetPage";
 import QuestionnairePage from "./pages/questionnairePage/Questionnaire.js";
 import SettingsPage from "./pages/settingsPage/Settings";
@@ -31,10 +30,13 @@ import Resources from "./pages/resourcesPage/Resources";
 import Statistics from "./pages/statisticsPage/Statistics";
 
 function App() {
+
+// Save the user token from firebase to the global state and update it every time user state changes
+
   initializeApp(firebaseConfig);
   const auth = getAuth();
   const user = useSelector((state) => state.auth.value);
-  console.log("user from state", user);
+  console.log(user);
   const dispatch = useDispatch();
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
@@ -60,7 +62,7 @@ function App() {
           <Route path="/settings" element={<SettingsPage />}></Route>
           <Route path="/logout" element={<LogoutPage />}></Route>
           <Route path="/Statistics" element={<Statistics />}></Route>
-          <Route path="/UserProfile/*" element={<UserProfile />}></Route>
+          <Route path="/UserProfile/*" element={<UserPage />}></Route>
           <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
           <Route path="/resources" element={<Resources />}></Route>
         </Route>
