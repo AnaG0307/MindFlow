@@ -1,6 +1,6 @@
-//send get quuery to the MongoDB for user details
-
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+
+//Send get quuery to the MongoDB for user details
 
 export const profileApi = createApi({
   reducerPath: "api",

@@ -1,9 +1,5 @@
-//Needs to hash the data!!
-// Firebase App (the core Firebase SDK)
+// Firebase App (the core Firebase SDK) - the details would go to .env file in the future
 
-import * as firebase from "firebase/app";
-
-// Add Firebase Auth
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
