@@ -1,14 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "./services/firebase";
 import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
 import { useSelector, useDispatch } from "react-redux";
 import { saveUser } from "./redux/slice/authSlice";
+import "bootstrap/dist/css/bootstrap.min.css";
+// Importing public and private routes
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ProtectedRoutes from "./utils/ProtectedRoutes";
 import PublicRoutes from "./utils/PublicRoutes";
-import "bootstrap/dist/css/bootstrap.min.css";
+// Importing files to creates routes to them
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer.js";
 import PeriodPage from "./pages/periodPage/Period";
