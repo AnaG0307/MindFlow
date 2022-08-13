@@ -95,11 +95,52 @@ We have tried and distribute the workload as evenly as possible, however if one 
 - Lucid Chart
 - Graphic Assets (Canva)
 - MongoDB
-- NPM Calendat
+- NPM Calendar
 - NPM Moment
 
 #### **Implementation Process & Challenges:**
 
+The implementation of our project was a very valuable and insightful experience, in that it allowed us to implement the various methodologies and good habits learned throughout the duracy of the CFG degree.
+
+The implementation stage could be divided in the following seven steps:
+
+Step 1 – Idea: 
+We first gathered and brainstormed a few ideas, very quickly the big lines of our project were drawn. 
+
+Step 2 – Organisation : 
+Throughout our second session, we defined a bit further which role each of us would be having (all based on our personal preferences), and which tools we would be using. We started from this moment to keep a log of each of our meetings, kept a shared folder to gather documents on Google Drive, and started talking about using Jira to track our progress and tasks, along deciding and having 3 meetings a week using an Agile methodology.  
+
+Step 3 – Github: 
+As it was our first time using Github in a group project, our team gathered and had a few training sessions together, we decided to establish official guidelines and good practices in regards to the use of our repository, mock repositories were created in order to ensure that we were all in line. 
+
+Step 4 – Wireframe of our project: 
+As a group, we decided on the main features we wanted to see on our website, and how we would like the frame of our website to be. We also decided on a website name: MindFlow 
+
+Step 5 – Structure of our App: 
+A methodology was defined in order to keep our folders and files under an established naming convention, thus encouraging us to develop future good work habits, and keeping the folder organised. 
+
+Step 6 – Development process : 
+Our Team gathered a few times a week, and using slack and Jira, ensured that we would keep each other updated in regards to what we were doing, and which part of the website we were developing, and what should be our priorities. 
+
+Step 7 – Testing: 
+Although our testing plan had been established at the beginning of our project, we conducted tests throughout the creation of the app, and especially after everything was completed, ensuring in the process that no element was forgotten. 
+
+Nevertheless, despite how enlightening the experience was, we faces a few challenges, which were as follow: 
+
+- Poor documentation 
+One of the main issues that we encountered throughout our project is the lack of documentation available and structure in regards to the use of React JS. As we are at a very early stage of our web development journey, our knowledge is still very limited, with the new introduction of React 18, a lot of the material available online was not applicable anymore. Resources were at time scarce or hard to understand limiting at times the extent of what we could have been achieving. 
+
+- ReactJs is a Library rather than a complete all-inclusive framework 
+Contrarily to Angular 2+, ReactJs require the users to install a lot of the packages, we encountered a few issues, which delayed the process of our project linked to having issues with webpacks and modules. The constant need to install external packages is a hindrance in us complete our work quicker and in a more efficient way. 
+
+- The use of JSX 
+We have been having classes about HTML, CSS and Javascript, however React’s language, JSX, which is a mixture between both HTML and Javascript, can feature a rather complex syntax at times. 
+
+- Development speed 
+The above points, lead developers, especially new developers such as ourselves, to spend lengthy times researching, and fixing issues rather than developing the project and having more time to develop the project, thus delaying and slowing down the development process. 
+
+- A limitation of knowledge and time
+Despite our enthusiasm for the task, we couldn't’ accomplish everything we wanted to accomplish and implement, this was due to the fact that we are still at the beginning of our programming journey. Another limitation was the time, unfortunately some of us were working full-time, this coupled with the fact that we had 3-4 weeks to develop our project put a restriction on what we could do, and narrowed our options. 
 ---
 
 ## **Testing and Evaluation**
