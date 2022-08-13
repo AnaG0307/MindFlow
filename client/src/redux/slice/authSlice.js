@@ -1,4 +1,4 @@
-//store user authentication details
+//Store user authentication details
 
 import { createSlice} from "@reduxjs/toolkit";
 
