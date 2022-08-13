@@ -1,18 +1,25 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "./services/firebase";
 import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
 import { useSelector, useDispatch } from "react-redux";
 import { saveUser } from "./redux/slice/authSlice";
+import "bootstrap/dist/css/bootstrap.min.css";
+// Importing public and private routes
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Redirect,
+} from "react-router-dom";
 import ProtectedRoutes from "./utils/ProtectedRoutes";
 import PublicRoutes from "./utils/PublicRoutes";
-import "bootstrap/dist/css/bootstrap.min.css";
+// Importing files to creates routes to them
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer.js";
 import PeriodPage from "./pages/periodPage/Period";
-import Home from "./pages/landingPage/LandingPage";
+import LandingPage from "./pages/landingPage/LandingPage";
 import Login from "./pages/loginPage/LoginPage";
 import SignUp from "./pages/signUpPage/SignUp";
 import UserProfile from "./pages/profilePage/UserProfile";
@@ -43,14 +50,11 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route element={<ProtectedRoutes />}>
-        
-        </Route>
-        <Route  element={<PublicRoutes />}>
-          <Route exact path="/" element={<Home />}></Route>
+        <Route element={<ProtectedRoutes />}></Route>
+        <Route element={<PublicRoutes />}>
+          <Route path="/" element={<LandingPage />}></Route>
           <Route path="/period" element={<PeriodPage />}></Route>
-          <Route exact path="/Login" element={<Login />}></Route>
-          <Route path="/Home" element={<landingPage />}></Route>
+          <Route path="/Login" element={<Login />}></Route>
           <Route path="/SignUp" element={<SignUp />}></Route>
           <Route path="/Reset" element={<ResetPage />}></Route>
           <Route path="/settings" element={<SettingsPage />}></Route>
@@ -58,7 +62,6 @@ function App() {
           <Route path="/Statistics" element={<Statistics />}></Route>
           <Route path="/UserProfile/*" element={<UserProfile />}></Route>
           <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
-         
           <Route path="/resources" element={<Resources />}></Route>
         </Route>
       </Routes>

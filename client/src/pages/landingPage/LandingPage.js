@@ -11,9 +11,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 
-function App() {
+function LandingPage() {
   return (
-    <div className="App">
+    <div className="LandingPage">
       <Container>
         <Row>
           <Col xs={12} lg={6}>
@@ -85,4 +85,4 @@ function App() {
   );
 }
 
-export default App;
+export default LandingPage;
