@@ -11,7 +11,7 @@ function questionnairePage() {
     <div className="QuestionnairePage">
     <Sidebar />
     <div>
-    <h1 className="pagetitle"> How are you feeling today? </h1>
+    <h1 className="qpagetitle"> How are you feeling today? </h1>
     <img
     src={Question} 
     alt= "Questionpng" 
