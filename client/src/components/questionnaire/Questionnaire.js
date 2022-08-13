@@ -71,7 +71,7 @@ export default function Questionnaire() {
    
 
         <div>
-          <button type="submit" className="submitbutton">
+          <button type="submit" className="qsubmitbutton">
             Submit
           </button>
         </div>

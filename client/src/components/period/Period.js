@@ -26,7 +26,7 @@ function Period() {
         <select
           onChange={(e) => cycleValue(e.target.value)}
           defaultValue={cycle}
-          className="m-2"
+          className="m-2p"
         >
           <option value="28">28</option>
           <option value="29">29</option>

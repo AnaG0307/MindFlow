@@ -18,9 +18,9 @@ function PeriodPage() {
           <Col xs={12} lg={1}>
             <Sidebar />
           </Col>
-          <h3 className="pagetitle">Calculate Your Next Period</h3>
+          <h3 className="ppagetitle">Calculate Your Next Period</h3>
           <Col xs={12} lg={7}>
-            <div className="rightcol">
+            <div className="prightcol">
               <Period />
             </div>
           </Col>
