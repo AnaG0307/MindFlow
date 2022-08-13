@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { getAuth } from "firebase/auth";
 import axios from "axios";
+import "../../style/SignUpPage.css";
 
 export default function Registration() {
   // Navigate between pages
@@ -66,7 +67,7 @@ export default function Registration() {
     <div className="App">
       <div className="form">
         <div>
-          <h1>Register</h1>
+          <h2 className="register">Register</h2>
         </div>
 
         <form onSubmit={handleSubmit}>
@@ -144,11 +145,11 @@ export default function Registration() {
 
           {error ? <p>Error: {error}</p> : null}
           <div>
-            <button type="submit" className="btn">
+            <button type="submit" className="signupbutt1">
               Sign Up
             </button>
             <hr />
-            <button onClick={navigatetoLogin} className="btn" type="submit">
+            <button onClick={navigatetoLogin} className="signupbutt2" type="submit">
               {" "}
               Login Here{" "}
             </button>

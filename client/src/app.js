@@ -58,7 +58,7 @@ function App() {
           <Route path="/Statistics" element={<Statistics />}></Route>
           <Route path="/UserProfile/*" element={<UserProfile />}></Route>
           <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
-          <Route path="/Resources" element={<Resources />}></Route>
+          <Route path="/resources" element={<Resources />}></Route>
         </Route>
       </Routes>
       <Footer />

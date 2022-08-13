@@ -3,6 +3,7 @@ import "../../App.css";
 import RegisterPage from "../../assets/RegisterPage.png";
 import "../../style/Header.css";
 import "../../style/index.css";
+import "../../style/SignUpPage.css";
 import Registration from "../../components/login/Registration.js";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -37,8 +38,8 @@ function SignUp() {
             </div>
           </Col>
 
-          <Col xs={12} lg={4} style={{ paddingRight: 200 }}>
-            <div>
+          <Col xs={12} lg={4}>
+            <div >
               <Registration />
             </div>
           </Col>

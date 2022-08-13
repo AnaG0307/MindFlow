@@ -6,8 +6,8 @@
 .ppagetitle {
 	color: rgb(64, 64, 65) !important;
 	font-size: 35px !important;
-	margin-top: -370px !important;
-	margin-left: 550px !important;
+	padding-left: 50%;
+	padding-bottom: 5%;
 }
 
 .cyclelegnth {
@@ -75,10 +75,8 @@ abbr[title] {
 }
 
 .CalendarPagePNG {
-	margin-top: -253px;
-	margin-bottom: 40px;
-	margin-right: 0px; 
-	margin-left: 95px; 
+	margin-left: 13%;
+	margin-top: 6%;
 }
 
 .text-centermt-4p-2 {
@@ -89,7 +87,6 @@ abbr[title] {
 }
 
 .prightcol {
-	margin-left: 290px !important;
-	margin-top: -290px;
+	padding-left: 40%;
 }
 

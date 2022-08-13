@@ -1,28 +1,32 @@
 .header {
- position: center;
- margin-left: 200px;
+ text-align: center;
+ padding-right: 11%;
+ margin-bottom: 10px;
 }
 
+.subheader {
+    text-align: center;
+    padding-left: 11%;
+    margin-bottom: 2%;
+
+   }
+   
 
 .col1 {
     padding: 10px;
-    margin-top: -300px;
-    margin-left: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
 
 }
 
 .col2 {
     padding: 10px;
-    margin-left: 100px;
+    margin-left: 0px;
 }
 
 .col3 {
     padding: 10px;
-    margin-left: 100px;
-
-}
-
-.sidebar {
+    margin-left: 0px;
 
 }
 
@@ -34,10 +38,7 @@
     font-size: 20px !important;
 }
 
-.moodover {
-
-}
-
-.sympover {
-
+.allstats {
+    text-align: center;
+    padding-left: 30%;
 }

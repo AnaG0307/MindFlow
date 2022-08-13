@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import "../../style/SignUpPage.css";
+
 
 const Reset = () => {
   const [email, setEmail] = useState("");
@@ -40,7 +42,7 @@ const Reset = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
         <div>
-          <button onClick={handleReset} className="btn">
+          <button onClick={handleReset} className="submitbtn">
             Reset password
           </button>
         </div>

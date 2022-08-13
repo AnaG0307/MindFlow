@@ -85,6 +85,8 @@ export default function Login() {
             Password
           </label>
         </div>
+        <div classname="break">
+        </div>
         <div>
           <input
             className="input"
@@ -98,11 +100,11 @@ export default function Login() {
 
         {error ? <p style={{ color: "red" }}>Error: {error}</p> : null}
         <div>
-          <button className="btn" type="submit">
+          <button className="submitbtn" type="submit">
             Submit
           </button>
           <hr />
-          <button onClick={navigatetoReg} className="btn" type="submit">
+          <button onClick={navigatetoReg} className="signbtn" type="submit">
             Register Here{" "}
           </button>
         </div>

@@ -4,3 +4,35 @@
 	margin-bottom: 0px !important;
 	margin-left: 0px !important;
 }
+
+.signupbutt1 {
+	color: white !important;
+	background-color: rgb(12, 0, 60);
+	border-radius: 5px;
+	height: 44px;
+	font-size: 23px;
+	display: block;
+	padding: 5px;
+	margin: 10px auto;
+	margin-left: 39%;
+}
+
+.signupbutt2 {
+	color: white !important;
+	background-color: rgb(12, 0, 60);
+	border-radius: 5px;
+	font-size: 23px;
+	display: block;
+	padding: 5px;
+	margin: 10px auto;
+	margin-left: 36%;
+	height: 44px;
+}
+
+.label {
+	font-size: 20px;
+}
+
+.register {
+	margin-bottom: 20px;
+}
