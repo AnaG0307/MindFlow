@@ -13,13 +13,16 @@ function ResourcesPage() {
     <div className="ResourcesPage">
     <Container>
       <Row>
-        {/* <Col xs={12} lg={1}> */}
         <Sidebar />
         <div>
-      
-        {/* <Col xs={12} lg={7} style={{ padding: 0}}> */}
+        <div> 
+        <Col xs={3} lg={4} style={{ paddingRight: 100%Col }}>      
+        <img src={ResourcesImage} alt= "2 ladies" className="resources-image"/>
+        </Col>
+        </div>
+        <Col xs={12} lg={7} style={{ padding: 0}}>
         <div className="rightcol">
-        <h1 className="firstTitle" style={{ height: "90px"}}> Your mental wellbeing matters </h1>
+        <h1 className="firstTitle"> Your mental wellbeing matters </h1>
         <h3 className="resourcesHeading"> If you are in need of help please see some links and helpful guides below 
         </h3> 
         <div className="Resources-table">
@@ -41,22 +44,9 @@ function ResourcesPage() {
         </div>
         </div>
         <Resources />
-        {/* </Col> */}
-        {/* <Col xs={12} lg={4} style={{paddingLeft:0 }}> */}
-        <div> 
-        <Col xs={12} lg={4} style={{ paddingLeft: 0 }}>      
-        <img
-			src={ResourcesImage} 
-			alt= "2 ladies" 
-			className="resources-image"
-			width="850" 
-      height="750"
-      style={{ paddingRight: 10, paddingTop: 30}}
-			/>
         </Col>
+        
         </div>
-        </div>
-        {/* </Col> */}
       </Row>
       </Container>
       
