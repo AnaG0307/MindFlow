@@ -7,10 +7,13 @@ import Logo2 from "../../assets/logo2.png";
 import "../../style/Header.css";
 import "../../style/index.css";
 import { getAuth, signOut} from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   
   const auth = getAuth();
+  const navigate = useNavigate();
+
 
   const handleAnchorClick = (e) => { 
     
@@ -18,6 +21,7 @@ function Header() {
 
       signOut(auth) 
       .then(() => {
+        navigate("/logout")
         console.log("user signed out");
        })
       .catch((error) => {
@@ -62,7 +66,7 @@ function Header() {
             <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link href="/UserProfile">Profile</Nav.Link>
               <Nav.Link href="/settings">Settings</Nav.Link>
-              <Nav.Link href="/logout" onClick = {handleAnchorClick}> Log out</Nav.Link>
+              <Nav.Link onClick = {handleAnchorClick}> Log out</Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
@@ -72,9 +76,3 @@ function Header() {
 }
 
 export default Header;
-
-// <div className="justify-content-end">
-// <Navbar.Text>
-// Signed in as: <a href="#login">Buffy Summers</a>
-// </Navbar.Text>
-// </div>
