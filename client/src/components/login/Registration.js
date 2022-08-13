@@ -10,16 +10,15 @@ import axios from "axios";
 import "../../style/SignUpPage.css";
 
 export default function Registration() {
-  // Navigate between pages
+  
+  const auth = getAuth();
   const navigate = useNavigate();
-
-  const navigatetoLogin = () => {
+  const navLogIn = () => {
     navigate("/Login");
   };
-  // Registration
+
 
   const [error, setError] = useState("");
-
   const [fields, setFields] = useState({
     email: "",
     name: "",
@@ -28,7 +27,6 @@ export default function Registration() {
     confirmPassword: "",
   });
 
-  const auth = getAuth();
 
   const handleChange = (e) => {
     setFields({ ...fields, [e.target.name]: e.target.value });
@@ -51,7 +49,7 @@ export default function Registration() {
         surname: fields.surname,
       });
       const message = req.data.success;
-      return navigate("/Login", {
+      return navigate(navLogIn, {
         replace: true,
         state: {
           message,
@@ -149,14 +147,10 @@ export default function Registration() {
               Sign Up
             </button>
             <hr />
-            <button onClick={navigatetoLogin} className="signupbutt2" type="submit">
-              {" "}
-              Login{" "}
+            <button onClick={navLogIn} className="signupbutt2" type="submit">
+              Login
             </button>
           </div>
-          <Routes>
-            <Route path="/Login" element={<login />} />
-          </Routes>
         </form>
       </div>
     </div>
