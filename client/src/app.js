@@ -18,12 +18,10 @@ import SignUp from "./pages/signUpPage/SignUp";
 import UserProfile from "./pages/profilePage/UserProfile";
 import ResetPage from "./pages/resetPage/ResetPage";
 import QuestionnairePage from "./pages/questionnairePage/Questionnaire.js";
-import ResourcesPage from "./pages/resourcesPage/Resources";
 import SettingsPage from "./pages/settingsPage/Settings";
 import LogoutPage from "./pages/logoutPage/LogoutPage";
 import Resources from "./pages/resourcesPage/Resources";
 import Statistics from "./pages/statisticsPage/Statistics";
-
 
 function App() {
   initializeApp(firebaseConfig);
@@ -45,31 +43,21 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Home />} />
         <Route path="/" element={<ProtectedRoutes />}></Route>
-        <Route path="/" element={<PublicRoutes />}></Route>
-        <Route exact path="/" element={<Home />}></Route>
-        <Route path="/period" element={<PeriodPage />}></Route>
-        <Route exact path="/Login" element={<Login />}></Route>
-        <Route path="/Home" element={<landingPage />}></Route>
-        <Route path="/SignUp" element={<SignUp />}></Route>
-        <Route path="/Reset" element={<ResetPage />}></Route>
-        <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
-        <Route path="/resources" element={<ResourcesPage />}></Route>
-        <Route path="/settings" element={<SettingsPage />}></Route>
-        <Route path="/logout" element={<LogoutPage />}></Route>
-        <Route path="/" element={<ProtectedRoutes />}></Route>
-        <Route path="/" element={<PublicRoutes />}></Route>
-        <Route exact path="/" element={<Home />}></Route>
-        <Route path="/period" element={<PeriodPage />}></Route>
-        <Route exact path="/Login" element={<Login />}></Route>
-        <Route path="/Home" element={<landingPage />}></Route>
-        <Route path="/SignUp" element={<SignUp />}></Route>
-        <Route path="/Reset" element={<ResetPage />}></Route>
-        <Route path="/Resources" element={<Resources />}></Route>
-        <Route path="/Statistics" element={<Statistics />}></Route>
-        <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
-        <Route path="/UserProfile/*" element={<UserProfile />}></Route>
+        <Route path="/" element={<PublicRoutes />}>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route path="/period" element={<PeriodPage />}></Route>
+          <Route exact path="/Login" element={<Login />}></Route>
+          <Route path="/Home" element={<landingPage />}></Route>
+          <Route path="/SignUp" element={<SignUp />}></Route>
+          <Route path="/Reset" element={<ResetPage />}></Route>
+          <Route path="/settings" element={<SettingsPage />}></Route>
+          <Route path="/logout" element={<LogoutPage />}></Route>
+          <Route path="/Statistics" element={<Statistics />}></Route>
+          <Route path="/UserProfile/*" element={<UserProfile />}></Route>
+          <Route path="/questionnaire" element={<QuestionnairePage />}></Route>
+          <Route path="/Resources" element={<Resources />}></Route>
+        </Route>
       </Routes>
       <Footer />
     </Router>

@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useNavigate,
-} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Reset = () => {
   const [email, setEmail] = useState("");
@@ -34,17 +29,22 @@ const Reset = () => {
   };
 
   return (
-    <div>
-      <h1>Reset password</h1>
-      Email:
-      <br />
-      <input
-        type="text"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <br />
-      <button onClick={handleReset}>Reset password</button>
+    <div className="App">
+      <div className="form">
+        <h1>Reset password</h1>
+        Email:
+        <br />
+        <input
+          type="text"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <div>
+          <button onClick={handleReset} className="btn">
+            Reset password
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

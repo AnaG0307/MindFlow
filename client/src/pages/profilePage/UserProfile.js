@@ -2,7 +2,6 @@ import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
 import "../../style/ProfilePage.css";
 import Profile1 from "../../assets/Profile1.png";
 import Sidebar from "../../components/sidebar/Sidebar2.js";
-import axios from "axios";
 import React, { Component } from "react";
 import Container from "react-bootstrap/esm/Container";
 import { useGetUserQuery } from "../../redux/slice/profileSlice";
