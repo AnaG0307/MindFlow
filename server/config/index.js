@@ -1,9 +1,7 @@
-//Configgurate the environment
-
-
 const dotenv = require("dotenv");
 dotenv.config();
 
+//Configgurate the firebase environment
 
 const config = {
   PORT: process.env.PORT,

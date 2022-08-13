@@ -1,6 +1,3 @@
-//create account sign up
-
-
 const express = require("express") ;
 const authenticate = require("../middleware/authenticate") ;
 const firebaseAdmin = require("../services/firebase") ;
@@ -8,7 +5,7 @@ const firebaseAdmin = require("../services/firebase") ;
 const router = express.Router();
 
 
-// user authentication to retrive data, api/user route connection to middleware
+// User authentication to retrive data, api/user route connection to middleware
 
 exports.user = ("/", authenticate, async (req, res) => {
   res.status(200).json(req.user);
@@ -16,9 +13,7 @@ exports.user = ("/", authenticate, async (req, res) => {
   });
 
 
-//send user details to the MongoDB
-
-
+//Send user details to the MongoDB
 
 exports.signup = ("/", async (req, res) => {
   const { email, name, password, surname } = req.body;

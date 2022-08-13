@@ -1,6 +1,6 @@
 const firebaseAdmin = require("../services/firebase") ;
 
-// validate the Firebase tokens sent from the frontend
+// Validate the Firebase tokens sent from the frontend
 
  module.exports = async function (req, res, next) {
    try {
@@ -16,8 +16,7 @@ const firebaseAdmin = require("../services/firebase") ;
       return res.sendStatus(401);
     }
 
-//once validated, tack on the user document fetched from MongoDB onto our request as req.user
-
+//Once validated, tack on the user document fetched from MongoDB onto our request as req.user
 
     const usersCollection = req.app.locals.db.collection("user");
 
@@ -37,4 +36,4 @@ const firebaseAdmin = require("../services/firebase") ;
     //Unauthorized
     res.sendStatus(401);
   }
-}
+};
