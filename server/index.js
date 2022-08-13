@@ -2,11 +2,9 @@ const express = require("express");
 const cors = require("cors");
 const config =require("./config/index");
 const db = require("./config/db") ;
-const userRouter = require('./routes/user');
+const userRouter = require("./routes/user");
 const authenticate = require("./middleware/authenticate") ;
-const moodRouter = require('./routes/mood');
-
-
+const moodRouter = require("./routes/mood");
 
 
 const app = express();
@@ -16,19 +14,16 @@ db(config.MONGO_URI, app);
 app.use(cors({ origin: true }));
 app.use(express.json());
 
+//Api user GET route
 
-// I would like to move this router get to routes, put the auhentication middleware stops working and gives warning. But works here...random??
-
-app.get("/api/user", authenticate, async (req, res) => {
+app.get('/api/user', authenticate, async (req, res) => {
   res.status(200).json(req.user);
     });
 
+//Routes 
 
-
-app.use("/api/user", userRouter);
-app.use("/api/period", moodRouter);
-
-
+app.use('/api/user', userRouter);
+app.use('/api/period', moodRouter);
 
 app.listen(config.PORT, () =>
   console.log(`App listening on PORT ${config.PORT}`)
