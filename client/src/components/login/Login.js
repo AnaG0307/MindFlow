@@ -6,6 +6,7 @@ import {
   useNavigate,
   useLocation,
 } from "react-router-dom";
+import "../../style/Login.css";
 
 import {
   getAuth,
@@ -63,10 +64,10 @@ export default function Login() {
       {location.state && location.state.message ? (
         <p>{location.state.message}</p>
       ) : null}
-      <h1>Log In</h1>
+      <h1 className="logintxt">Log In</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email" className="label">
+          <label htmlFor="email" className="emailtxt">
             Email Address
           </label>
         </div>
@@ -81,7 +82,7 @@ export default function Login() {
           />
         </div>
         <div>
-          <label htmlFor="password" className="label">
+          <label htmlFor="password" className="passtxt">
             Password
           </label>
         </div>
