@@ -13,8 +13,9 @@ import CalendarPage from "../../assets/CalendarPage.png";
 function PeriodPage() {
   return (
     <div className="PeriodPage">
+    <Sidebar />
       <Container>
-      <Sidebar />
+
         <Row>
           <h3 className="ppagetitle">Calculate Your Next Period</h3>
           <Col xs={12} lg={8}>
