@@ -10,25 +10,15 @@ import Sidebar from '../../components/sidebar/Sidebar2';
 function Settings() {
   
     return (
+      <div>
+      <Sidebar /> 
       <div className='App'>
-      <Container>
+      <div>
+ 
       <h1> This is Settings page!</h1>
-        <Row>
-          <Col xs={12} lg={4}>
-  
-          </Col>
-          <Col xs={12} lg={4}>
-  
-  
-          </Col>
-          <Col xs={12} lg={4}>
-  
-  
-          </Col>
-        </Row>
-        <Sidebar />        
-      </Container>
-      </div>  
+      </div>   
+      </div> 
+      </div> 
     );
   }
   
