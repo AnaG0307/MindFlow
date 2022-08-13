@@ -57,9 +57,9 @@ export default function Questionnaire() {
               Awful 😓
             </option>
           </select>
-
-          {error ? <p>{error}</p> : <p>{success}</p>}
-
+          <div className="errorsuccess">
+          {error ? <p className="errortxt">{error}</p> : <p className="successtxt">{success}</p>}
+          </div>
           <div>
             <button type="submit" className="qsubmitbutton">
               Submit

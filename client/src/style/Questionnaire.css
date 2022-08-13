@@ -6,11 +6,16 @@
 
 }
 
-.Questionfunction{
+.successtxt {
+	display: block !important;
+	margin-left: 15%;
+	margin-top: 1%;
 }
 
-.QuestionnairePage {
-
+.errortxt {
+	display: block !important;
+	margin-left: 15%;
+	margin-top: 1%;
 }
 
 .moodselect {
