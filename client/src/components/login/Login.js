@@ -7,7 +7,7 @@ import {
   useLocation,
 } from "react-router-dom";
 
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, setPersistence, browserSessionPersistence } from "firebase/auth";
 
 export default function Login() {
   // Navigate between pages
@@ -42,6 +42,7 @@ export default function Login() {
         fields.password
       );
       if (user) {
+       // setPersistence(auth, browserSessionPersistence);
         navigate("/questionnaire");
         console.log("Called");
         console.log(user);

@@ -28,6 +28,7 @@ export default function Questionnaire() {
 
     try {
       const req = await axios.post("http://localhost:4000/api/period", {
+        auth,
         mood: mood,
       });
 
@@ -43,7 +44,8 @@ export default function Questionnaire() {
   };
 
   return (
-    <div>
+    <div className="App">
+    <div className="form">
       <form onSubmit={handleSubmit}>
         <label className="selectmoodtext" for="cycle">
            Select your mood for today :{" "} 
@@ -78,6 +80,7 @@ export default function Questionnaire() {
         <Route path="/questionnaire" element={<Questionnaire />} />
       </Routes>
     </div>
+   </div>
   );
 }
 
