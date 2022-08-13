@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 function LandingPage() {
   return (
     <div className="LandingPage">
-      <Container>
+      <Container fluid style={{ paddingLeft: 0, paddingRight: 0 }}>
         <Row>
           <Col xs={12} lg={6}>
             <img
@@ -35,35 +35,35 @@ function LandingPage() {
             />
           </Col>
           <Col xs={12} lg={6}>
-            <div className="rhc">
+            <div>
               <h3 className="landingheadline">Your journey starts here</h3>
+              <div className="paracont">
               <text className="landingpararaph">
-                At MindFlow, we believe in connecting with both our bodies and
+                At MindFlow, we believe in connecting with both our bodies 
                 <br />
-                our cycles. By gaining valuable insight into our menstrual
-                cycles,
+                and our cycles. By gaining valuable insight into our menstrual
                 <br />
-                we can become better equipped to make decisions about our bodies
+                cycles, we can become better equipped to make decisions 
                 <br />
-                that work for us.
-                <br />
+                about our bodies that work for us.
                 <br />
                 <img
                   src={Logo2}
                   alt="MindFlow logo"
-                  className="landinglogo"
+                  className="landinglogo2"
                   width="25"
                   height="22"
                 />
                 <br />
                 It can often be difficult for women to access information and
                 <br />
-                support for women's health, so here at MindFlow we hope to be
+                support for women's health, so here at MindFlow we hope to 
                 <br />
-                the first step in your journey to understanding your body's{" "}
+                be the first step in your journey to understanding your body's{" "}
                 <br />
                 relationship mestruation and wellbeing.
               </text>
+              </div>
               <div className="buttongroup">
                 <Link to="/SignUp">
                   <Button className="signupbutton" size="med">
