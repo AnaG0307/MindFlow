@@ -1,11 +1,11 @@
 import React, { useState} from "react";
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
-import {
+import { useNavigate } from "react-router-dom";
+/*import {
   BrowserRouter as Router,
   Route,
   Routes,
-  useNavigate, 
-} from "react-router-dom";
+} from "react-router-dom";*/
 
 const Reset = () => {
   const [email, setEmail] = useState("");

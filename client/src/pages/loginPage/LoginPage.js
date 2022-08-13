@@ -1,26 +1,26 @@
 import React from 'react';
 import '../../App.css'
-import Logo from "../../assets/logo.png"
-import Logo2 from "../../assets/logo2.png"
+//import Logo from "../../assets/logo.png"
+//import Logo2 from "../../assets/logo2.png"
 import SignInPage from "../../assets/SignInPage.png"
 import '../../style/Header.css'
 import '../../style/index.css'
 import '../../style/Login.css'
-import Button from 'react-bootstrap/Button';
-import { BrowserRouter as Router, Route, Routes, useNavigate} from 'react-router-dom';
+//import Button from 'react-bootstrap/Button';
+import { useNavigate} from 'react-router-dom';
+//import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Login from '../../components/login/Login';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Sidebar from "../../components/sidebar/Sidebar";
+//import Sidebar from "../../components/sidebar/Sidebar";
 
 function SignIn() {
 
   const navigate = useNavigate();
-  
-  const navReset = () => {
+  function handleClick() {
     navigate("/Reset");
-  };
+  }
   return (
     <div>
     <div className="App">
@@ -45,7 +45,7 @@ function SignIn() {
         <Login />
         </div>
         <div>
-        <button onClick={navReset} className="btn" type="button">
+        <button onClick={handleClick} className="btn" type="button">
         Reset your password
         </button>
         </div>

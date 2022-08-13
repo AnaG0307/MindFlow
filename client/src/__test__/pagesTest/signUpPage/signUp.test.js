@@ -1,5 +1,5 @@
 import React from "react";
-import SignUp from "../../../pages/signUpPage";
+import SignUp from "../../../pages/signUpPage/SignUp";
 import { render, screen} from "@testing-library/react";
 
 describe ("SignUp page", () => {

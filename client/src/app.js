@@ -1,14 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+//import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/landingPage/LandingPage";
 import Header from "./components/header/Header";
-import reportWebVitals from "./reportWebVitals";
+//import reportWebVitals from "./reportWebVitals";
 import Footer from "./components/footer/Footer.js";
-import Registration from "./components/login/Registration";
+//import Registration from "./components/login/Registration";
 import PeriodPage from "./pages/periodPage/Period";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ThemeProvider from "react-bootstrap/ThemeProvider";
+//import ThemeProvider from "react-bootstrap/ThemeProvider";
 //import Dashboard from "../pages/dashboard/MoodLog";
 import Login from "./pages/loginPage/LoginPage";
 import SignUp from "./pages/signUpPage/SignUp"
