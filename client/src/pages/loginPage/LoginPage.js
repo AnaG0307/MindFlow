@@ -4,12 +4,7 @@ import SignInPage from "../../assets/SignInPage.png";
 import "../../style/Header.css";
 import "../../style/index.css";
 import "../../style/Login.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useNavigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, useNavigate } from "react-router-dom";
 import Login from "../../components/login/Login";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
