@@ -12,13 +12,13 @@ import "../../style/Questionnaire.css";
 
 
 export default function Questionnaire() {
-  const [mood, setMood] = useState([]);
+  const [mood, setMood] = useState("");
   const [error, setError] = useState("");
 
   const auth = getAuth();
 
-  const handleChange = (e) => {
-    setMood(e.target.mood);
+  const handleChange =  (e) => {
+    setMood(e.target.value);
   };
 
   const handleSubmit = async (e) => {
@@ -28,7 +28,9 @@ export default function Questionnaire() {
       const req = await axios.post("http://localhost:4000/api/period", {
         mood: mood,
       });
+
       const message = req.data.success;
+     
       return {
         replace: true,
         state: {
@@ -45,23 +47,23 @@ export default function Questionnaire() {
     <div>
       <form onSubmit={handleSubmit}>
         <label className="selectmoodtext" for="cycle">
-          Select your mood for today :{" "}
+           Select your mood for today :{" "} 
         </label>
-        <select value={mood} onChange={handleChange} className="moodselect">
-        <option className="" value="">
+        <select value={mood} onChange={handleChange} className="moodselect" multiple ={false}>
+        <option className="great" >
            Select
           </option>
-          <option className="great" value="great">
+          <option className="great" value="great" >
             Great 😄
           </option>
-          <option className="soso" value="medium">
+          <option className="soso" value="medium" >
             So so 😶
           </option>
-          <option className="horrible" value="horrible">
+          <option className="horrible" value="horrible" >
             Awful 😓
           </option>
         </select>
-        {error ? <p style={{ color: "red" }}>Error: {error}</p> : null}
+        {error ? <p>{error}</p> : null}
         <div>
           <button type="submit" className="submitbutton">
             Submit

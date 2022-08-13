@@ -115,7 +115,7 @@ export default function Registration() {
           </div>
 
           <div>
-            <label className="label" tmlFor="password">
+            <label className="label" htmlFor="password">
               Password
             </label>
 
@@ -144,7 +144,7 @@ export default function Registration() {
             />
           </div>
 
-          {error ? <p style={{ color: "red" }}>Error: {error}</p> : null}
+          {error ? <p>Error: {error}</p> : null}
           <div>
             <button type="submit" className="btn">
               Sign Up
