@@ -10,14 +10,26 @@
     line-height: 1.5em;
     height: 90px;
     text-align: center;
+    margin-left: 150px;
+}
+.resources-image {
+	width: 900; 
+    height: 750;
+    max-width: 100%;
+    margin-right:10;
+    margin-left: auto;
+    display:block;
 }
 
 .resourcesHeading {
 	color: rgb(64, 64, 65) !important;
 	font-size: 25px !important;
 	padding-left: 60px;
-    height: 3em; 
+    line-height: 1.5em;
+    height: 90px;
     text-align: center;
+    margin-left: 150px;
+    max-width: 100%;
 }
 
 .Resources-table {
@@ -28,13 +40,6 @@
     max-width: 61rem;
     margin: 0 auto;
     
-}
-
-.resources-image {
-	width: 800px; 
-    height: 750;
-    max-width: 100%;
-    align-content: center;
 }
 
 .Resources-table .Resources {
@@ -56,7 +61,7 @@
 	margin-top: -50px;
 	margin-bottom: 0px !important;
 }
-.rightcol {
+.rightcols {
 	margin-left: -0px !important;
 	padding-left: 200px;
 }
