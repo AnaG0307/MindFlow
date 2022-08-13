@@ -14,8 +14,10 @@ import "../../style/Questionnaire.css";
 export default function Questionnaire() {
   const [mood, setMood] = useState("");
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const auth = getAuth();
+ 
 
   const handleChange =  (e) => {
     setMood(e.target.value);
@@ -29,14 +31,11 @@ export default function Questionnaire() {
         mood: mood,
       });
 
-      const message = req.data.success;
      
-      return {
-        replace: true,
-        state: {
-          message,
-        },
-      };
+      const message = req.data.success;
+      return  setSuccess(message)
+         
+      
     } catch (err) {
       const errMessage = err.response.data.error;
       return setError(errMessage);
@@ -63,7 +62,12 @@ export default function Questionnaire() {
             Awful 😓
           </option>
         </select>
-        {error ? <p>{error}</p> : null}
+
+        {error ? <p>{error}</p> : null}  
+        {success ? <p>{success}</p> : null}
+       
+   
+
         <div>
           <button type="submit" className="submitbutton">
             Submit
