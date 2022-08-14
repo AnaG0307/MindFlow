@@ -325,13 +325,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The project has two folders: client and server. To see the full functionality of the web application on your local host, run the client directory in one terminal and the server directory in another terminal simultaneously. 
 
-Client folder
+#### Client folder
 
 1. Go to client directory
 2. In the terminal, run 'npm install' to install all the node packages
 3. In the same terminal, run 'npm run start'. The React app will open on the local host 3000
 
-Server folder
+#### Server folder
 
 4. Go to server directory
 5. Open another terminal
