@@ -299,7 +299,7 @@ The above points, led developers, especially new developers such as ourselves, t
   Although we met regularly and used Jira, there were occasionally misunderstandings over who was doing what. The confusion led to doubled work in some occasions as two individuals were working on the same thing. In restrospective, we believe that this could be improved by making better use of Jira and deciding on the team-lead.
   
   
-- **Design and Architecture **
+- **Design and Architecture**
  
 In terms of our design, given the time constraints there are a few aspects of the design that we would want to improve and enhance. With our hamburger side menu, we discovered that it is not fully functional on all browsers as some of the team members were having issue with viewing the full menu. 
 We also would incorporate some more interactivity such as animation, video and sound to make the web app more user friendly and interactive. 
@@ -325,13 +325,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The project has two folders: client and server. To see the full functionality of the web application on your local host, run the client directory in one terminal and the server directory in another terminal simultaneously. 
 
-#### Client folder
+Client folder
 
 1. Go to client directory
 2. In the terminal, run 'npm install' to install all the node packages
 3. In the same terminal, run 'npm run start'. The React app will open on the local host 3000
 
-#### Server folder
+Server folder
 
 4. Go to server directory
 5. Open another terminal
