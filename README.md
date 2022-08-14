@@ -218,7 +218,7 @@ When using React Js, writing proper code in regards to testing is a lengthier pr
 
 #### **Deployment:**
 
-We aimed to deploy our app on Heroku as the final step of our project. At the moment, Heroku completes the build successfully but returns a blank page with error messages in the log (example screenshot below). We assume those messages relate to how the path to static files is set up in the index server file of our deployment version despite providing the build version of our React frontend app.
+We aimed to deploy our app on Heroku as the final step of our project. The deployment was done via Heroku CLI. At the moment, Heroku completes the build successfully but returns a blank page with error messages in the log (example screenshot below). We assume those messages relate to how the path to static files is set up in the index server file of our deployment version despite providing the build version of our React frontend app.
 
 
 ---
