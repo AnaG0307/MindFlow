@@ -94,6 +94,8 @@ For navigation we separated our links into two different sidebars. On the right-
 
 ## **Implementation and Execution**
 
+We aimed to deploy our app on Heroku as the final step of our project. At the moment, Heroku complets the build succesfully but returns a blank page with error messages in the log (example screenshot below). We assume those messages relate to how the path to static files is set up in the index server file of our deployment version. 
+
 #### **Team Approach to Work:**
 
 Using the Agile methodology we had a retrospective and review meeting once a week. We also met for stand-ups where possible, and ensure that we plan out our objectives for each of our week-long sprints. We did set a rough meeting schedule of Monday, Wednesday and Friday, although this was flexible to accommodate everyone’s individual schedules. We each updated our Google doc daily with what we have done that day. We initially planned to test our code after the second week and test our code as we go along. Feedback from the testing was provided in our meetings.
@@ -221,6 +223,10 @@ When using React Js, writing proper code in regards to testing is a lengthier pr
 ## **Getting Started**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+To run the app on your local host, please run server directory and client directory simulateneously, each of them in a different terminal.
+
+To run the server directory, please install node packages (npm install) and run node index or nodemon index. The serves is hosted on the local host port 4000.
 
 #### Available Scripts
 
