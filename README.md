@@ -99,6 +99,7 @@ We have tried and distribute the workload as evenly as possible, however if one 
 - NPM Moment
 - Firebase
 - Redux Toolkit
+- Postman
 
 
 #### **Implementation Process & Challenges:**
