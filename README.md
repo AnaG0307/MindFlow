@@ -314,19 +314,27 @@ As we carried developing the project it was obvious that more in-depth developme
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The project has two folders: client and server. To see the full functionality of the web application on your local host, run the client directory in one terminal and the server directory in another terminal simultaneously. The server directory runs on the PORT 4000. To run the server, type node index or nodemon index in the terminal.
+#### How to run Mindflow app
 
-#### Available Scripts
+The project has two folders: client and server. To see the full functionality of the web application on your local host, run the client directory in one terminal and the server directory in another terminal simultaneously. 
 
-In the project directory, you can run:
+Client folder
 
-#### `npm start`
+1. Go to client directory
+2. In the terminal, run 'npm install' to install all the node packages
+3. In the same terminal, run 'npm run start'. The React app will open on the local host 3000
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Server folder
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Go to server directory
+5. Open another terminal
+6. Run 'npm install' to istall node packages for server folder
+7. Run 'node index' or 'nodemon index'
+8. The server directory runs on the PORT 4000
+
+
+
+You can also run:
 
 #### `npm test`
 
