@@ -1,5 +1,4 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { setupListeners } from "@reduxjs/toolkit/dist/query";
 //import periodReducer from "../pages/periodPage/periodSlice";
 import authReducer from "./slice/authSlice";
 import { profileApi } from "./slice/profileSlice";
@@ -8,7 +7,7 @@ export const store = configureStore({
   reducer: {
     auth: authReducer,
     [profileApi.reducerPath]: profileApi.reducer,
-    // periodInformation: periodReducer,
+ // periodInformation: periodReducer,
   },
 
   middleware: (getDefaultMiddleware) =>
@@ -16,3 +15,4 @@ export const store = configureStore({
       profileApi.middleware
     ),
 });
+

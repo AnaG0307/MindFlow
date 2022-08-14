@@ -5,14 +5,14 @@ const firebaseAdmin = require("../services/firebase") ;
 
 //GET controller
 
-exports.showmood = ("/", authenticate, async (req, res) => {
+exports.showmood = ('/', authenticate, async (req, res) => {
    res.status(200).json(req.user);
  });
 
 
 //POST controller  to add daily mood to a database
 
-exports.logmood = ("/", async (req, res) => {
+exports.logmood = ('/', async (req, res) => {
   const {mood} = req.body;
 
   if (!mood ) {
@@ -21,12 +21,9 @@ exports.logmood = ("/", async (req, res) => {
     });
   }
 
-//add data to the collection in MongoDb
+//Add data to the collection in MongoDb
 
   try{
-
-    
-
 
       const FirebaseUser = await firebaseAdmin.auth.getUser
 
@@ -38,15 +35,6 @@ exports.logmood = ("/", async (req, res) => {
         mood,
         date: Date(),
         firebaseId: FirebaseUser.uid
-
-      // $lookup:
-      // {
-      //   from:  "user",
-      //   localField: null,
-      //   foreignField: 'firebaseId',
-      //   as: 'lol'
-      // },
-    
 
     });
   

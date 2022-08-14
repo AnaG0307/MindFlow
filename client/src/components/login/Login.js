@@ -7,24 +7,18 @@ import {
   useLocation,
 } from "react-router-dom";
 import "../../style/Login.css";
+import {getAuth, signInWithEmailAndPassword,} from "firebase/auth";
 
-import {
-  getAuth,
-  signInWithEmailAndPassword,
-  setPersistence,
-  browserSessionPersistence,
-} from "firebase/auth";
+//Log in firebase function
 
 export default function Login() {
-  // Navigate between pages
+
   const location = useLocation();
   const navigate = useNavigate();
 
-  const navigatetoDashboard = () => {
-    navigate("/UserProfile");
-  };
-  const navigatetoReg = () => {
-    navigate("/Registration");
+
+  const navSignUp = () => {
+    navigate("/SignUp");
   };
   const [fields, setFields] = useState({
     email: "",
@@ -48,7 +42,7 @@ export default function Login() {
         fields.password
       );
       if (user) {
-        // setPersistence(auth, browserSessionPersistence);
+
         navigate("/questionnaire");
         console.log("Called");
         console.log(user);
@@ -99,21 +93,16 @@ export default function Login() {
           />
         </div>
 
-        {error ? <p style={{ color: "red" }}>Error: {error}</p> : null}
+        {error ? <p>Error: {error}</p> : null}
         <div>
           <button className="submitbtn" type="submit">
             Submit
           </button>
           <hr />
-          <button onClick={navigatetoReg} className="regbtn" type="submit">
-            Register{" "}
+          <button onClick={navSignUp} className="regbtn" type="submit">
+            Register
           </button>
         </div>
-        {/* <Routes>
-            <Route path="/Dashboard" element={<Dashboard />} />
-            <Route path="/Registration" element={<Registration />} />
-          </Routes>
-       */}
       </form>
     </div>
   );

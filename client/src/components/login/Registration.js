@@ -9,17 +9,18 @@ import { getAuth } from "firebase/auth";
 import axios from "axios";
 import "../../style/SignUpPage.css";
 
-export default function Registration() {
-  // Navigate between pages
-  const navigate = useNavigate();
+//Register user function
 
-  const navigatetoLogin = () => {
+export default function Registration() {
+  
+  const auth = getAuth();
+  const navigate = useNavigate();
+  const navLogIn = () => {
     navigate("/Login");
   };
-  // Registration
+
 
   const [error, setError] = useState("");
-
   const [fields, setFields] = useState({
     email: "",
     name: "",
@@ -28,11 +29,12 @@ export default function Registration() {
     confirmPassword: "",
   });
 
-  const auth = getAuth();
 
   const handleChange = (e) => {
     setFields({ ...fields, [e.target.name]: e.target.value });
   };
+
+  // Send user data to a database
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -149,14 +151,10 @@ export default function Registration() {
               Sign Up
             </button>
             <hr />
-            <button onClick={navigatetoLogin} className="signupbutt2" type="submit">
-              {" "}
-              Login{" "}
+            <button onClick={navLogIn} className="signupbutt2" type="submit">
+              Login
             </button>
           </div>
-          <Routes>
-            <Route path="/Login" element={<login />} />
-          </Routes>
         </form>
       </div>
     </div>

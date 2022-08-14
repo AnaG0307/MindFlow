@@ -3,24 +3,21 @@ import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import "../../style/SignUpPage.css";
 
+//Reset password firebase function
 
-const Reset = () => {
+export default function Reset ()  {
+
   const [email, setEmail] = useState("");
-
   const auth = getAuth();
-
   const navigate = useNavigate();
 
-  const navHome = () => {
-    navigate("/");
-  };
 
   const handleReset = () => {
     sendPasswordResetEmail(auth, email)
       .then(() => {
         console.log("success");
 
-        navigate(navHome);
+        navigate("/Login");
       })
 
       .catch((error) => {
@@ -51,4 +48,3 @@ const Reset = () => {
   );
 };
 
-export default Reset;
