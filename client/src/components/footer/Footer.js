@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import '../../style/Footer.css'
+//Footer not in use anymore due to not matching the style of our website
 
 function Footer() {
     const [inputValue, setInputValue] = useState ('')
