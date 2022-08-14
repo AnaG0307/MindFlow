@@ -314,6 +314,8 @@ As we carried developing the project it was obvious that more in-depth developme
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+The project has two folders: client and server. To see the full functionality of the web application on your local host, run the client directory in one terminal and the server directory in another terminal simultaneously. The server directory runs on the PORT 4000. To run the server, type node index or nodemon index in the terminal.
+
 #### Available Scripts
 
 In the project directory, you can run:
