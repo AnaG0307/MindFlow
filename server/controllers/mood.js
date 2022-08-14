@@ -4,7 +4,7 @@ const firebaseAdmin = require("../services/firebase");
 //GET controller
 
 exports.showmood = ('/', authenticate, async (req, res) => {
-   res.status(200).json(req.user);
+    res.status(200).json(req.user);
  });
 
 //POST controller  to add daily mood to a database
@@ -23,7 +23,7 @@ exports.logmood = ('/', async (req, res) => {
   try{
       const FirebaseUser = firebaseAdmin.auth.getUser
 
-       if(FirebaseUser) {
+        if(FirebaseUser) {
 
       const newmood = req.app.locals.db.collection("mood");
 
@@ -34,7 +34,7 @@ exports.logmood = ('/', async (req, res) => {
     });
        }
   
-    return res.status(200).json({ 
+      return res.status(200).json({ 
       success: "Mood added successfully!" });
 
 } catch  {
