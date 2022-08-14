@@ -152,6 +152,18 @@ Our Team gathered a few times a week, and using slack and Jira, ensured that we 
 
 Although our testing plan had been established at the beginning of our project, we conducted tests throughout the creation of the app, and especially after everything was completed, ensuring in the process that no element was forgotten.
 
+#### **Backend Development:**
+
+The backend development is been a massive challenge to ensure that the site had all the features doing what they are supposed to be doing. The very basics features we needed to implement was a login/out, register, period calendar and mood questionnaire. On top of that we had to start learning MongoDB and how to implement it to allow the features just mentioned to save the information send by the user and save into the database for the user to have it available. To allow us doing this actions we explored different ways of doing them and we installed Redux and learned how to use it.
+
+In regards of the login/out and user registration features we managed to connect it to the MongoDB database, however we were not able to retrieve the information from it and display it for the user to be able to see what information was saved.
+
+In regards of the mood questionnaire, we were able to allow the user to select between different options and save it to MondoDB database. Similar to the login/out and registration features we were unable to retrive this information from the database to display it to the user.
+
+In regards of the period calendar, we were able to implement a code that showed the user when their next period and ovulation day would be based on the information provided by themselves on the calendar as well as them providing the lenght of their cycle. However we were not able to connect the information to MongoDB database, as it showed to be more complex to do than the last features mentioned, so the user is only able to see the information on the screen but the information is never saved on the database.
+
+This lack of knowledge (and also the limited time available) on how to retrieve the information sent to MongoDB we were unable to implement another feature that we had planned on doing, which is the statisctics page. We have implemented the statistics page anyway and placed some images that would show how we had planned to show it to our users.
+
 ---
 
 ## **Testing and Evaluation**
