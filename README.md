@@ -58,7 +58,24 @@ Women and those who experience menstruation of all ages.
 
 #### **Requirements technical and non-technical:**
 
+Technical:
+
+Non-Technical:
+
 #### **Design and architecture**
+
+Before starting our design process we decided to conduct research into similar web and mobile applications. A common theme we found was a lot use of the colour pink, and hyper-feminine imagery such as flowers, butterflies and hearts. We unanimously agreed that for our project we would rather take a more calm and neutral tone to reflect the mood we wanted our application to evoke. We settled on a core colour palette of light blues and greens with some accents of navy for when a stronger colour was required.
+
+For the logo we decided a lotus leaf would capture what our app is all about, as it has connotations of meditation, relaxing, reflecting and calmness. We based the shape off of the adobe icon collection and added a light green colour to the leaves to tie in with our colour 
+theme. 
+
+For our font we chose Eina01-Bold. It is a sans-serif rounded font that is both clear and easy to read and modern feeling. We used this font for both the logo and throughout the website.
+
+We then began to plan our basic wire structures. We had extensive talks about what we would and wouldn’t include in our application, so we had a good idea of what would go on each page. Using Figma we made an initial wireframe with the pages, what we would add on each page and how everything linked up. Once we were satisfied with the content we mocked up a few pages just to get a sense of the design. We found some appropriate customisable illustrations on Figma and decided they would be an excellent addition to our app. They are part of the ‘Hero Women’ plug-in and showcase women in various situations. 
+
+It was important to us that our application felt welcoming, clean and calm. It needed to be easy to use and navigate, creating a warm atmosphere whilst being stylish and neutral. To achieve this we rounded off all of the components on our page so there were no sharp edges, and utilised our light cool-toned colour palette. We kept the number of elements on each page to a minimum where possible, and added a sidebar for seamless navigation. Another reason we kept it simple was to make it more accessible for everyone, including those with limited computer skills. By keeping our pages minimal and using a large, clear sans-serif font we were able to create page that can easily read and understood. For this same purpose we decided to use a slightly larger font size to improve readability. 
+
+For navigation we separated our links into two different sidebars. On the right-hand side, we had a floating sidebar to link to pages that have our app’s functions on them such as the calendar and the questionnaire. We then had a drop-down hamburger menu for more basic functional pages like user profile and settings. After researching other  website we concluded that this was a set-up often used in web design, and would therefor be familiar and intuitive for the user.
 
 ---
 
