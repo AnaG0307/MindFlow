@@ -100,83 +100,74 @@ We have tried and distribute the workload as evenly as possible, however if one 
 - Firebase
 - Redux Toolkit
 
-
 #### **Implementation Process & Challenges:**
 
 The implementation of our project was a very valuable and insightful experience, in that it allowed us to implement the various methodologies and good habits learned throughout the duracy of the CFG degree.
 
 The implementation stage could be divided in the following seven steps:
 
-- Step 1 – Idea: 
-We first gathered and brainstormed a few ideas, very quickly the big lines of our project were drawn. 
-- Step 2 – Organisation : 
-Throughout our second session, we defined a bit further which role each of us would be having (all based on our personal preferences), and which tools we would be using. We started from this moment to keep a log of each of our meetings, kept a shared folder to gather documents on Google Drive, and started talking about using Jira to track our progress and tasks, along deciding and having 3 meetings a week using an Agile methodology.  
-- Step 3 – Github: 
-As it was our first time using Github in a group project, our team gathered and had a few training sessions together, we decided to establish official guidelines and good practices in regards to the use of our repository, mock repositories were created in order to ensure that we were all in line. 
-- Step 4 – Wireframe of our project: 
-As a group, we decided on the main features we wanted to see on our website, and how we would like the frame of our website to be. We also decided on a website name: MindFlow 
-- Step 5 – Structure of our App: 
-A methodology was defined in order to keep our folders and files under an established naming convention, thus encouraging us to develop future good work habits, and keeping the folder organised. 
-- Step 6 – Development process : 
-Our Team gathered a few times a week, and using slack and Jira, ensured that we would keep each other updated in regards to what we were doing, and which part of the website we were developing, and what should be our priorities. 
-- Step 7 – Testing: 
-Although our testing plan had been established at the beginning of our project, we conducted tests throughout the creation of the app, and especially after everything was completed, ensuring in the process that no element was forgotten. 
+- Step 1 – Idea:
 
-Nevertheless, despite how enlightening the experience was, we faces a few challenges, which were as follow: 
+We first gathered and brainstormed a few ideas, very quickly the big lines of our project were drawn.
 
-- Poor documentation 
-One of the main issues that we encountered throughout our project is the lack of documentation available and structure in regards to the use of React JS. As we are at a very early stage of our web development journey, our knowledge is still very limited, with the new introduction of React 18, a lot of the material available online was not applicable anymore. Resources were at time scarce or hard to understand limiting at times the extent of what we could have been achieving. 
+- Step 2 – Organisation :
 
-- ReactJs is a Library rather than a complete all-inclusive framework 
-Contrarily to Angular 2+, ReactJs require the users to install a lot of the packages, we encountered a few issues, which delayed the process of our project linked to having issues with webpacks and modules. The constant need to install external packages is a hindrance in us complete our work quicker and in a more efficient way. 
+Throughout our second session, we defined a bit further which role each of us would be having (all based on our personal preferences), and which tools we would be using. We started from this moment to keep a log of each of our meetings, kept a shared folder to gather documents on Google Drive, and started talking about using Jira to track our progress and tasks, along deciding and having 3 meetings a week using an Agile methodology.
 
-- The use of JSX 
-We have been having classes about HTML, CSS and Javascript, however React’s language, JSX, which is a mixture between both HTML and Javascript, can feature a rather complex syntax at times. 
+- Step 3 – Github:
 
-- Development speed 
-The above points, lead developers, especially new developers such as ourselves, to spend lengthy times researching, and fixing issues rather than developing the project and having more time to develop the project, thus delaying and slowing down the development process. 
+As it was our first time using Github in a group project, our team gathered and had a few training sessions together, we decided to establish official guidelines and good practices in regards to the use of our repository, mock repositories were created in order to ensure that we were all in line.
 
-- A limitation of knowledge and time
-Despite our enthusiasm for the task, we couldn't’ accomplish everything we wanted to accomplish and implement, this was due to the fact that we are still at the beginning of our programming journey. Another limitation was the time, unfortunately some of us were working full-time, this coupled with the fact that we had 3-4 weeks to develop our project put a restriction on what we could do, and narrowed our options. 
+- Step 4 – Wireframe of our project:
 
-- Integration of front-end and backend with external service providers
-The integration of Firebase authentication and MongoDB into our project was a challanging task. Besides authentication, we believe we could have used Firebase also as a database to ease the complexity of our project. The decision to use MongoDB was based on our desire to display personalised interactive graphs for the user, which is one of the great features of MongoDB when integrated with Custom JWT Provider such as Firebase. Although we managed to integrate MongoDB and Firebase on a basic level, we consider that using both was not a time wise decision. 
+As a group, we decided on the main features we wanted to see on our website, and how we would like the frame of our website to be. We also decided on a website name: MindFlow
 
-- Communication
-Although we met regularly, there were ocacionally misunderstandings over who was doing what. The confusion led to doubled work as two individuals were working on the same thing.In restrospective, we believe tha this could be improved by making better use of Jira and deciding on the team-lead. 
+- Step 5 – Structure of our App:
 
-- Github merges
-Besides others, a group work on Github was also one of our main challanges. At the beginning of the project it was fairly easy to maintain separate streams of work. However, towards the finish line, we encountered several merge clashes which slowed down our workflow. We faced issues with accurate way of creating branches and pulling from the main repository. We suported each other with problemsolving of  GitHub  issues which helped us to learn throughout the process.
+A methodology was defined in order to keep our folders and files under an established naming convention, thus encouraging us to develop future good work habits, and keeping the folder organised.
+
+- Step 6 – Development process :
+
+Our Team gathered a few times a week, and using slack and Jira, ensured that we would keep each other updated in regards to what we were doing, and which part of the website we were developing, and what should be our priorities.
+
+- Step 7 – Testing:
+
+Although our testing plan had been established at the beginning of our project, we conducted tests throughout the creation of the app, and especially after everything was completed, ensuring in the process that no element was forgotten.
+
 ---
 
 ## **Testing and Evaluation**
 
 #### **Testing strategy:**
-For our testing strategy, rather than following the testing pyramid as introduced by Mike Cohn, we thought that given the nature of our project, a frame which lies more on backend tests would be more suitable, hence we followed the testing trophy as introduced by Kent C. Dodds (https://kentcdodds.com/blog/write-tests). The style of the testing trophy is summarised as follow by its creator: "Write tests. Not too many. Mostly integration."  
 
-So here is what we implemented: 
+For our testing strategy, rather than following the testing pyramid as introduced by Mike Cohn, we thought that given the nature of our project, a frame which lies more on backend tests would be more suitable, hence we followed the testing trophy as introduced by Kent C. Dodds (https://kentcdodds.com/blog/write-tests). The style of the testing trophy is summarised as follow by its creator: "Write tests. Not too many. Mostly integration."
 
-1. Static analysis: through the use of code formatters such as Prettier, or Linters like ESLint. Due to lack of time no Type checker like Typescript or Flow was implemented. 
+So here is what we implemented:
 
-2. Unit tests to verify that the algorithms were working where we could implement them through the use of Jest. 
+1. Static analysis: through the use of code formatters such as Prettier, or Linters like ESLint. Due to lack of time no Type checker like Typescript or Flow was implemented.
 
-3. Integration tests through Jest and react-testing-library to check that the features of our app were working as expected 
+2. Unit tests to verify that the algorithms were working where we could implement them through the use of Jest.
 
-4. and finally to check that the app was working as a whole, we used user-testers (mostly ourselves and acquaintances) 
+3. Integration tests through Jest and react-testing-library to check that the features of our app were working as expected
+
+4. and finally to check that the app was working as a whole, we used user-testers (mostly ourselves and acquaintances)
 
 #### **Functional and user testing:**
-Our strategy also comprised a smart use of time, therefore a few types of functional testing were privileged over others such as: 
 
-Unit testing : We checked if individual components or units of our app matched our requirements (functioning and performing as expected), as a result we wrote tests for each section of our app (each page and component) to ensure that the right values were being returned. 
+Our strategy also comprised a smart use of time, therefore a few types of functional testing were privileged over others such as:
 
-Functional : Functional testing usually involve testing the behavior rather than the code, from a user side that would mean being able to register and to submit log in details for example. In order to do so we implemented tests within our code pages as well as extra test jest pages.  
+Unit testing : We checked if individual components or units of our app matched our requirements (functioning and performing as expected), as a result we wrote tests for each section of our app (each page and component) to ensure that the right values were being returned.
 
-We also used user-testers in order to implement our functional testing strategy.  
+Functional : Functional testing usually involve testing the behavior rather than the code, from a user side that would mean being able to register and to submit log in details for example. In order to do so we implemented tests within our code pages as well as extra test jest pages.
+
+We also used user-testers in order to implement our functional testing strategy.
+
 #### **System limitations:**
-Our project is a very interesting project which would have benefitted from a longer development period. Due to having a dashboard featuring multiple options (trackers, calendars, log in and Sign-Up pages), more rigorous checks would have been implemented and lengthier test codes had we had more time. 
 
-For our testing strategy, the testing trophy usually require the developers to use Cypress in order to implement end-to-end tests, however time, and training limitations stopped us from being able to do so on this project, hence the use of user-testers instead. 
-When using React Js, writing proper code in regards to testing is a lengthier process, especially as we need to write more code. Due to our knowledge and time limitations, having a comprehensive framework providing us with testing tools, with a more structured architecture along a set of established, official guidelines would have been helpful (a bit like Angular does, despite Angular being much more complex to get a grasp of). 
+Our project is a very interesting project which would have benefitted from a longer development period. Due to having a dashboard featuring multiple options (trackers, calendars, log in and Sign-Up pages), more rigorous checks would have been implemented and lengthier test codes had we had more time.
+
+For our testing strategy, the testing trophy usually require the developers to use Cypress in order to implement end-to-end tests, however time, and training limitations stopped us from being able to do so on this project, hence the use of user-testers instead.
+When using React Js, writing proper code in regards to testing is a lengthier process, especially as we need to write more code. Due to our knowledge and time limitations, having a comprehensive framework providing us with testing tools, with a more structured architecture along a set of established, official guidelines would have been helpful (a bit like Angular does, despite Angular being much more complex to get a grasp of).
 
 ---
 
@@ -254,3 +245,45 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ---
 
 ## **Conclusion**
+
+Nevertheless, despite how enlightening the experience was when deciding what we wanted to develop and its features, we faced a few challenges and we had to act and make decisions accordingly to the reality we were facing.
+
+- **Poor documentation**
+
+  One of the main issues that we encountered throughout our project is the lack of documentation available and structure in regards to the use of React JS. As we are at a very early stage of our web development journey, our knowledge is still very limited, with the new introduction of React 18, a lot of the material available online was not applicable anymore. Resources were at time scarce or hard to understand limiting at times the extent of what we could have been achieving.
+
+- **ReactJs is a Library rather than a complete all-inclusive framework**
+
+  Contrarily to Angular 2+, ReactJs require the users to install a lot of the packages, we encountered a few issues, which delayed the process of our project linked to having issues with webpacks and modules. The constant need to install external packages is a hindrance in us complete our work quicker and in a more efficient way.
+
+- **The use of JSX**
+
+  We have been having classes about HTML, CSS and Javascript, however React’s language, JSX, which is a mixture between both HTML and Javascript, can feature a rather complex syntax at times.
+
+- **Development speed**
+
+  The above points, lead developers, especially new developers such as ourselves, to spend lengthy times researching, and fixing issues rather than developing the project and having more time to develop the project, thus delaying and slowing down the development process.
+
+- **A limitation of knowledge and time**
+
+  Despite our enthusiasm for the task, we couldn't accomplish everything we wanted to accomplish and implement, this was due to the fact that we are still at the beginning of our programming journey. Another limitation was the time, unfortunately some of us were working full-time, attend the evening sessions of the CFG course, do homework, assignments and prepare for the final assessment, these coupled with the fact that we had 3-4 weeks to develop our project put a restriction on what we could do, and narrowed our options considerably.
+
+- **Integration of front-end and backend with external service providers**
+
+  The integration of Firebase authentication and MongoDB into our project was a challenging task. Besides authentication, we believe we could have used Firebase also as a database to ease the complexity of our project. The decision to use MongoDB was based on our desire to display personalised interactive graphs for the user, which is one of the great features of MongoDB when integrated with Custom JWT Provider such as Firebase. Although we managed to integrate MongoDB and Firebase on a basic level, we consider that using both was not a time wise decision.
+
+- **Communication**
+
+  Although we met regularly and used Jira, there were occasionally misunderstandings over who was doing what. The confusion led to doubled work in some occasions as two individuals were working on the same thing. In restrospective, we believe that this could be improved by making better use of Jira and deciding on the team-lead.
+
+- **Development Order**
+
+We also didn't really decide on what order we would start developing our project and deciding what needed to be developed first. This was due on that we had a vague idea on what needed to be developed first. We had an initial discussion about it and agreed that creating a structure for the project (what folders were necessary like client and server, and how the folders inside this folders had to be structured as well) was important to get started and avoid each member of the group creating folders here and there randomly. So we decided were to place all the main directories like server, client, components, pages, etc. and had a session all together explaining it to ensure we were all in the same page. We also agreed on a naming convention for folders and file names (camel case for folder names, ie. signup, and camel case with initial uppercase for the first letter for files, ie. SignUp.js).
+
+As we carried developing the project it was obvious that more in depth development priorities were needed as some of the developers working in the backend needed some front end done and the other way round. We solved this by communicating with the particular developer working on that area and kept working together by communicating what needs we had. It is been a fantastic learning as we learned the importance of organising what needs to be developed first and communicating in a clear way with each other.
+
+- **Working with Github**
+
+  Besides others, a group work on Github was also one of our main challanges. We all had different levels of experience working with github (on our own or as a team) and we decided that we would practice merging our code in a mock up repository first and then start coding our project for real.
+
+  At the beginning of the project it was fairly easy to maintain separate streams of work. However, towards the finish line, we encountered several merge clashes which slowed down our workflow. We faced issues with accurate way of creating branches and pulling from the main repository. We suported each other with problem solving of GitHub issues which helped us to learn a great deal throughout the process.
