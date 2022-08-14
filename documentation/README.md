@@ -307,6 +307,9 @@ We also would incorporate some more interactivity such as animation, video and s
   Besides others, a group work on Github was also one of our main challanges. We all had different levels of experience working with github (on our own or as a team) and we decided that we would practice merging our code in a mock up repository first and then start coding our project for real.
 
   At the beginning of the project it was fairly easy to maintain separate streams of work. However, towards the finish line, we encountered several merge clashes which slowed down our workflow. We faced issues with accurate way of creating branches and pulling from the main repository. We suported each other with problem solving of GitHub issues which helped us to learn a great deal throughout the process.
+  
+  - **Testing issues**
+We encountered quite a few issues upon launching our testing strategy, we wanted to orignally test using Jest, however numerous issues linked to clashes with babel, led us to drop the sue of Jest. Unfortunately we tryied all the options covered online, but due to not having enough documentation our problem couldn't be solved. Another issue encountered towards the end of the testing phase, was issues with modules which couldn't be fixed, due to lack of documentation online, we came to the conclusion that it must be an internal problem with our Team Tester's node modules. Lack of documentation and guideline limited what we could have achieved in term of testing, realistically a good tester would require a lot more training sessions to implement a more extensive strategy.
 
 ## **Getting Started**
 
