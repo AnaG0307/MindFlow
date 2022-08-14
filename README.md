@@ -65,6 +65,8 @@ Technical:
 - Have unique user profile
 - Have personal statistics displayed
 - All pages linked together and able to navigate between them
+- User authentication system
+- Database to store user details and mood/symptoms logs
 
 Non-Technical:
 
@@ -165,15 +167,19 @@ Although our testing plan had been established at the beginning of our project, 
 
 #### **Backend Development:**
 
-The backend development is been a massive challenge to ensure that the site had all the features doing what they are supposed to be doing. The very basics features we needed to implement was a login/out, register, period calendar and mood questionnaire. On top of that we had to start learning MongoDB and how to implement it to allow the features just mentioned to save the information send by the user and save into the database for the user to have it available. To allow us doing this actions we explored different ways of doing them and we installed Redux and learned how to use it.
+The backend development is been a massive challenge to ensure that the site had all the features doing what they are supposed to be doing. The very basics features we needed to implement was a login/out, register, period calendar and mood questionnaire. On top of that we had to start learning MongoDB and how to implement it to allow the features just mentioned to save the information send by the user and save into the database for the user to have it available. We aimed to embed MongoDB authenticated chart by using a Custom JWT Provider(Firebase) to diplay interactive charts on the user profile. To manage states and data manipulation within our web app, we installed Redux Toolkit and learned how to use it. 
 
-In regards of the login/out and user registration features we managed to connect it to the MongoDB database, however we were not able to retrieve the information from it and display it for the user to be able to see what information was saved.
+In regards of the login/out and user registration features we managed to connect integrate Firebase with MongoDB.  At the moment, our web-app saves user details with FirebaseId to our MongoDG user collection.  We managed to retrive information related to user profile and display it. However, the GET request worked only when the user profile page was directly linked to the login page. When we tried to access user profile indirectly after the login, data did not display and showed status 'Unauthorized'. The GET request also worked well in Postman when the token was inserted. We asume there is an issue with how Tokens are refreshed and stored within our application when using Redux Tookit to send a GET request with a Bearer Token header. We alos incorporated logout function. 
 
-In regards of the mood questionnaire, we were able to allow the user to select between different options and save it to MondoDB database. Similar to the login/out and registration features we were unable to retrive this information from the database to display it to the user.
+We aimed to establish Public and Protected routes within our application, to allow only authorized users to access certain pages. However, the user got logged out whenever we tried to access the Protected route after log in. Therefore, we have use only Public routes within our application. Again, we assume that this issue relates to Redux store and Token storage/refresh. We used Redux Toolkit to keep up to date with the most recent Redux updates and to avoid complex folder structure for action and reducer. This was a challanging step as there were not as many tutorials available that would fit the requirementsof our application. We incorporated Redux into our application only after our Redux lesson when we had the majority of login and register structure built without Redux. Therefore, they maybe so inconsistencies as the POST requests are handeled directly from the components. 
 
-In regards of the period calendar, we were able to implement a code that showed the user when their next period and ovulation day would be based on the information provided by themselves on the calendar as well as them providing the lenght of their cycle. However we were not able to connect the information to MongoDB database, as it showed to be more complex to do than the last features mentioned, so the user is only able to see the information on the screen but the information is never saved on the database.
+In regards of the mood questionnaire, we were able to allow the user to select between different options and save it to MondoDB database. We aimed to link our user and mood colection via FirebaseId to be able to retrive moods of a singular user. However, the FirebaseId field within the user collection displays null, which means that the the system does not pass well the FirebaseId. We assume that this relates again to the managment of Tokens and passing a personalised POST request. As mentioned previously, the integration of Firebase and MongoDB was mainly due to our desire to display personalised MongoDG charts. However, it proven to be fairly complex to manage personalised POST and GET requests.
 
-This lack of knowledge (and also the limited time available) on how to retrieve the information sent to MongoDB we were unable to implement another feature that we had planned on doing, which is the statisctics page. We have implemented the statistics page anyway and placed some images that would show how we had planned to show it to our users.
+In regards of the period calendar, we were able to implement a code that showed the user when their next period and ovulation day would be based on the information provided by themselves on the calendar as well as them providing the lenght of their cycle. However we were not able to connect the information to MongoDB database, as it showed to be more complex to do than the last features mentioned, so the user is only able to see the information on the screen but the information is never saved on the database. However, we started building the Redux structure to POST the request.
+
+Due to the time constraints, we did not manage to test our backend structure. Nevtherless, throughout the development process, we used Postman to test our POST and GET requests. 
+
+This lack of knowledge (and also the limited time available) on how to retrieve the personalised information sent to MongoDB we were unable to implement another feature that we had planned on doing, which is the statisctics page. We have implemented the statistics page anyway and placed some images that would show how we had planned to show it to our users.
 
 ---
 
