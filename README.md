@@ -60,7 +60,18 @@ Women and those who experience menstruation of all ages.
 
 Technical:
 
+- Have Login, Logout and Register capabilities
+- Have period calculating function
+- Have unique user profile
+- Have personal statistics displayed
+- All pages linked together and able to navigate between them
+
 Non-Technical:
+
+- Accessable 
+- Be easy to use
+- Have a clean and simple appearance 
+- Consistent styling
 
 #### **Design and architecture**
 
