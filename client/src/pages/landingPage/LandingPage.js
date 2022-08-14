@@ -38,7 +38,7 @@ function LandingPage() {
             <div>
               <h3 className="landingheadline">Your journey starts here</h3>
               <div className="paracont">
-              <text className="landingpararaph">
+              <p className="landingpararaph">
                 At MindFlow, we believe in connecting with both our bodies 
                 <br />
                 and our cycles. By gaining valuable insight into our menstrual
@@ -62,7 +62,7 @@ function LandingPage() {
                 be the first step in your journey to understanding your body's{" "}
                 <br />
                 relationship mestruation and wellbeing.
-              </text>
+              </p>
               </div>
               <div className="buttongroup">
                 <Link to="/SignUp">

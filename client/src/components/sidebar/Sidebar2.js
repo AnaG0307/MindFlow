@@ -1,12 +1,12 @@
-import React from "react";
-import "../../style/SideBar2.css";
-import { Link } from "react-router-dom";
-import Logo from "../../assets/logo.png";
+import React from "react"
+import "../../style/SideBar2.css"
+import { Link } from "react-router-dom"
+import Logo from "../../assets/logo.png"
 
 function Sidebar() {
   return (
     <div className="ALLSIDEBAR">
-      <ul className="sidebar" >
+      <ul className="sidebar">
         <div className="sidebarlogo">
           <img
             src={Logo}
@@ -51,13 +51,12 @@ function Sidebar() {
       </ul>
       <div className="content"></div>
     </div>
-  );
+  )
 }
-
-export default Sidebar;
+export default Sidebar
 
 {
-  /* 
+  /*
     // <ProSidebar className='container'>
     //     <SidebarHeader> Dashboard</SidebarHeader>
     //     <SidebarContent>
