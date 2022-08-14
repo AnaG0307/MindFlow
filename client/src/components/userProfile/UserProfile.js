@@ -1,6 +1,5 @@
 import "../../style/ProfilePage.css";
 import Profile1 from "../../assets/Profile1.png";
-import Sidebar from "../../components/sidebar/Sidebar2";
 import React from "react";
 import { useGetUserQuery } from "../../redux/slice/profileSlice";
 
@@ -19,10 +18,9 @@ export default function UserProfile() {
   return (
 
     <div>
-      <div className="header">
+      <div className="header">    
         <h1>Your Profile Details</h1>
-      </div>
-      <Sidebar /> 
+      </div>   
           <div className="profile">
             <img src={Profile1} alt="ProfilePic" width="200" height="200" />
           </div>
