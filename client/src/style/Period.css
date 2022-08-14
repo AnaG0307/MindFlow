@@ -75,8 +75,9 @@ abbr[title] {
 }
 
 .CalendarPagePNG {
-	margin-left: 13%;
-	margin-top: 6%;
+	display: block;
+    margin-left: auto;
+    margin-right: 10%;
 }
 
 .text-centermt-4p-2 {
