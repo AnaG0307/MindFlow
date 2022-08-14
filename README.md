@@ -222,6 +222,54 @@ When using React Js, writing proper code in regards to testing is a lengthier pr
 
 ---
 
+
+## **Conclusion**
+
+Nevertheless, despite how enlightening the experience was when deciding what we wanted to develop and its features, we faced a few challenges and we had to act and make decisions accordingly to the reality we were facing.
+
+- **Poor documentation**
+
+  One of the main issues that we encountered throughout our project is the lack of documentation available and structure in regards to the use of React JS. As we are at a very early stage of our web development journey, our knowledge is still very limited, with the new introduction of React 18, a lot of the material available online was not applicable anymore. Resources were at time scarce or hard to understand limiting at times the extent of what we could have been achieving.
+
+- **ReactJs is a Library rather than a complete all-inclusive framework**
+
+  Contrarily to Angular 2+, ReactJs require the users to install a lot of the packages, we encountered a few issues, which delayed the process of our project linked to having issues with webpacks and modules. The constant need to install external packages is a hindrance in us complete our work quicker and in a more efficient way.
+
+- **The use of JSX**
+
+  We have had classes regarding HTML, CSS and Javascript, however React’s language, JSX, which is a mixture between both HTML and Javascript, can feature a rather complex syntax at times.
+
+- **Development speed**
+
+The above points, led developers, especially new developers such as ourselves, to spend lengthy times researching, and fixing issues rather than developing the project and having more time to develop the project. Thus, delaying and slowing down the development process.
+
+- **A limitation of knowledge and time**
+
+  Despite our enthusiasm for the task, we couldn't accomplish everything we wanted to accomplish and implement, this was due to the fact that we are still at the beginning of our programming journey. Another limitation was the time, unfortunately some of us were working full-time, attend the evening sessions of the CFG course, do homework, assignments and prepare for the final assessment, these coupled with the fact that we had 3-4 weeks to develop our project put a restriction on what we could do, and narrowed our options down considerably.
+
+- **Integration of front-end and backend with external service providers**
+
+  The integration of Firebase authentication and MongoDB into our project was a challenging task. Besides authentication, we believe we could have used Firebase also as a database to ease the complexity of our project. The decision to use MongoDB was based on our desire to display personalised interactive graphs for the user, which is one of the great features of MongoDB when integrated with Custom JWT Provider such as Firebase. Although we managed to integrate MongoDB and Firebase on a basic level, we consider that using both was not a time wise decision.
+
+- **Communication**
+
+  Although we met regularly and used Jira, there were occasionally misunderstandings over who was doing what. The confusion led to doubled work in some occasions as two individuals were working on the same thing. In restrospective, we believe that this could be improved by making better use of Jira and deciding on the team-lead.
+
+- **Development Order**
+
+We also didn't decide on what order we would start developing our project and deciding what needed to be developed first. This was due on that we had a vague idea on what needed to be developed first. We had an initial discussion about it and agreed that creating a structure for the project (what folders were necessary like client and server, and how the folders inside this folders had to be structured as well) was important to get started and avoid each member of the group creating folders here and there randomly. So we decided where to place all the main directories like server, client, components, pages, etc. and had a session altogether explaining it to ensure we were all in the same page. We also agreed on a naming convention for folders and file names (camel case for folder names, ie. signup, and camel case with initial uppercase for the first letter for files, ie. SignUp.js).
+
+As we carried developing the project it was obvious that more in-depth development priorities were needed, as some of the developers working in the backend needed some front end done and the other way round. We solved this by communicating with the particular developer working on that area and kept working together by communicating what needs we had. It has been a fantastic learning as we learned the importance of organising what needs to be developed first and communicating in a clear way with each other.
+
+- **Working with Github**
+
+  Besides others, a group work on Github was also one of our main challanges. We all had different levels of experience working with github (on our own or as a team) and we decided that we would practice merging our code in a mock up repository first and then start coding our project for real.
+
+  At the beginning of the project it was fairly easy to maintain separate streams of work. However, towards the finish line, we encountered several merge clashes which slowed down our workflow. We faced issues with accurate way of creating branches and pulling from the main repository. We suported each other with problem solving of GitHub issues which helped us to learn a great deal throughout the process.
+
+
+
+
 ## **Getting Started**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -294,47 +342,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ---
-
-## **Conclusion**
-
-Nevertheless, despite how enlightening the experience was when deciding what we wanted to develop and its features, we faced a few challenges and we had to act and make decisions accordingly to the reality we were facing.
-
-- **Poor documentation**
-
-  One of the main issues that we encountered throughout our project is the lack of documentation available and structure in regards to the use of React JS. As we are at a very early stage of our web development journey, our knowledge is still very limited, with the new introduction of React 18, a lot of the material available online was not applicable anymore. Resources were at time scarce or hard to understand limiting at times the extent of what we could have been achieving.
-
-- **ReactJs is a Library rather than a complete all-inclusive framework**
-
-  Contrarily to Angular 2+, ReactJs require the users to install a lot of the packages, we encountered a few issues, which delayed the process of our project linked to having issues with webpacks and modules. The constant need to install external packages is a hindrance in us complete our work quicker and in a more efficient way.
-
-- **The use of JSX**
-
-  We have had classes regarding HTML, CSS and Javascript, however React’s language, JSX, which is a mixture between both HTML and Javascript, can feature a rather complex syntax at times.
-
-- **Development speed**
-
-The above points, led developers, especially new developers such as ourselves, to spend lengthy times researching, and fixing issues rather than developing the project and having more time to develop the project. Thus, delaying and slowing down the development process.
-
-- **A limitation of knowledge and time**
-
-  Despite our enthusiasm for the task, we couldn't accomplish everything we wanted to accomplish and implement, this was due to the fact that we are still at the beginning of our programming journey. Another limitation was the time, unfortunately some of us were working full-time, attend the evening sessions of the CFG course, do homework, assignments and prepare for the final assessment, these coupled with the fact that we had 3-4 weeks to develop our project put a restriction on what we could do, and narrowed our options down considerably.
-
-- **Integration of front-end and backend with external service providers**
-
-  The integration of Firebase authentication and MongoDB into our project was a challenging task. Besides authentication, we believe we could have used Firebase also as a database to ease the complexity of our project. The decision to use MongoDB was based on our desire to display personalised interactive graphs for the user, which is one of the great features of MongoDB when integrated with Custom JWT Provider such as Firebase. Although we managed to integrate MongoDB and Firebase on a basic level, we consider that using both was not a time wise decision.
-
-- **Communication**
-
-  Although we met regularly and used Jira, there were occasionally misunderstandings over who was doing what. The confusion led to doubled work in some occasions as two individuals were working on the same thing. In restrospective, we believe that this could be improved by making better use of Jira and deciding on the team-lead.
-
-- **Development Order**
-
-We also didn't decide on what order we would start developing our project and deciding what needed to be developed first. This was due on that we had a vague idea on what needed to be developed first. We had an initial discussion about it and agreed that creating a structure for the project (what folders were necessary like client and server, and how the folders inside this folders had to be structured as well) was important to get started and avoid each member of the group creating folders here and there randomly. So we decided where to place all the main directories like server, client, components, pages, etc. and had a session altogether explaining it to ensure we were all in the same page. We also agreed on a naming convention for folders and file names (camel case for folder names, ie. signup, and camel case with initial uppercase for the first letter for files, ie. SignUp.js).
-
-As we carried developing the project it was obvious that more in-depth development priorities were needed, as some of the developers working in the backend needed some front end done and the other way round. We solved this by communicating with the particular developer working on that area and kept working together by communicating what needs we had. It has been a fantastic learning as we learned the importance of organising what needs to be developed first and communicating in a clear way with each other.
-
-- **Working with Github**
-
-  Besides others, a group work on Github was also one of our main challanges. We all had different levels of experience working with github (on our own or as a team) and we decided that we would practice merging our code in a mock up repository first and then start coding our project for real.
-
-  At the beginning of the project it was fairly easy to maintain separate streams of work. However, towards the finish line, we encountered several merge clashes which slowed down our workflow. We faced issues with accurate way of creating branches and pulling from the main repository. We suported each other with problem solving of GitHub issues which helped us to learn a great deal throughout the process.
