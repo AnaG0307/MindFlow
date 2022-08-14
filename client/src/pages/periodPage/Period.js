@@ -15,26 +15,11 @@ function PeriodPage() {
     <div className="PeriodPage">
     <Sidebar />
       <Container>
-
-        <Row>
           <h3 className="ppagetitle">Calculate Your Next Period</h3>
-          <Col xs={12} lg={8}>
+
             <div className="prightcol">
               <Period />
             </div>
-          </Col>
-          <Col xs={12} lg={4} style={{ paddingLeft: 0 }}>
-            <div>
-              <img
-                src={CalendarPage}
-                alt="CalendarPagePNG"
-                className="CalendarPagePNG"
-                width="450"
-                height="400"
-              />
-            </div>
-          </Col>
-        </Row>
       </Container>
     </div>
   );

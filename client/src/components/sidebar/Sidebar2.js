@@ -7,15 +7,6 @@ function Sidebar() {
   return (
     <div className="ALLSIDEBAR">
       <ul className="sidebar">
-        <div className="sidebarlogo">
-          <img
-            src={Logo}
-            alt="MindFlow logo"
-            className="mfl-logo"
-            width="49"
-            height="40"
-          />
-        </div>
         <li>
           <span>
             <Link to="/questionnaire">
