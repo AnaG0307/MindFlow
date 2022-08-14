@@ -83,8 +83,6 @@ Non-Technical:
 
 Mindful Mockup - This was used for front-end to have a template in terms of colour palette, layout and features to be added
 
-
-
 Before starting our design process we decided to conduct research into similar web and mobile applications. A common theme we found was a lot use of the colour pink, and hyper-feminine imagery such as flowers, butterflies and hearts. We unanimously agreed that for our project we would rather take a more calm and neutral tone to reflect the mood we wanted our application to evoke. We settled on a core colour palette of light blues and greens with some accents of navy for when a stronger colour was required.
 
 For the logo we decided a lotus leaf would capture what our app is all about, as it has connotations of meditation, relaxing, reflecting and calmness. We based the shape off of the adobe icon collection and added a light green colour to the leaves to tie in with our colour
@@ -99,9 +97,6 @@ It was important to us that our application felt welcoming, clean and calm. It n
 For navigation we separated our links into two different sidebars. On the left-hand side, we had a floating sidebar to link to pages that have our app’s functions on them such as the calendar and the questionnaire, this appearead on the page only once the user had logged in so they can navigate the webpage easily. This sidebar included slight movement and colour change to from light blue to grey once the user hovers their cursor over the words. This is to signify that the sidebar has clickable functions and is a common function on many websites.
 
 We then had a drop-down hamburger menu in the top right-hand corner of the page, for more basic functional pages like user profile and settings. After researching other websites we concluded that this was a set-up often used in web design, and would therefore be familiar and intuitive for the user.
-
-
-
 
 ---
 
@@ -128,11 +123,9 @@ We have tried to distribute the workload as evenly as possible, however if one a
 - Discord: for our meetings.
 - Jira (free edition): to create a board with all of our tasks and keep track of what we are doing and what the other members are doing.
 
-
 <img width="1464" alt="Screenshot 2022-08-14 at 15 22 28" src="https://user-images.githubusercontent.com/100788351/184544174-ee1dd40b-9811-4a53-a904-6fe493b82b65.png">
 
 Copy of our Jira board
-
 
 #### **Tools & Libraries:**
 
@@ -149,13 +142,11 @@ Copy of our Jira board
 - Firebase
 - Redux Toolkit
 - Postman
-
+- EsLint
 
 <img width="1319" alt="Screenshot 2022-08-14 at 16 29 27" src="https://user-images.githubusercontent.com/100788351/184544210-0195fcd0-6be5-4a16-bbb7-eb9caa20223d.png">
 
 Our Miro Board to brainstorm ideas
-
-
 
 #### **Implementation Process & Challenges:**
 
