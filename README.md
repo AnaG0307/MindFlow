@@ -94,8 +94,6 @@ For navigation we separated our links into two different sidebars. On the right-
 
 ## **Implementation and Execution**
 
-We aimed to deploy our app on Heroku as the final step of our project. At the moment, Heroku complets the build succesfully but returns a blank page with error messages in the log (example screenshot below). We assume those messages relate to how the path to static files is set up in the index server file of our deployment version. 
-
 #### **Team Approach to Work:**
 
 Using the Agile methodology we had a retrospective and review meeting once a week. We also met for stand-ups where possible, and ensure that we plan out our objectives for each of our week-long sprints. We did set a rough meeting schedule of Monday, Wednesday and Friday, although this was flexible to accommodate everyone’s individual schedules. We each updated our Google doc daily with what we have done that day. We initially planned to test our code after the second week and test our code as we go along. Feedback from the testing was provided in our meetings.
@@ -217,6 +215,11 @@ Our project is a very interesting project which would have benefitted from a lon
 
 For our testing strategy, the testing trophy usually require the developers to use Cypress in order to implement end-to-end tests, however time, and training limitations stopped us from being able to do so on this project, hence the use of user-testers instead.
 When using React Js, writing proper code in regards to testing is a lengthier process, especially as we need to write more code. Due to our knowledge and time limitations, having a comprehensive framework providing us with testing tools, with a more structured architecture along a set of established, official guidelines would have been helpful (a bit like Angular does, despite Angular being much more complex to get a grasp of).
+
+#### **Deployment:**
+
+We aimed to deploy our app on Heroku as the final step of our project. At the moment, Heroku completes the build successfully but returns a blank page with error messages in the log (example screenshot below). We assume those messages relate to how the path to static files is set up in the index server file of our deployment version despite providing the build version of our React frontend app.
+
 
 ---
 
