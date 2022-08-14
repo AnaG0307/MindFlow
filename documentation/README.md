@@ -275,7 +275,7 @@ Nevertheless, despite how enlightening the experience was when deciding what we 
 
 - **Development speed**
 
-The above points, led developers, especially new developers such as ourselves, to spend lengthy times researching, and fixing issues rather than developing the project and having more time to develop the project. Thus, delaying and slowing down the development process.
+  The above points, led developers, especially new developers such as ourselves, to spend lengthy times researching, and fixing issues rather than developing the project and having more time to develop the project. Thus, delaying and slowing down the development process.
 
 - **A limitation of knowledge and time**
 
@@ -292,15 +292,15 @@ The above points, led developers, especially new developers such as ourselves, t
   
 - **Design and Architecture**
  
-In terms of our design, given the time constraints there are a few aspects of the design that we would want to improve and enhance. With our hamburger side menu, we discovered that it is not fully functional on all browsers as some of the team members were having issue with viewing the full menu. 
+  In terms of our design, given the time constraints there are a few aspects of the design that we would want to improve and enhance. With our hamburger side menu, we discovered that it is not fully functional on all browsers as some of the team members were having issue with viewing the full menu. 
 We also would incorporate some more interactivity such as animation, video and sound to make the web app more user friendly and interactive. 
 
 
 - **Development Order**
 
-We also didn't decide on what order we would start developing our project and deciding what needed to be developed first. This was due on that we had a vague idea on what needed to be developed first. We had an initial discussion about it and agreed that creating a structure for the project (what folders were necessary like client and server, and how the folders inside this folders had to be structured as well) was important to get started and avoid each member of the group creating folders here and there randomly. So we decided where to place all the main directories like server, client, components, pages, etc. and had a session altogether explaining it to ensure we were all in the same page. We also agreed on a naming convention for folders and file names (camel case for folder names, ie. signup, and camel case with initial uppercase for the first letter for files, ie. SignUp.js).
+  We also didn't decide on what order we would start developing our project and deciding what needed to be developed first. This was due on that we had a vague idea on what needed to be developed first. We had an initial discussion about it and agreed that creating a structure for the project (what folders were necessary like client and server, and how the folders inside this folders had to be structured as well) was important to get started and avoid each member of the group creating folders here and there randomly. So we decided where to place all the main directories like server, client, components, pages, etc. and had a session altogether explaining it to ensure we were all in the same page. We also agreed on a naming convention for folders and file names (camel case for folder names, ie. signup, and camel case with initial uppercase for the first letter for files, ie. SignUp.js).
 
-As we carried developing the project it was obvious that more in-depth development priorities were needed, as some of the developers working in the backend needed some front end done and the other way round. We solved this by communicating with the particular developer working on that area and kept working together by communicating what needs we had. It has been a fantastic learning as we learned the importance of organising what needs to be developed first and communicating in a clear way with each other.
+  As we carried developing the project it was obvious that more in-depth development priorities were needed, as some of the developers working in the backend needed some front end done and the other way round. We solved this by communicating with the particular developer working on that area and kept working together by communicating what needs we had. It has been a fantastic learning as we learned the importance of organising what needs to be developed first and communicating in a clear way with each other.
 
 - **Working with Github**
 
