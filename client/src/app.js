@@ -12,7 +12,6 @@ import ProtectedRoutes from "./utils/ProtectedRoutes"
 import PublicRoutes from "./utils/PublicRoutes"
 // Importing files to creates routes to them
 import Header from "./components/header/Header"
-import Footer from "./components/footer/Footer.js"
 import PeriodPage from "./pages/periodPage/Period"
 import LandingPage from "./pages/landingPage/LandingPage"
 import Login from "./pages/loginPage/LoginPage"
