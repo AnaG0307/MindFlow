@@ -16,8 +16,7 @@ module.exports = async function (req, res, next) {
       return res.sendStatus(401);
    }
 
-// Once validated, tack on the mood document fetched from MongoDB onto the request
-
+// Once validated, look up the mood document fetched from MongoDB onto the request
 
     const moodCollection = req.app.locals.db.collection("mood");
 

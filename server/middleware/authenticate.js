@@ -12,11 +12,10 @@ const firebaseAdmin = require("../services/firebase") ;
     }
 
     if (!firebaseUser) {
-      // Unauthorized
       return res.sendStatus(401);
     }
 
-//Once validated, tack on the user document fetched from MongoDB onto our request as req.user
+//Once validated, look up the user document fetched from MongoDB onto the request as req.user
 
     const usersCollection = req.app.locals.db.collection("user");
 
@@ -25,7 +24,6 @@ const firebaseAdmin = require("../services/firebase") ;
     });
 
     if (!user) {
-      // Unauthorized
       return res.sendStatus(401);
     }
 
@@ -33,7 +31,7 @@ const firebaseAdmin = require("../services/firebase") ;
 
     next();
   } catch (err) {
-    //Unauthorized
+    
     res.sendStatus(401);
   }
 };

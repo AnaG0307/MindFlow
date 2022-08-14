@@ -1,14 +1,11 @@
-const express = require("express") ;
-const authenticate = require("../middleware/authenticate") ;
-const firebaseAdmin = require("../services/firebase") ;
-
+const authenticate = require("../middleware/authenticate");
+const firebaseAdmin = require("../services/firebase");
 
 //GET controller
 
 exports.showmood = ('/', authenticate, async (req, res) => {
    res.status(200).json(req.user);
  });
-
 
 //POST controller  to add daily mood to a database
 
@@ -24,8 +21,7 @@ exports.logmood = ('/', async (req, res) => {
 //Add data to the collection in MongoDb
 
   try{
-
-      const FirebaseUser = await firebaseAdmin.auth.getUser
+      const FirebaseUser = firebaseAdmin.auth.getUser
 
        if(FirebaseUser) {
 
@@ -35,22 +31,17 @@ exports.logmood = ('/', async (req, res) => {
         mood,
         date: Date(),
         firebaseId: FirebaseUser.uid
-
     });
-  
        }
   
     return res.status(200).json({ 
       success: "Mood added successfully!" });
 
-
 } catch  {
       res.status(400).json({
           message: "Error adding mood",
-      });
-   
+      });  
 }
-
 });
 
   

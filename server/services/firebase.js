@@ -2,7 +2,7 @@ const admin = require("firebase-admin") ;
 const config = require("../config/index");
 
 //Admin authentication firebase
-//The details will be hidden by replacment in config in the future
+//The details will be hidden by replacment in the config/index file in the future
 
 const serviceAccount = {
   "type":"service_account",
