@@ -12,13 +12,27 @@
     text-align: center;
     margin-left: 150px;
 }
-.resources-image {
-	width: 900; 
-    height: 750;
+img.resources-image {
+	width: 800px; 
+    height: 350px;
     max-width: 100%;
-    margin-right:10;
-    margin-left: auto;
-    display:block;
+    max-height: 100%;
+    margin-right: 10;
+}
+
+.article-image {
+    width: 100px;
+    height: 100px;
+}
+
+.friend-image {
+    width: 100px;
+    height: 100px;
+}
+
+.mental-image {
+    width: 100px;
+    height: 100px;
 }
 
 .resourcesHeading {
@@ -39,7 +53,7 @@
     justify-content: space-around;
     max-width: 61rem;
     margin: 0 auto;
-    
+    text-align: center;    
 }
 
 .Resources-table .Resources {
